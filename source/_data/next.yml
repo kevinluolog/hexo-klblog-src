@@ -1136,7 +1136,7 @@ tag_generator:
 # 控制底部busuanzi_theme观看信息显示
 kl_footer_eye: true ##only for next theme use.
 
-kl_click_hanzi: true
+kl_click_hanzi: false ##kl+ true
 kl_click_love: true
 
 #---kl+---end---
