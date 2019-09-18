@@ -1137,6 +1137,6 @@ tag_generator:
 kl_footer_eye: true ##only for next theme use.
 
 kl_click_hanzi: false ##kl+ true
-kl_click_love: true
+kl_click_love: false ##kl+ true
 
 #---kl+---end---
