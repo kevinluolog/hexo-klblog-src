@@ -79,14 +79,14 @@
   {%- endif %}
 
   {%- if theme.kl_click_hanzi %}
-	 	<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+	 	<script src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script>
 	 	<!-- 页面点击汉字 -->
-	 	<script type="text/javascript" src="/js/hanzi.js"></script>
+	 	{{- next_js('hanzi.js') }}
   {%- endif %}
 
   {%- if theme.kl_click_love %}
 		<!-- 页面点击小红心 -->
-		<script type="text/javascript" src="/js/clicklove.js"></script>
+	 	{{- next_js('clicklove.js') }}
   {%- endif %}
 
 </body>
