@@ -76,7 +76,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 ### melody next maupassant-hexo very-simple sky random: these theme is good.
 ## landscape nayo polarbear xoxo 
-theme: next
+theme: maupassant-hexo
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -93,7 +93,7 @@ permalink_defaults:
 ##  branch:
 deploy:
   type: git
-  repo: git@github.com/kevinluolog/kevinluolog.github.io.git  
+  repo: repo: https://gh_token@github.com/kevinluolog/kevinluolog.github.io.git  
   branch: master                                                      
 
 #https://kevinluolog.github.io/
