@@ -76,12 +76,12 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 ### melody next maupassant-hexo very-simple sky random: these theme is good.
 ## landscape nayo polarbear xoxo 
-theme: maupassant-hexo
+theme: next
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 #url: https://kevinluolog.github.com/hexo-maup
-root: /
+root: /hexo-next-muse/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -93,8 +93,8 @@ permalink_defaults:
 ##  branch:
 deploy:
   type: git
-  repo: https://gh_token@github.com/kevinluolog/kevinluolog.github.io.git  
-  branch: master                                                      
+  repo: https://gh_token@github.com/kevinluolog/hexo-next-muse.git  
+  branch: gh-pages                                                      
 
 #https://kevinluolog.github.io/
 #https://github.com/kevinluolog/hexo-klblog-src.git - master -> github.com/kevinluolog/kevinluolog.github.io - master
