@@ -93,7 +93,7 @@ permalink_defaults:
 ##  branch:
 deploy:
   type: git
-  repo: https://gh_token@github.com/kevinluolog/hexo-next-Gemini.git  
+  repo: https://gh_token@github.com/kevinluolog/hexo-next-gemini.git  
   branch: gh-pages                                                      
 
 #https://kevinluolog.github.io/
@@ -106,7 +106,7 @@ deploy:
 #  branch: master
 
 #https://kevinluolog.github.io/hexo-next-muse/
-#hexo-next-muse | hexo-next-Gemini | hexo-next-Pisces | hexo-next-Mist
+#hexo-next-muse | hexo-next-gemini | hexo-next-pisces | hexo-next-mist
 #https://github.com/kevinluolog/hexo-klblog-src.git - branch[hexo-next-muse] -> github.com/kevinluolog/hexo-next-muse - gh-pages
 #root: /hexo-next-muse/
 #  repo: git@github.com:kevinluolog/kevinluolog.github.io.git
