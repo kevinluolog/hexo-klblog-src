@@ -1,5 +1,5 @@
 ---
-title: makefile
+title: gitpage
 toc: TRUE
 tag:
 - 自动生成
