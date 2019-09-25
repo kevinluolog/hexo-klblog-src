@@ -245,44 +245,71 @@ gcc的-S选项，表示在程序编译期间，在生成汇编代码后，停止
 <div class="line-block">相关环境变量：<br />
 <code>LIBRARY_PATH</code>环境变量：指定程序静态链接库文件搜索路径<br />
 <code>LD_LIBRARY_PATH</code>环境变量：指定程序动态链接库文件搜索路径</div>
+<h3 id="实践中的一些经验">实践中的一些经验</h3>
 <h4 id="eval-和-define-中变量展开的坑">eval 和 define 中变量展开的坑</h4>
 <p>先上参考代码，下面代码中的错误，让我一阵好找，费几天时间。 出现莫名其妙的错误，DIR_STEM 缺尾部的, TBFILENAME引用不到，文件名中间被插入空格等等。原因都是行尾的引起。</p>
-<dl>
-<dt>::</dt>
-<dd><p>define PROGRAM_template #把文件分成4部分,基-干(DIR_STEM)-文件名.后缀名 DIR_STEM := $(subst $(DIR_BASE_OBJ),,$(dir $(1)))#XXX:这句语句执行完后展开后，行尾有,会被视为连上下一行，导致下一行变量成内容了。后面就找不到这个变量了。所以用DIR_STEM := $(subst $(DIR_BASE_OBJ),,$(basename $(1)))代替，就不会有了 TBFILENAME := $(subst .md,,$(notdir $(1)))#XXX:此处因上面问题会连到上行 $(info $(TBFILENAME))#XXX:此处会显示不出东西来 #$(1): $(DIR_BASE_SRC)$$(DIR_STEM)$$(TBFILENAME).rst #$(1): $(DIR_BASE_SRC)$(subst $(DIR_BASE_OBJ),,$(dir $(1)))$(subst .md,,$(notdir $(1))).rst #$(1): $(DIR_BASE_SRC)$$(DIR_STEM)$$(TBFILENAME).rst #dep := $(DIR_BASE_SRC)$$(DIR_STEM)$$(TBFILENAME).rst #dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1))) dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1))) ##不能直接写在[目标:依赖]里面,因为依赖里面带着模式匹配,有可能会使文件名乱套,未做实验再次证实，如果有问题，可以参考。最后发现没关系的。 #$(1): $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1))) $(1): $$(dep) ##必须要写成$$(dep),$(dep)会使pandoc第一个参数为空。大概是因为命令集内部定义或组合生成的新变量要加双$ $(info $(1): $(dep)) pandoc $$&lt; -o $$@ $$(file &gt;$(DIR_BASE_OBJ)-$$(DIR_STEM)-$$(TBFILENAME).tmp,$$(call def_hexo_md_head,$$TBFILENAME)) ## 上面命令pandoc此处必须加$$,要不$&lt;,$@会找不到,会出现pandoc -o 这样没有任何的参数带入的错误。花了我几天时间查了无数资料，做无数次的试验，才找到这个问题 endef ## 写入文件的函数 $(file &gt;xxx.xx,$(xxx)),这里要用$$(file， $$(call ，如果没有则在eval 的第一次展开时，函数就会被执行，所以会每次执行make都会写文件，而不是设计的源文件有更新时才编译更新文件。</p>
-<p># 打散目标集合,一个一个送入命令集重组,同时用eval命令在makefile中使能。这样可以克服模式匹配依赖要一致的缺点(%只能匹配文件名,并且要规则一样) $(foreach temp,$(OBJ_PATH_MDS),$(eval $(call PROGRAM_template,$(temp))))</p>
-</dd>
-</dl>
+<pre><code>define PROGRAM_template
+#把文件分成4部分,基-干(DIR_STEM)-文件名.后缀名
+DIR_STEM := $(subst $(DIR_BASE_OBJ),,$(dir $(1)))#XXX:这句语句执行完后展开后，行尾有\,会被视为连上下一行，导致下一行变量成内容了。后面就找不到这个变量了。所以用DIR_STEM := $(subst $(DIR_BASE_OBJ),,$(basename $(1)))代替，就不会有\了
+TBFILENAME := $(subst .md,,$(notdir $(1)))#XXX:此处因上面问题会连到上行
+$(info $(TBFILENAME))#XXX:此处会显示不出东西来
+#$(1): $(DIR_BASE_SRC)$$(DIR_STEM)\$$(TBFILENAME).rst
+#$(1): $(DIR_BASE_SRC)$(subst $(DIR_BASE_OBJ),,$(dir $(1)))\$(subst .md,,$(notdir $(1))).rst
+#$(1): $(DIR_BASE_SRC)$$(DIR_STEM)$$(TBFILENAME).rst
+#dep := $(DIR_BASE_SRC)$$(DIR_STEM)\$$(TBFILENAME).rst
+#dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1)))
+dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1)))
+##不能直接写在[目标:依赖]里面,因为依赖里面带着模式匹配,有可能会使文件名乱套,未做实验再次证实，如果有问题，可以参考。最后发现没关系的。
+#$(1): $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1)))
+$(1): $$(dep)
+##必须要写成$$(dep),$(dep)会使pandoc第一个参数为空。大概是因为命令集内部定义或组合生成的新变量要加双$
+ $(info $(1): $(dep))
+ pandoc $$&lt; -o $$@
+ $$(file &gt;$(DIR_BASE_OBJ)-$$(DIR_STEM)-$$(TBFILENAME).tmp,$$(call def_hexo_md_head,$$TBFILENAME))
+## 上面命令pandoc此处必须加$$,要不$&lt;,$@会找不到,会出现pandoc -o 这样没有任何的参数带入的错误。花了我几天时间查了无数资料，做无数次的试验，才找到这个问题
+endef
+## 写入文件的函数 $(file &gt;xxx.xx,$(xxx)),这里要用$$(file， $$(call ，如果没有则在eval 的第一次展开时，函数就会被执行，所以会每次执行make都会写文件，而不是设计的源文件有更新时才编译更新文件。
+
+# 打散目标集合,一个一个送入命令集重组,同时用eval命令在makefile中使能。这样可以克服模式匹配依赖要一致的缺点(%只能匹配文件名,并且要规则一样)
+$(foreach temp,$(OBJ_PATH_MDS),$(eval $(call PROGRAM_template,$(temp))))</code></pre>
 <p>改好好用的代码</p>
-<pre><code>##定义一个命令包, 来重新组合【目标:依赖】关系, 配合$(eval ) 和foreach 来使用。eval用来二次展开命令包，使用真正成为makefile的一部分，命令包只是一堆makefile标识文本。foreach用来展开目标集的每一个目标，并送入命令包进行替换重组。
+<pre><code>$(OBJ_PATH_DIR):
+#因为mkdir支持多目录同时写在一起,所以不用再用模式来拆开成一个一个了。
+ @echo &quot;   MKDIR $@...&quot; 
+ @mkdir $@ 
+
+##定义一个命令包, 来重新组合【目标:依赖】关系, 配合$(eval ) 和foreach 来使用。eval用来二次展开命令包，使用真正成为makefile的一部分，命令包只是一堆makefile标识文本。foreach用来展开目标集的每一个目标，并送入命令包进行替换重组。
 ##此处要注意的是，二次展开才用到的变量或函数要用$$,譬如自动变量$@等。
 ##define a function
+#$(info $(TBFILENAME))
 
 define PROGRAM_template
 DIR_STEM := $(subst $(DIR_BASE_OBJ),,$(basename $(1)))
-TBFILENAME := $(subst .md,,$(notdir $(1)))
+#TBFILENAME := $(subst .md,,$(notdir $(1)))
 #$(1): $(DIR_BASE_SRC)$$(DIR_STEM).rst
 dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1)))
 $(1): $$(dep)
-  echo start hexo head output...
-  $$(file &gt;$$@.tmp,$$(call def_hexo_md_head,$$(TBFILENAME)))
-  echo convert to utf8
-  iconv -f GBK -t UTF-8 $$@.tmp &gt;$$@
-  echo start pandoc ...
-  pandoc $$&lt; -o - &gt;&gt;$$@
-  echo delete .tmp file...
-  del $$@.tmp
+ @echo start hexo head output...
+ $$(file &gt;$$@.tmp,$$(call def_hexo_md_head,$(subst .md,,$(notdir $(1)))))
+#  @echo $$(TBFILENAME)+2
+#  @echo $(subst .md,,$(notdir $(1)))+1#直接函数填入才能取到。
+ @echo convert to utf8
+ iconv -f GBK -t UTF-8 $$@.tmp &gt;$$@
+ @echo start pandoc ...
+ pandoc $$&lt; -o - &gt;&gt;$$@
+ @echo delete .tmp file...
+ del $$@.tmp
 endef
 
 # 打散目标集合,一个一个送入命令集重组,同时用eval命令在makefile中使能。这样可以克服模式匹配依赖要一致的缺点(%只能匹配文件名,并且要规则一样)
 $(foreach temp,$(OBJ_PATH_MDS),$(eval $(call PROGRAM_template,$(temp))))</code></pre>
 <ul>
 <li><p>行尾有,后一行的变量名被连上来了</p>
-<p>:</p>
-<p>define function DIR_STEM := $(dir $(1))#这个不是出现在define中是没有关系的。但此处就有可能有问题 endef</p>
+<pre><code>define function
+DIR_STEM := $(dir $(1))#这个不是出现在define中是没有关系的。但此处就有可能有问题
+endef</code></pre>
 <p>或者</p>
-<p>:</p>
-<p>DIR_STEM := c:tmp</p></li>
+<pre><code>DIR_STEM := c:\tmp\</code></pre></li>
 <li><p>eval和define</p>
 <p>define只是一堆文字，在引用的地方展开，但是并不作为makefile的一部分，即展开的变量不会出现在makefile变量空间中，1tab缩进的命令会在展开时执行。</p>
 <p>eval则表示会有2次展开，第一次展开和define一样。第二次展开是把展开的内容变为makefile变量等空间的一部分，可以真正引用到。</p>
@@ -290,7 +317,19 @@ $(foreach temp,$(OBJ_PATH_MDS),$(eval $(call PROGRAM_template,$(temp))))</code><
 </ul>
 <h4 id="输出文件的方法">输出文件的方法</h4>
 <ul>
-<li></li>
+<li>$(file &gt;$$@.tmp,$$(call def_hexo_md_head,$$(TBFILENAME)))</li>
+<li>&gt; 和 &gt;&gt; 法</li>
+</ul>
+<h4 id="一些工具">一些工具</h4>
+<ul>
+<li><p>iconv 文件编码转换</p>
+<p>因pandoc和Hexo都只支持UTF-8的编码形式，而中文版windows缺省输出的是GBK的中文编码，如果直接用&gt;&gt;把pandoc的输出重定向到GBK编码的文件中时，会出现什么也没有输出的现象。这里就需要iconv来做一下转换了。</p>
+<pre><code>echo start hexo head output...
+$$(file &gt;$$@.tmp,$$(call def_hexo_md_head,$$(TBFILENAME)))
+echo convert to utf8
+iconv -f GBK -t UTF-8 $$@.tmp &gt;$$@
+echo start pandoc ...
+pandoc $$&lt; -o - &gt;&gt;$$@</code></pre></li>
 </ul>
 <h4 id="调试输出变量信息方式">调试输出变量信息方式</h4>
 <ul>
