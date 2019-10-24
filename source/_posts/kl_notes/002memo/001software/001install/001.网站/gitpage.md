@@ -104,7 +104,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 hexo-next-Gemini<br />
 hexo-next-muse<br />
 hexo-next-Pisces<br />
-hexo-next-hexo-maup</p>
+hexo-maup</p>
 <table>
 <colgroup>
 <col width="7%" />
@@ -204,17 +204,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <td>05</td>
 <td><script type="text/javascript">
 <!--
-h='&#104;&#x65;&#120;&#x6f;&#x2d;&#110;&#x65;&#120;&#116;&#x2d;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;';e=n+a+h;
+h='&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
-</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;&#32;&#x61;&#116;&#32;&#104;&#x65;&#120;&#x6f;&#x2d;&#110;&#x65;&#120;&#116;&#x2d;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;</noscript></td>
-<td>~</td>
-<td><script type="text/javascript">
-<!--
-h='&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;&#32;&#x61;&#116;&#32;&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;</noscript></td>
+</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;&#32;&#x61;&#116;&#32;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;</noscript> | ~</td>
+<td>hexo-maup</td>
+<td>@gh-pages</td>
 </tr>
 </tbody>
 </table>
