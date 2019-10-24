@@ -1,17 +1,17 @@
----
-title: makefile
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+ ---
+title: makefile 
+tag: 
+- 001.make 
 - 笔记
 categories:
-- 技术
-- 笔记
----
+- 001.make 
+- 自动生成
+toc: TRUE
+--- 
 <h1 id="makefiles">makefiles</h1>
 <h2 id="案例">案例</h2>
 <h3 id="通用makefile自动遍历子目录源文件自动生成依赖">通用makefile,自动遍历子目录源文件，自动生成依赖。</h3>
+<p><a href="https://blog.csdn.net/yuliying/article/details/49635485">一份通用makefile,自动遍历子目录源文件，自动生成依赖Ubuntu和OSX</a></p>
 <p>这份makefile可以将当前makefile所在文件夹以及所有子文件夹中的cpp文件打包成静态库/动态库/可执行文件. 自动生成所有依赖关系，修改任何文件都可以触发重新编译相应依赖的文件。</p>
 <p>在Ubuntu 和 OSX 系统测试通过。</p>
 <pre><code>SHELL = /bin/bash
@@ -52,7 +52,7 @@ clean:
     rm -f $(Objs) $(Deps) $(StaticLib) $(DynamicLib) $(Bin)</code></pre>
 <h3 id="makefile操作系统检测方法">makefile操作系统检测方法</h3>
 <p>使用两个简单的技巧检测操作系统：</p>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>首先是环境变量 OS</li>
 <li>然后uname命令</li>
 </ol>
@@ -77,20 +77,37 @@ else
     detected_OS := $(patsubst MINGW%,MSYS,$(detected_OS))
 endif</code></pre>
 <p>然后您可以根据以下内容选择相关内容detected_OS：</p>
-<dl>
-<dt>::</dt>
-<dd><dl>
-<dt>ifeq ($(detected_OS),Windows)</dt>
-<dd><p>CFLAGS += -D WIN32</p>
-</dd>
-</dl>
-<p>endif ifeq ($(detected_OS),Darwin) # Mac OS X CFLAGS += -D OSX endif ifeq ($(detected_OS),Linux) CFLAGS += -D LINUX endif ifeq ($(detected_OS),GNU) # Debian GNU Hurd CFLAGS += -D GNU_HURD endif ifeq ($(detected_OS),GNU/kFreeBSD) # Debian kFreeBSD CFLAGS += -D GNU_kFreeBSD endif ifeq ($(detected_OS),FreeBSD) CFLAGS += -D FreeBSD endif ifeq ($(detected_OS),NetBSD) CFLAGS += -D NetBSD endif ifeq ($(detected_OS),DragonFly) CFLAGS += -D DragonFly endif ifeq ($(detected_OS),Haiku) CFLAGS += -D Haiku endif</p>
-</dd>
-</dl>
+<pre><code>ifeq ($(detected_OS),Windows)
+    CFLAGS += -D WIN32
+endif
+ifeq ($(detected_OS),Darwin)        # Mac OS X
+    CFLAGS += -D OSX
+endif
+ifeq ($(detected_OS),Linux)
+    CFLAGS   +=   -D LINUX
+endif
+ifeq ($(detected_OS),GNU)           # Debian GNU Hurd
+    CFLAGS   +=   -D GNU_HURD
+endif
+ifeq ($(detected_OS),GNU/kFreeBSD)  # Debian kFreeBSD
+    CFLAGS   +=   -D GNU_kFreeBSD
+endif
+ifeq ($(detected_OS),FreeBSD)
+    CFLAGS   +=   -D FreeBSD
+endif
+ifeq ($(detected_OS),NetBSD)
+    CFLAGS   +=   -D NetBSD
+endif
+ifeq ($(detected_OS),DragonFly)
+    CFLAGS   +=   -D DragonFly
+endif
+ifeq ($(detected_OS),Haiku)
+    CFLAGS   +=   -D Haiku
+endif</code></pre>
 <p>笔记：</p>
 <p>命令uname与uname -s因为option -s（--kernel-name）是默认值相同。看看为什么uname -s比这更好uname -o。</p>
 <p>使用OS（而不是uname）简化了识别算法。您仍然可以单独使用uname，但您必须处理if/else块以检查所有MinGW，Cygwin等变体。</p>
-<p>环境变量OS始终设置为"Windows_NT"不同的Windows版本（请参阅%OS%Wikipedia上的环境变量）。</p>
+<p>环境变量OS始终设置为&quot;Windows_NT&quot;不同的Windows版本（请参阅%OS%Wikipedia上的环境变量）。</p>
 <p>另一种方法OS是环境变量MSVC（它检查MS Visual Studio的存在，请参阅使用Visual C ++的示例）。</p>
 <p>下面我提供一个使用make和gcc构建共享库的完整示例：*.so或者*.dll取决于平台。这个例子尽可能简单易懂。</p>
 <p>要在Windows上安装make，gcc请参阅Cygwin或MinGW。</p>
@@ -104,7 +121,7 @@ endif</code></pre>
     └── main.c</code></pre>
 <p>提醒:Makefile使用制表缩进。在示例文件下面复制粘贴时的注意事项。</p>
 <p>这两个Makefile文件</p>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li><p>lib/Makefile</p>
 <pre><code>ifeq ($(OS),Windows_NT)
     uname_S := Windows
@@ -232,3 +249,4 @@ hello</code></pre>
 <pre><code>&gt; app/app
 hello</code></pre>
 <h3 id="next">next</h3>
+<h3 id="next-1">next</h3>

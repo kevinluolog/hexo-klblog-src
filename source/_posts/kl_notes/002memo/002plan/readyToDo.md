@@ -1,18 +1,17 @@
----
-title: readyToDo
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+ ---
+title: readyToDo 
+tag: 
+- 002plan 
 - 笔记
 categories:
-- 技术
-- 笔记
----
+- 002plan 
+- 自动生成
+toc: TRUE
+--- 
 <h1 id="readytodo">readyToDo</h1>
 <h2 id="目标">目标</h2>
 <h2 id="strikeouttextlive">STRIKEOUT:textlive</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>texmaker,texstudio生成中文PDF</li>
 <li>基本latext语法熟悉</li>
 </ol>
