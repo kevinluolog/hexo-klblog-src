@@ -1,14 +1,13 @@
----
-title: LaTex
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+ ---
+title: LaTex 
+tag: 
+- 001install 
 - 笔记
 categories:
-- 技术
-- 笔记
----
+- 001install 
+- 自动生成
+toc: TRUE
+--- 
 <h1 id="memo-of-latex">memo of latex</h1>
 <h2 id="安装方法">安装方法</h2>
 <h3 id="tex">tex</h3>
@@ -32,14 +31,14 @@ Dvipm: &quot;C:/texlive/2016/bin/win32/pdflatex.exe&quot; -interacti on=nonstopm
 <p>这是texlive 安装自带</p>
 <h2 id="sublimetext配置texlive编辑和编译环境">SublimeText配置TexLive编辑和编译环境</h2>
 <ul>
-<li><p><a href="htt://blog.csdn.net/meiqi0538/article/details/82915406">Tex-Live安装及SublimeText 配置Tex-Live编辑和编译环境</a></p>
-<ol type="1">
+<li><a href="htt://blog.csdn.net/meiqi0538/article/details/82915406">Tex-Live安装及SublimeText 配置Tex-Live编辑和编译环境</a>
+<ol style="list-style-type: decimal">
 <li>LatexTools插件</li>
 <li>SumatraPDF配置</li>
 </ol></li>
-<li><p><a href="https://www.sumatrapdfreader.org/%20%20download-free-pdf-viewer.html">下载路径</a></p></li>
+<li><a href="https://www.sumatrapdfreader.org/%20%20download-free-pdf-viewer.html">下载路径</a></li>
 <li><p>【设置】-》【选项】</p>
-<p>"C:CommonToolsSublime Text 3Sublime Text 3sublime_text.exe" "%f:%l"</p></li>
+<p>&quot;C:CommonToolsSublime Text 3Sublime Text 3sublime_text.exe&quot; &quot;%f:%l&quot;</p></li>
 </ul>
 <pre><code>「LaTeXTools.sublime-settings」做以下配置：
 &quot;windows&quot;:{
@@ -83,18 +82,18 @@ This is the context of the article.
 <blockquote>
 <p>TikZ的命名更有趣，采用的是递归式的取名：“TikZ ist kein Zeichenprogramm”(TikZ is not a drawing program)。 类似的取名最出名的恐怕就是GNU（GNU is Not Unix）了。</p>
 </blockquote>
-<ol type="1">
-<li><p><a href="http://www.texample.net/tikz/">TikZ的官网：内含很多示例代码</a></p></li>
-<li><p><a href="https://www.overleaf.com">LateX在线编辑工具</a></p></li>
-<li><p><a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">TikZ快速入门文档</a></p></li>
-<li><p><a href="https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing">LaTeX Graphics using TikZ: A Tutorial p1</a></p></li>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.texample.net/tikz/">TikZ的官网：内含很多示例代码</a></li>
+<li><a href="https://www.overleaf.com">LateX在线编辑工具</a></li>
+<li><a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">TikZ快速入门文档</a></li>
+<li><a href="https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing">LaTeX Graphics using TikZ: A Tutorial p1</a></li>
 <li><p><a href="http://blog.sina.com.cn/s/blog_97d042500101g4jk.html">TikZ绘图学习笔记</a> LaTeX中支持PGF(Portable Graphics Format/Pretty,Good,Functional).PGF能够画出精确的图像，但因为非所见即所得，所以学习起来也有一定难度。</p>
 <p>在*<em>TeX中绘制图形有很多方法，例如picture环境、pstricks宏包、xypic宏包、dratex宏包、metapost宏包等</em>*。PGF也是其中一种。PGF的结构包括系统层、基础层和前段层。在通常情况下，用户只会接触到如TikZ的前端层。TikZ是PGF的扩展，由同一个作者开发。</p></li>
-<li><p><a href="https://www.cnblogs.com/tsingke/p/6649800.html">Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！</a> 这个网址收集了比较齐全的学习网址</p></li>
-<li><p><a href="https://www.ctan.org/pkg/pgf">tikz &amp; pgf manual - CTAN: Package pgf</a> 用户手册，源码 <a href="https://github.com/pgf-tikz/pgf">gitHub源码仓库</a></p></li>
+<li><a href="https://www.cnblogs.com/tsingke/p/6649800.html">Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！</a> 这个网址收集了比较齐全的学习网址</li>
+<li><a href="https://www.ctan.org/pkg/pgf">tikz &amp; pgf manual - CTAN: Package pgf</a> 用户手册，源码 <a href="https://github.com/pgf-tikz/pgf">gitHub源码仓库</a></li>
 </ol>
 <h4 id="tikz绘图">TiKZ绘图</h4>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>使用 LaTeX 宏包 TikZ 来绘制矢量流程图
 <ul>
 <li><a href="https://blog.csdn.net/tuzixini/article/details/72957211">Latex 绘制流程图</a></li>
@@ -136,7 +135,7 @@ This is the context of the article.
     }
     \end{tikzpicture}
 \end{frame}</code></pre>
-<ol start="3" type="1">
+<ol start="3" style="list-style-type: decimal">
 <li><p><a href="https://blog.csdn.net/lishoubox/article/details/7316224">ifthen宏包使用——条件判断与循环语句</a></p>
 <blockquote>
 <p>ifthenelse{判断条件}{肯定结构}{否定结构} whiledo{判断条件}{while语句}</p>
@@ -163,7 +162,7 @@ This is the context of the article.
 <p><a href="http://blog.sina.com.cn/s/blog_5e16f1770102e77g.html">使用PSTricks绘制精致的流程图</a> 一个好用的package地址在http://texnik.dante.de/tex/generic/pstricks-add/ 大家也可以下载替换系统的 texlive/2011/texmf-local/tex/generic/pstricks-add/pstricks-add.tex 文件，或者就放在自己编码的文件目录下也可。 我们可以利用已有的命令绘制出精致的流程图</p>
 <p>TIPS ===</p>
 <h3 id="misc">MISC</h3>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li>参考文献可以搜bibtex，</li>
 <li>制作幻灯片可以搜beamer。</li>
 </ol>
