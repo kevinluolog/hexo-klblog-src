@@ -1,29 +1,22 @@
----
-title: make
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+ ---
+title: make 
+tag: 
+- 001install 
 - 笔记
 categories:
-- 技术
-- 笔记
----
+- 001install 
+- 自动生成
+toc: TRUE
+--- 
 <h1 id="make">make</h1>
 <h2 id="make-and-makefile">make and makefile</h2>
-<div class="contents">
-<p>目录</p>
-</div>
-<div class="section-numbering">
-
-</div>
 <h3 id="make-1">make</h3>
 <h4 id="gnu-make-安装">gnu make 安装</h4>
 <ul>
 <li><p>make 官方下载地址</p>
-<p>GNU ftp server: <a href="http://ftp.gnu.org/gnu/make/">http://ftp.gnu.org/gnu/make/</a> (via HTTP) and <a href="ftp://ftp.gnu.org/gnu/make/">ftp://ftp.gnu.org/gnu/make/</a> (via FTP)</p></li>
-<li><p>make4.2（GNU make）的安装步骤</p>
-<ol type="1">
+<p>GNU ftp server: <a href="http://ftp.gnu.org/gnu/make/" class="uri">http://ftp.gnu.org/gnu/make/</a> (via HTTP) and <a href="ftp://ftp.gnu.org/gnu/make/" class="uri">ftp://ftp.gnu.org/gnu/make/</a> (via FTP)</p></li>
+<li>make4.2（GNU make）的安装步骤
+<ol style="list-style-type: decimal">
 <li><p>解压</p>
 <p><code>tar -zxvf make4.2.tar.gz</code></p></li>
 <li><p>安装</p>
@@ -58,8 +51,13 @@ make &amp;&amp; make install</code></pre></li>
 <h3 id="faq">FAQ</h3>
 <h4 id="makefile变量代表的意义">Makefile变量$@，$^，$&lt;代表的意义</h4>
 <p><a href="https://www.cnblogs.com/baiduboy/p/6849587.html">makefile中$@ $^ %&lt;使用</a></p>
-<p>$@--目标文件，$^--所有的依赖文件，$&lt;--第一个依赖文件。</p>
-<p># 这是再一次简化后的Makefile</p>
+<p><script type="text/javascript">
+<!--
+h='&#30446;&#x6807;&#x6587;&#20214;';a='&#64;';n='&#36;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#36;&#32;&#x61;&#116;&#32;&#30446;&#x6807;&#x6587;&#20214;</noscript>，$^所有的依赖文件，$&lt;第一个依赖文件。</p>
+<p>这是再一次简化后的Makefile</p>
 <pre><code>main：main.o mytool1.o mytool2.o
 gcc -o $@ $^
 .c.o：
@@ -74,17 +72,17 @@ gcc -c $&lt;</code></pre>
 <pre><code>gcc -o temp temp.c -lm</code></pre>
 <h4 id="只知道函数的大概形式怎么找到头文件用man">只知道函数的大概形式，怎么找到头文件。用man</h4>
 <p>想知道fread这个函数的确切形式，我们只要执行 man fread 系统就会输出着函数的详细解释的。和这个函数所在的头文件说明了。</p>
-<p>如果我们要write这个函数的说明，当我们执行 <span class="title-ref">man write</span> 时，输出的结果却不是我们所需要的。 因为我们要的是write这个函数的说明，可是出来的却是write这个命令的说明。 为了得到write的函数说明我们要用 <span class="title-ref">man 2 write</span> 2表示我们用的write这个函数是系统调用函数，还有一个我们常用的是3表示函数是C的库函数。</p>
+<p>如果我们要write这个函数的说明，当我们执行 man write 时，输出的结果却不是我们所需要的。 因为我们要的是write这个函数的说明，可是出来的却是write这个命令的说明。 为了得到write的函数说明我们要用 man 2 write 2表示我们用的write这个函数是系统调用函数，还有一个我们常用的是3表示函数是C的库函数。</p>
 <h3 id="引用文章全文">引用文章全文</h3>
 <h4 id="gcc与makefile">gcc与makefile</h4>
-<div class="line-block">本文不会详细展开如何编写一个Makefile。如想了解种种细节，请参考下面这个非常详细的教程，包含几乎GNU make的Makefile的所有细节：</div>
+<p>本文不会详细展开如何编写一个Makefile。如想了解种种细节，请参考下面这个非常详细的教程，包含几乎GNU make的Makefile的所有细节：</p>
 <p><a href="https://seisman.github.io/how-to-write-makefile/">跟我一起写Makefile</a></p>
 <p>而本文包含以下内容：</p>
 <ul>
 <li>makefile小模板</li>
 <li>gcc指令</li>
 </ul>
-<p><strong>Makefile小模板</strong></p>
+<p>Makefile小模板</p>
 <p>适用于纯 Ｃ 语言</p>
 <pre><code># 指令编译器和选项
 CC=gcc
@@ -106,8 +104,8 @@ clean:
 
 %.o:%.c
     $(CC) $(CFLAGS) $(INC) -o $@ -c $&lt;</code></pre>
-<div class="line-block">注意：Makefile有个规则就是命令行是以tab键开头，4个空格或其他则会报错：<br />
-<code>Makefile:2: *** missing separator。stop</code></div>
+<p>注意：Makefile有个规则就是命令行是以tab键开头，4个空格或其他则会报错：<br />
+<code>Makefile:2: *** missing separator。stop</code></p>
 <ul>
 <li>相比于单个文件和多个文件的makefile，通过变量<code>INC</code>制定了头文件路径。头文件路径之间通过空格隔开。</li>
 <li>编译规则<code>%.o:%.c</code>中加入了头文件参数<code>$(CC) $(CFLAGS) $(INC) -o $@ -c $&lt;</code>，</li>
@@ -194,40 +192,40 @@ all:
 <p><strong>多个程序文件的编译</strong></p>
 <p><code>gcc main1.c main2.c -o main</code></p>
 <p><strong>预处理</strong></p>
-<div class="line-block"><code>gcc -E main.c -o main.i</code><br />
+<p><code>gcc -E main.c -o main.i</code><br />
 或<br />
 <code>gcc -E main.c</code><br />
-gcc的-E选项，可以让编译器在预处理后停止，并输出预处理结果。</div>
+gcc的-E选项，可以让编译器在预处理后停止，并输出预处理结果。</p>
 <p><strong>编译为汇编代码</strong></p>
-<div class="line-block">预处理之后，可直接对生成的test.i文件编译，生成汇编代码:<br />
+<p>预处理之后，可直接对生成的test.i文件编译，生成汇编代码:<br />
 <code>gcc -S main.i -o main.s</code><br />
-gcc的-S选项，表示在程序编译期间，在生成汇编代码后，停止，-o输出汇编代码文件。</div>
+gcc的-S选项，表示在程序编译期间，在生成汇编代码后，停止，-o输出汇编代码文件。</p>
 <p><strong>汇编</strong></p>
-<div class="line-block">对于上文中生成的汇编代码文件test.s，gas汇编器负责将其编译为目标文件，如下:<br />
-<code>gcc -c main.s -o main.o</code></div>
+<p>对于上文中生成的汇编代码文件test.s，gas汇编器负责将其编译为目标文件，如下:<br />
+<code>gcc -c main.s -o main.o</code></p>
 <p><strong>连接</strong></p>
-<div class="line-block">gcc连接器是gas提供的，负责将程序的目标文件与所需的所有附加的目标文件连接起来，最终生成可执行文件。附加的目标文件包括静态连接库和动态连接库。<br />
-对于上一小节中生成的main.o，将其与Ｃ标准输入输出库进行连接，最终生成可执行程序main。</div>
+<p>gcc连接器是gas提供的，负责将程序的目标文件与所需的所有附加的目标文件连接起来，最终生成可执行文件。附加的目标文件包括静态连接库和动态连接库。<br />
+对于上一小节中生成的main.o，将其与Ｃ标准输入输出库进行连接，最终生成可执行程序main。</p>
 <p><strong>检错</strong></p>
-<div class="line-block">参数<code>-Wall</code>，使用它能够使GCC产生尽可能多的警告信息。<br />
+<p>参数<code>-Wall</code>，使用它能够使GCC产生尽可能多的警告信息。<br />
 <code>gcc -Wall main.c -o main</code><br />
 在编译程序时带上<code>-Werror</code>选项，那么GCC会在所有产生警告的地方停止编译，迫使程序员对自己的代码进行修改，如下：<br />
-<code>gcc -Werrormain.c -o main</code></div>
+<code>gcc -Werrormain.c -o main</code></p>
 <p><strong>创建动态链接库</strong></p>
-<div class="line-block">生成生成o文件<br />
+<p>生成生成o文件<br />
 <code>gcc -c -fPIC add.c</code> //这里一定要加上-fPIC选项，目的使库不必关心文件内函数位置<br />
 再编译<br />
-<code>gcc -shared -fPIC -o libadd.so add.o</code></div>
+<code>gcc -shared -fPIC -o libadd.so add.o</code></p>
 <p><strong>库文件连接</strong></p>
-<div class="line-block">开发软件时，完全不使用第三方函数库的情况是比较少见的，通常来讲都需要借助许多函数库的支持才能够完成相应的功能。从程序员的角度看，函数库实际上就是一些头文件（<code>.h</code>）和库文件（<code>so、或lib、dll</code>）的集合。虽然<code>Linux</code>下的大多数函数都默认将头文件放到<code>/usr/include/</code>目录下，而库文件则放到<code>/usr/lib/</code>目录下；但也有的时候，我们要用的库不在这些目录下，所以GCC在编译时必须用自己的办法来查找所需要的头文件和库文件。<br />
-额外补充：Linux需要连接so库文件（带软连接），可以完完整整的复制到<code>/usr/include/</code>或<code>/usr/lib/</code>目录下，使用 <code>cp -d * /usr/lib/</code> 命令，然后别忘记再运行 <code>ldconfig</code>。</div>
-<div class="line-block">其中inclulde文件夹的路径是<code>/home/test/include</code>,lib文件夹是<code>/home/test/lib</code>,lib文件夹中里面包含二进制so文件<code>libtest.so</code><br />
+<p>开发软件时，完全不使用第三方函数库的情况是比较少见的，通常来讲都需要借助许多函数库的支持才能够完成相应的功能。从程序员的角度看，函数库实际上就是一些头文件（<code>.h</code>）和库文件（<code>so、或lib、dll</code>）的集合。虽然<code>Linux</code>下的大多数函数都默认将头文件放到<code>/usr/include/</code>目录下，而库文件则放到<code>/usr/lib/</code>目录下；但也有的时候，我们要用的库不在这些目录下，所以GCC在编译时必须用自己的办法来查找所需要的头文件和库文件。<br />
+额外补充：Linux需要连接so库文件（带软连接），可以完完整整的复制到<code>/usr/include/</code>或<code>/usr/lib/</code>目录下，使用 <code>cp -d * /usr/lib/</code> 命令，然后别忘记再运行 <code>ldconfig</code>。</p>
+<p>其中inclulde文件夹的路径是<code>/home/test/include</code>,lib文件夹是<code>/home/test/lib</code>,lib文件夹中里面包含二进制so文件<code>libtest.so</code><br />
 首先要进行编译main.c为目标文件，这个时候需要执行:<br />
 <code>gcc –c –I /home/test/include main.c –o main.o</code><br />
 最后把所有目标文件链接成可执行文件:<br />
-<code>gcc –L /home/test/lib -ltest main.o –o main</code></div>
-<div class="line-block">默认情况下， GCC在链接时优先使用动态链接库，只有当动态链接库不存在时才考虑使用静态链接库，如果需要的话可以在编译时加上-static选项，强制使用静态链接库。<br />
-<code>gcc –L /home/test/lib -static -ltest main.o –o main</code></div>
+<code>gcc –L /home/test/lib -ltest main.o –o main</code></p>
+<p>默认情况下， GCC在链接时优先使用动态链接库，只有当动态链接库不存在时才考虑使用静态链接库，如果需要的话可以在编译时加上-static选项，强制使用静态链接库。<br />
+<code>gcc –L /home/test/lib -static -ltest main.o –o main</code></p>
 <p>静态库链接时搜索路径顺序：</p>
 <ol>
 <li><code>ld</code>会去找GCC命令中的参数-L</li>
@@ -242,9 +240,9 @@ gcc的-S选项，表示在程序编译期间，在生成汇编代码后，停止
 <li>默认的动态库搜索路径<code>/lib</code></li>
 <li>默认的动态库搜索路径<code>/usr/lib</code></li>
 </ol>
-<div class="line-block">相关环境变量：<br />
+<p>相关环境变量：<br />
 <code>LIBRARY_PATH</code>环境变量：指定程序静态链接库文件搜索路径<br />
-<code>LD_LIBRARY_PATH</code>环境变量：指定程序动态链接库文件搜索路径</div>
+<code>LD_LIBRARY_PATH</code>环境变量：指定程序动态链接库文件搜索路径</p>
 <h3 id="实践中的一些经验">实践中的一些经验</h3>
 <h4 id="eval-和-define-中变量展开的坑">eval 和 define 中变量展开的坑</h4>
 <p>先上参考代码，下面代码中的错误，让我一阵好找，费几天时间。 出现莫名其妙的错误，DIR_STEM 缺尾部的, TBFILENAME引用不到，文件名中间被插入空格等等。原因都是行尾的引起。</p>
@@ -287,7 +285,8 @@ define PROGRAM_template
 DIR_STEM := $(subst $(DIR_BASE_OBJ),,$(basename $(1)))
 #TBFILENAME := $(subst .md,,$(notdir $(1)))
 #$(1): $(DIR_BASE_SRC)$$(DIR_STEM).rst
-dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1)))
+#dep := $(patsubst %.md,%.rst,$(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1)))
+dep := $(basename $(subst $(DIR_BASE_OBJ),$(DIR_BASE_SRC),$(1))).rst
 $(1): $$(dep)
  @echo start hexo head output...
  $$(file &gt;$$@.tmp,$$(call def_hexo_md_head,$(subst .md,,$(notdir $(1)))))
@@ -299,6 +298,8 @@ $(1): $$(dep)
  pandoc $$&lt; -o - &gt;&gt;$$@
  @echo delete .tmp file...
  del $$@.tmp
+ @echo copy .md file to hexo post...
+ xcopy $$@ $(dir $(subst $(DIR_BASE_OBJ),$(DIR_BASE_HEXO_POST),$(1))) /y
 endef
 
 # 打散目标集合,一个一个送入命令集重组,同时用eval命令在makefile中使能。这样可以克服模式匹配依赖要一致的缺点(%只能匹配文件名,并且要规则一样)

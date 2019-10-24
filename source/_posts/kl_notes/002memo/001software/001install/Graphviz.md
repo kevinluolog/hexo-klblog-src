@@ -1,21 +1,20 @@
----
-title: Graphviz
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+ ---
+title: Graphviz 
+tag: 
+- 001install 
 - 笔记
 categories:
-- 技术
-- 笔记
----
+- 001install 
+- 自动生成
+toc: TRUE
+--- 
 <h1 id="graphviz">Graphviz</h1>
 <h2 id="install">install</h2>
-<ol type="1">
+<ol style="list-style-type: decimal">
 <li><a href="http://www.graphviz.org/download/">download</a></li>
 <li>设置
-<ol type="i">
-<li><p>环境变量 path: ~graphviz-2.38bin</p></li>
+<ol style="list-style-type: lower-roman">
+<li>环境变量 path: ~graphviz-2.38bin</li>
 <li><p>font中文支持</p>
 <ul>
 <li>graphviz-2.38etcfontsfonts.conf， 指明字体文件目录</li>
