@@ -81,7 +81,7 @@ theme: next
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 #url: https://kevinluolog.github.com/hexo-maup
-root: /hexo-next-gemini/
+root: /hexo-next-Pisces/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -93,7 +93,7 @@ permalink_defaults:
 ##  branch:
 deploy:
   type: git
-  repo: https://gh_token@github.com/kevinluolog/hexo-next-gemini.git  
+  repo: https://gh_token@github.com/kevinluolog/hexo-next-Pisces.git  
   branch: gh-pages                                                      
 
 #https://kevinluolog.github.io/
