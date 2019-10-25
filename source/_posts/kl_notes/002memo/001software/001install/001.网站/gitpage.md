@@ -101,9 +101,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 // -->
 </script><noscript>&#35302;&#x53d1;&#x4ed3;&#32;&#x61;&#116;&#32;&#20998;&#x652f;</noscript> 一样</p>
 <p>master<br />
-hexo-next-Gemini<br />
+hexo-next-Gemini :注意大写，linux下大小写敏感<br />
 hexo-next-muse<br />
-hexo-next-Pisces<br />
+hexo-next-Pisces :注意大写，linux下大小写敏感<br />
 hexo-maup</p>
 <table>
 <colgroup>
@@ -163,10 +163,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <td>~</td>
 <td><script type="text/javascript">
 <!--
-h='&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#110;&#x65;&#120;&#116;&#x2d;&#x47;&#x65;&#x6d;&#x69;&#110;&#x69;';e=n+a+h;
+h='&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#110;&#x65;&#120;&#116;&#x2d;&#x67;&#x65;&#x6d;&#x69;&#110;&#x69;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
-</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#110;&#x65;&#120;&#116;&#x2d;&#x47;&#x65;&#x6d;&#x69;&#110;&#x69;&#32;&#x61;&#116;&#32;&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;</noscript></td>
+</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#110;&#x65;&#120;&#116;&#x2d;&#x67;&#x65;&#x6d;&#x69;&#110;&#x69;&#32;&#x61;&#116;&#32;&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;</noscript></td>
 </tr>
 <tr class="odd">
 <td>03</td>
