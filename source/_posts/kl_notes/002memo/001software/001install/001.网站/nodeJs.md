@@ -1,4 +1,5 @@
- ---
+ 
+---
 title: nodeJs 
 tag: 
 - 001.网站 
@@ -7,7 +8,8 @@ categories:
 - 001.网站 
 - 自动生成
 toc: TRUE
---- 
+---
+ 
 <h1 id="node.js">node.JS</h1>
 <h2 id="install">install</h2>
 <p><a href="https://nodejs.org/en/">download here</a></p>
