@@ -1,15 +1,13 @@
- 
 ---
-title: LaTex 
+title: LaTex
 tag: 
-- 001install 
+- 001install
 - 笔记
 categories:
-- 001install 
+- 001install
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="memo-of-latex">memo of latex</h1>
 <h2 id="安装方法">安装方法</h2>
 <h3 id="tex">tex</h3>

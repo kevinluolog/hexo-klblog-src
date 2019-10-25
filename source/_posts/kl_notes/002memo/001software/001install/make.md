@@ -1,15 +1,13 @@
- 
 ---
-title: make 
+title: make
 tag: 
-- 001install 
+- 001install
 - 笔记
 categories:
-- 001install 
+- 001install
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="make">make</h1>
 <h2 id="make-and-makefile">make and makefile</h2>
 <h3 id="make-1">make</h3>

@@ -1,15 +1,13 @@
- 
 ---
-title: readyToDo 
+title: readyToDo
 tag: 
-- 002plan 
+- 002plan
 - 笔记
 categories:
-- 002plan 
+- 002plan
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="readytodo">readyToDo</h1>
 <h2 id="目标">目标</h2>
 <h2 id="strikeouttextlive">STRIKEOUT:textlive</h2>

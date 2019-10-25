@@ -1,15 +1,13 @@
- 
 ---
-title: bat 
+title: bat
 tag: 
-- 002usage 
+- 002usage
 - 笔记
 categories:
-- 002usage 
+- 002usage
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="batch">batch</h1>
 <h2 id="tips">tips</h2>
 <h3 id="cd和dp0的区别">%cd%和%~dp0的区别</h3>
