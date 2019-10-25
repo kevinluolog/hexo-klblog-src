@@ -1,11 +1,9 @@
 ---
 title: memo
 tag: 
-- 000misc
 - 笔记
 categories:
-- 000misc
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/000misc/
 toc: TRUE
 ---
 <h1 id="memo">memo</h1>
