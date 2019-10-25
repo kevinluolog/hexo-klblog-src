@@ -1,15 +1,13 @@
- 
 ---
-title: sphinx 
+title: sphinx
 tag: 
-- 001install 
+- 001install
 - 笔记
 categories:
-- 001install 
+- 001install
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="sphinx">sphinx</h1>
 <h2 id="sphinx-is-great">sphinx is great</h2>
 <h3 id="sphinx-install3">sphinx install+3</h3>

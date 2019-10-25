@@ -1,15 +1,13 @@
- 
 ---
-title: github 
+title: github
 tag: 
-- 001.网站 
+- 001.网站
 - 笔记
 categories:
-- 001.网站 
+- 001.网站
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="github">github</h1>
 <h2 id="参考链接">参考链接</h2>
 <p><a href="https://git-scm.com/doc">git-scm 官方doc 网址</a></p>
