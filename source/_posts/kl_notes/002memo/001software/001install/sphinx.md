@@ -10,7 +10,7 @@ toc: TRUE
 --- 
 <h1 id="sphinx">sphinx</h1>
 <h2 id="sphinx-is-great">sphinx is great</h2>
-<h3 id="sphinx-install">sphinx install+</h3>
+<h3 id="sphinx-install2">sphinx install+2</h3>
 <p><a href="http://www.sphinx-doc.org/en/master/usage/installation.html#linux">sphinx install 官方spec</a></p>
 <h4 id="windows">windows</h4>
 <p><a href="https://pypi.org/project/Sphinx/">pypi sphinx website</a></p>
