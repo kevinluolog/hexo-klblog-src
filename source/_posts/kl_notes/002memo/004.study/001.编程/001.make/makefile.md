@@ -1,11 +1,9 @@
 ---
 title: makefile
 tag: 
-- 001.make
 - 笔记
 categories:
-- 001.make
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/004.study/001.编程/001.make/
 toc: TRUE
 ---
 <h1 id="makefiles">makefiles</h1>

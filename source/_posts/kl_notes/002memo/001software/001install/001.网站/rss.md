@@ -1,11 +1,9 @@
 ---
 title: rss
 tag: 
-- 001.网站
 - 笔记
 categories:
-- 001.网站
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/001software/001install/001.网站/
 toc: TRUE
 ---
 <h1 id="rss">rss</h1>

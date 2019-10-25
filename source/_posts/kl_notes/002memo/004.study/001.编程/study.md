@@ -1,11 +1,9 @@
 ---
 title: study
 tag: 
-- 001.编程
 - 笔记
 categories:
-- 001.编程
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/004.study/001.编程/
 toc: TRUE
 ---
 <h1 id="study">study</h1>
