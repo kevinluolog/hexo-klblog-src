@@ -1,15 +1,13 @@
- 
 ---
-title: Graphviz 
+title: Graphviz
 tag: 
-- 001install 
+- 001install
 - 笔记
 categories:
-- 001install 
+- 001install
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="graphviz">Graphviz</h1>
 <h2 id="install">install</h2>
 <ol style="list-style-type: decimal">

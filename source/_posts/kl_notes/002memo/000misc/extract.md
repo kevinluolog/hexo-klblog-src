@@ -1,15 +1,13 @@
- 
 ---
-title: extract 
+title: extract
 tag: 
-- 000misc 
+- 000misc
 - 笔记
 categories:
-- 000misc 
+- 000misc
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="extract">extract</h1>
 <h2 id="摘录东西">摘录东西</h2>
 <h3 id="生活">生活</h3>
