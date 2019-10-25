@@ -1,4 +1,5 @@
- ---
+ 
+---
 title: python 
 tag: 
 - 001install 
@@ -7,7 +8,8 @@ categories:
 - 001install 
 - 自动生成
 toc: TRUE
---- 
+---
+ 
 <h1 id="python">python</h1>
 <h2 id="install">install</h2>
 <h3 id="主要相关工具和包为">主要相关工具和包为：</h3>
