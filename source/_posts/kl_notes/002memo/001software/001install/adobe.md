@@ -1,4 +1,5 @@
- ---
+ 
+---
 title: adobe 
 tag: 
 - 001install 
@@ -7,7 +8,8 @@ categories:
 - 001install 
 - 自动生成
 toc: TRUE
---- 
+---
+ 
 <h1 id="adobe-software">adobe software</h1>
 <h2 id="help">help</h2>
 <h3 id="official-help-address">official help address</h3>

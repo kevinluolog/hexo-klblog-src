@@ -1,4 +1,5 @@
- ---
+ 
+---
 title: makefile 
 tag: 
 - 001.make 
@@ -7,7 +8,8 @@ categories:
 - 001.make 
 - 自动生成
 toc: TRUE
---- 
+---
+ 
 <h1 id="makefiles">makefiles</h1>
 <h2 id="案例">案例</h2>
 <h3 id="通用makefile自动遍历子目录源文件自动生成依赖">通用makefile,自动遍历子目录源文件，自动生成依赖。</h3>

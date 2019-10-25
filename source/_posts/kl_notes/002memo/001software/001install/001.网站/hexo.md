@@ -1,4 +1,5 @@
- ---
+ 
+---
 title: hexo 
 tag: 
 - 001.网站 
@@ -7,7 +8,8 @@ categories:
 - 001.网站 
 - 自动生成
 toc: TRUE
---- 
+---
+ 
 <h1 id="hexo">hexo</h1>
 <h2 id="install">install</h2>
 <p><a href="https://hexo.io/docs/">Installation guide on hexo.io</a></p>
