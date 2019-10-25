@@ -1,15 +1,13 @@
- 
 ---
-title: study 
+title: study
 tag: 
-- 001.编程 
+- 001.编程
 - 笔记
 categories:
-- 001.编程 
+- 001.编程
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="study">study</h1>
 <h2 id="编程">编程</h2>
 <h3 id="java">java</h3>

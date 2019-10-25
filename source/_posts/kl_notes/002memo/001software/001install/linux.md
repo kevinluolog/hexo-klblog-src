@@ -1,15 +1,13 @@
- 
 ---
-title: linux 
+title: linux
 tag: 
-- 001install 
+- 001install
 - 笔记
 categories:
-- 001install 
+- 001install
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="gramma-and-template">gramma and template</h1>
 <h2 id="网络资源地址">网络资源地址</h2>
 <p><a href="https://yq.aliyun.com/articles/681643">Linux基础知识——Linux常用命令大全</a></p>

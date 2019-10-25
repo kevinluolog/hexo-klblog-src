@@ -1,15 +1,13 @@
- 
 ---
-title: gramma 
+title: gramma
 tag: 
-- 001install 
+- 001install
 - 笔记
 categories:
-- 001install 
+- 001install
 - 自动生成
 toc: TRUE
 ---
- 
 <h1 id="gramma-and-template">gramma and template</h1>
 <h1 id="h1">h1</h1>
 <h2 id="h2">h2</h2>
