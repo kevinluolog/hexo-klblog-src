@@ -1,13 +1,11 @@
- ---
-title: bat 
+---
+title: bat
 tag: 
-- 002usage 
 - 笔记
 categories:
-- 002usage 
-- 自动生成
+- 002usage
 toc: TRUE
---- 
+---
 <h1 id="batch">batch</h1>
 <h2 id="tips">tips</h2>
 <h3 id="cd和dp0的区别">%cd%和%~dp0的区别</h3>
@@ -19,7 +17,7 @@ toc: TRUE
 <li>%~dp0只可以用在批处理文件中，它是由它所在的批处理文件的目录位置决定的，是批处理文件所在的盘符:+路径。在执行这个批处理文件的过程中，它展开后的内容是不会改变的。</li>
 </ol>
 <h3 id="pushd-dp0-popd">pushd &quot;%~dp0&quot; popd</h3>
-<p>进入执行文件所在目录，并且把老年目录推入目录栈，popd就是回到原先的目录</p>
+<p>进入执行文件所在目录，并且把原先目录推入目录栈，popd就是回到原先的目录</p>
 <p>&lt;<a href="https://www.cnblogs.com/suanec/p/8026964.html" class="uri">https://www.cnblogs.com/suanec/p/8026964.html</a>&gt;</p>
 <p>pushd和popd在linux中可以用来方便地在多个目录之间切换。</p>
 <h3 id="setlocal-enabledelayedexpansion">setlocal enabledelayedexpansion</h3>

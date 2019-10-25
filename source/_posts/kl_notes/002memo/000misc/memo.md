@@ -1,13 +1,11 @@
- ---
-title: memo 
+---
+title: memo
 tag: 
-- 000misc 
 - 笔记
 categories:
-- 000misc 
-- 自动生成
+- 000misc
 toc: TRUE
---- 
+---
 <h1 id="memo">memo</h1>
 <h2 id="web">web</h2>
 <p>wiki:</p>

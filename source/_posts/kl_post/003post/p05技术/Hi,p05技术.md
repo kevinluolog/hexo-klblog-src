@@ -1,12 +1,10 @@
- ---
+---
 title: Hi
 tag: 
-- p05技术 
-- 笔记
+- p05技术
 categories:
-- p05技术 
-- 自动生成
-toc: TRUE
---- 
+- post
+toc: p05技术
+---
 <h1 id="hip05技术">Hi,p05技术</h1>
 <h2 id="post">post</h2>

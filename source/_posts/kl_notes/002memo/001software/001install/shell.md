@@ -1,13 +1,11 @@
- ---
-title: shell 
+---
+title: shell
 tag: 
-- 001install 
 - 笔记
 categories:
-- 001install 
-- 自动生成
+- 001install
 toc: TRUE
---- 
+---
 <h1 id="shell">shell</h1>
 <h2 id="windowns-cmd">windowns cmd</h2>
 <h3 id="tips">tips</h3>
