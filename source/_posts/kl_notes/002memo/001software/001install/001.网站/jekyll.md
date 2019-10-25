@@ -1,12 +1,9 @@
 ---
 title: jekyll
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+tag: 
 - 笔记
 categories:
-- 技术
-- 笔记
+- 001.网站
+toc: TRUE
 ---
 <h1 id="jekyll">jekyll</h1>

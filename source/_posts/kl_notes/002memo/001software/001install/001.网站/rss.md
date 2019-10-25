@@ -1,13 +1,10 @@
 ---
 title: rss
-toc: TRUE
-tag:
-- 自动生成
-- 技术
+tag: 
 - 笔记
 categories:
-- 技术
-- 笔记
+- 001.网站
+toc: TRUE
 ---
 <h1 id="rss">rss</h1>
 <h2 id="tools">tools</h2>
