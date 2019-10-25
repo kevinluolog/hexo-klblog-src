@@ -3,7 +3,7 @@ title: index
 tag: 
 - 笔记
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/
+- 002memo
 toc: TRUE
 ---
 <h1 id="学习笔记-002memo">学习笔记-002memo</h1>

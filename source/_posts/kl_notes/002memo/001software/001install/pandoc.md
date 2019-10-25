@@ -3,7 +3,7 @@ title: pandoc
 tag: 
 - 笔记
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/001software/001install/
+- 001install
 toc: TRUE
 ---
 <h1 id="pandoc">pandoc</h1>

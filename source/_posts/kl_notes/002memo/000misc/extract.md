@@ -3,7 +3,7 @@ title: extract
 tag: 
 - 笔记
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/000misc/
+- 000misc
 toc: TRUE
 ---
 <h1 id="extract">extract</h1>
