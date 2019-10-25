@@ -3,7 +3,7 @@ title: bat
 tag: 
 - 笔记
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/001software/002usage/
+- 002usage
 toc: TRUE
 ---
 <h1 id="batch">batch</h1>

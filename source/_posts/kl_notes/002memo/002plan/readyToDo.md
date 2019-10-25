@@ -3,7 +3,7 @@ title: readyToDo
 tag: 
 - 笔记
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/002plan/
+- 002plan
 toc: TRUE
 ---
 <h1 id="readytodo">readyToDo</h1>
