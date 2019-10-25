@@ -3,7 +3,7 @@ title: study
 tag: 
 - 笔记
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/004.study/001.编程/
+- 001.编程
 toc: TRUE
 ---
 <h1 id="study">study</h1>
