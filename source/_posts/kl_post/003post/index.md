@@ -3,7 +3,7 @@ title: index
 tag: 
 - post
 categories:
-- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/003post/
+- 003post
 toc: TRUE
 ---
 <h1 id="hipost---003post">Hi,post - 003post</h1>
