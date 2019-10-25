@@ -1,11 +1,9 @@
 ---
 title: bat
 tag: 
-- 002usage
 - 笔记
 categories:
-- 002usage
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/001software/002usage/
 toc: TRUE
 ---
 <h1 id="batch">batch</h1>

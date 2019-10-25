@@ -1,11 +1,9 @@
 ---
 title: readyToDo
 tag: 
-- 002plan
 - 笔记
 categories:
-- 002plan
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/002plan/
 toc: TRUE
 ---
 <h1 id="readytodo">readyToDo</h1>
