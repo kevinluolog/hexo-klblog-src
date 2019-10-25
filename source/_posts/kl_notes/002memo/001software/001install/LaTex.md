@@ -1,11 +1,9 @@
 ---
 title: LaTex
 tag: 
-- 001install
 - 笔记
 categories:
-- 001install
-- 自动生成
+- /home/travis/build/kevinluolog/kdoc/output/pandoc/hexomd/002memo/001software/001install/
 toc: TRUE
 ---
 <h1 id="memo-of-latex">memo of latex</h1>
