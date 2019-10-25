@@ -161,7 +161,7 @@ menu:
   tags: /tags/ || tags ##kl+
   categories: /categories/ || th ##kl+
   archives: /archives/ || archive
-  kl_notes: /categories/kl_notes/ || book
+#  kl_notes: /categories/kl_notes/ || book
   #schedule: /schedule/ || calendar ##kl+  
   #sitemap: /sitemap.xml || sitemap ##kl+  
   #commonweal: /404/ || heartbeat ##kl+  
