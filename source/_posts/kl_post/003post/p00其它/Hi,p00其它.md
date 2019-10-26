@@ -1,9 +1,10 @@
 ---
 title: Hi
 tag: 
+- 自动生成
 - p00其它
 categories:
-- post
+- post+
 toc: p00其它
 ---
 <h1 id="hip00其它">Hi,p00其它</h1>
