@@ -106,10 +106,10 @@ hexo-next-Pisces :注意大写，linux下大小写敏感<br />
 hexo-maup</p>
 <table>
 <colgroup>
-<col width="7%" />
-<col width="43%" />
-<col width="13%" />
-<col width="35%" />
+<col width="8%" />
+<col width="41%" />
+<col width="14%" />
+<col width="36%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -206,9 +206,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 h='&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
-</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;&#32;&#x61;&#116;&#32;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;</noscript> | ~</td>
-<td>hexo-maup</td>
-<td>@gh-pages</td>
+</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#x6b;&#108;&#98;&#108;&#x6f;&#x67;&#x2d;&#x73;&#114;&#x63;&#32;&#x61;&#116;&#32;&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;</noscript></td>
+<td>~</td>
+<td><script type="text/javascript">
+<!--
+h='&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;';a='&#64;';n='&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#104;&#x65;&#120;&#x6f;&#x2d;&#x6d;&#x61;&#x75;&#112;&#32;&#x61;&#116;&#32;&#x67;&#104;&#x2d;&#112;&#x61;&#x67;&#x65;&#x73;</noscript></td>
 </tr>
 </tbody>
 </table>
