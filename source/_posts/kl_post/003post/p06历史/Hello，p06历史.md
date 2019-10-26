@@ -1,11 +1,11 @@
 ---
-title: Hi
+title: Hello，p06历史
 tag: 
 - 自动生成
-- p06历史
-categories:
 - post+
-toc: p06历史
+categories:
+- p06历史
+toc: TRUE
 ---
 <h1 id="hip06历史">Hi,p06历史</h1>
 <h2 id="post">post</h2>
