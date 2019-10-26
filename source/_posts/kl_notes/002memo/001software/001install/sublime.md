@@ -1,6 +1,7 @@
 ---
 title: sublime
 tag: 
+- 自动生成
 - 笔记
 categories:
 - 001install

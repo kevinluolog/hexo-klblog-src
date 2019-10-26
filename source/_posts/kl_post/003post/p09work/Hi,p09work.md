@@ -1,9 +1,10 @@
 ---
 title: Hi
 tag: 
+- 自动生成
 - p09work
 categories:
-- post
+- post+
 toc: p09work
 ---
 <h1 id="hip09work">Hi,p09work</h1>

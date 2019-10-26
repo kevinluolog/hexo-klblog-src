@@ -1,6 +1,7 @@
 ---
 title: python
 tag: 
+- 自动生成
 - 笔记
 categories:
 - 001install
