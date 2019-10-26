@@ -1,9 +1,10 @@
 ---
 title: Hi
 tag: 
+- 自动生成
 - p01散文
 categories:
-- post
+- post+
 toc: p01散文
 ---
 <h1 id="hip01散文">Hi,p01散文</h1>
