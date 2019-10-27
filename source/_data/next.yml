@@ -306,7 +306,7 @@ post_meta:
   created_at: true ##kl+ true
   updated_at:
     enable: true ##kl+ true
-    another_day: flase ##kl+ true
+    another_day: true ##kl+ true
   categories: true
 
 # Post wordcount display settings

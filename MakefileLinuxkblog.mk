@@ -39,7 +39,7 @@ $(1):
 endef
 
 # 打散目标集合,一个一个送入命令集重组,同时用eval命令在makefile中使能。这样可以克服模式匹配依赖要一致的缺点(%只能匹配文件名,并且要规则一样)
-$(foreach temp,$(DIR_BASE_SRC),$(eval $(call PROGRAM_template,$(temp))))
+$(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 
 ###---伪目标
 .phony: $(DIR_BASE_SRC) touch1
