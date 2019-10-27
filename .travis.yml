@@ -43,9 +43,8 @@ script:
   - pwd
 
   - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g"
-  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*.*attr\/[ \t]*/\n/g"
-  
-#  - git ls-files -z --eol | sed -e "s/i\/lf *w\/crlf *attr\/ */\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/$filename" | tail -1; done
+ 
+  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/$filename" | tail -1; done
   - cd $TRAVIS_BUILD_DIR
 
   - tail --help

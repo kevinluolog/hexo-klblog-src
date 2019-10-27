@@ -1,20 +1,5 @@
 #linux专用
 script:
-  - git ls-files -z --eol | sed -e "s/i\/lf *w\/crlf *attr\/ */\n/g" | while read filename; do echo "$filename"; done
-  - git ls-files -z --eol | sed -e "s/i\/lf/ */\n/g" | while read filename; do echo "$filename"; done
-  - git ls-files -z --eol
-  - git log -1 --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/002plan/readyToDo.md
-  - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/002plan/readyToDo.md
-
-  - pwd
-  - echo "+显示首次COMMIT时间：$TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo"
-  - cd $TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo
-  - git ls-files -z --eol
-  - git ls-files -z --eol | sed -e "s/i\/lf *w\/crlf *attr\/ */\n/g"
-
-  - git ls-files -z --eol | sed -e "s/i\/lf *w\/crlf *attr\/ */\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/$filename" | tail -1; done
-  - cd $TRAVIS_BUILD_DIR
-
 ###---输入变量
 
 # 基目录
