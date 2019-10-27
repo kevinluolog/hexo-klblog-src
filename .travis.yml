@@ -28,6 +28,9 @@ install:
 # 执行清缓存，生成网页操作
 script:
 #  - git ls-files -z --eol
+  - echo "+make start"
+  - make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
+  - echo "+make End"
   - git log -1 --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/002plan/readyToDo.md
   - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/002plan/readyToDo.md
 
@@ -39,7 +42,7 @@ script:
   - git ls-files -z --eol | sed -e "s/i\/lf/\n/g"
   - pwd
 
-  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf/[ \t]*attr\/[ \t]*/\n/g"
+  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g"
   - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*.*attr\/[ \t]*/\n/g"
   
 #  - git ls-files -z --eol | sed -e "s/i\/lf *w\/crlf *attr\/ */\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/kl_notes/002memo/$filename" | tail -1; done
