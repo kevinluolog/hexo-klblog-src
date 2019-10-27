@@ -42,11 +42,12 @@ endef
 $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 
 ###---伪目标
-.phony: $(DIR_BASE_SRC) touch1
+.phony: $(SRC_PATH_FILES) touch1
 
-touch1: $(DIR_BASE_SRC)
+touch1: $(SRC_PATH_FILES)
 	@echo all files is touch back first commit time.
-
+	@echo $(DIR_BASE_SRC)
+	@echo $(SRC_PATH_FILES)
 
 ###---help
 
