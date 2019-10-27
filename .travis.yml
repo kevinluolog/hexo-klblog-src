@@ -27,6 +27,16 @@ install:
 
 # 执行清缓存，生成网页操作
 script:
+  - grep --help
+  - date --help
+  - stat --help
+  - bash --help
+  - xargs --help
+  - grep --help
+
+  - git ls-files -z --eol | sed -e "s/i\/lf *w\/crlf *attr\/ */\n/g" | while read filename; do echo "$filename"; done
+
+
   - hexo clean
   - hexo generate
 
