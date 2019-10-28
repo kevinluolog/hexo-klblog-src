@@ -302,7 +302,7 @@ read_more_btn: true
 
 # Post meta display settings
 post_meta:
-  item_text: flase ##kl+ true
+  item_text: true ##kl+ true
   created_at: true ##kl+ true
   updated_at:
     enable: true ##kl+ true
