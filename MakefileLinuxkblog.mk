@@ -48,8 +48,8 @@ touch_time_$(1) := $$(shell tail -1 $$(TMP_TIME_FILE_$(1)))
 
 $$(TARGET_PHONY_FILE):
 #	echo "touch1 ok! $$@"
-#	@echo "all_time_$(1)="
-#	@echo "$$(all_time_$(1))"
+	@echo "all_time_$(1)="
+	@echo "$$(all_time_$(1))"
 	@echo "TMP_TIME_FILE_$(1)%%$$(TMP_TIME_FILE_$(1))%%"
 	@echo "touch_time_$(1)="
 	@echo "$$(touch_time_$(1))"
