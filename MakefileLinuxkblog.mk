@@ -31,8 +31,10 @@ touch_time_$(1) := $$(shell 'git log --date=iso --format="%ad" -- "$(1)" | tail 
 $$(info $$(all_time_$(1)))
 #$$(info $$(touch_time_$(1)))
 $$(info $(1))
-.phony: $(1)
-$(1): 
+#.phony: $(1)
+#$(1): 
+.phony: k
+k: 
 	@echo "touch1 ok! $$@"
 #	@echo "all_time_$(1)="
 #	@echo "$$(all_time_$(1))"
