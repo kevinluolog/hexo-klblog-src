@@ -31,7 +31,7 @@ script:
   - echo "+make start"
   - make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
   - echo "+make End"
-  - git log -1 --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
+  - git log -100 --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
   - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
 
   - pwd
