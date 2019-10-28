@@ -48,7 +48,7 @@ endef
 $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 
 ###---伪目标
-.phony: $(SRC_PATH_FILES) touch1
+.phony: touch1
 
 touch1: $(SRC_PATH_FILES)
 	@echo all files is touch back first commit time.
