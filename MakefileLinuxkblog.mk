@@ -26,10 +26,10 @@ define PROGRAM_template
 #all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #touch_time_$(1) := $$(shell tail -1 $$(all_time_$(1)))
 
-all_time_$(1) := $$(shell git log -1000 --date=iso --format="%ad" -- "$(1)")
+all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 touch_time_$(1) := $$(shell 'git log --date=iso --format="%ad" -- "$(1)" | tail -1') 
-$$(info $$(all_time_$(1)))
-$$(info $$(touch_time_$(1)))
+#$$(info $$(all_time_$(1)))
+#$$(info $$(touch_time_$(1)))
 $$(info $(1))
 $(1): 
 	@echo "touch1 ok! $$@"
