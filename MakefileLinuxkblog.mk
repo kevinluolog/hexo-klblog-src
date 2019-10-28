@@ -28,9 +28,9 @@ define PROGRAM_template
 
 all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #touch_time_$(1) := $$(shell 'git log --date=iso --format="%ad" -- "$(1)" | tail -1') 
-$$(info $$(all_time_$(1)))
 #$$(info $$(touch_time_$(1)))
-$$(info $(1))
+#$$(info $$(all_time_$(1)))
+#$$(info $(1))
 #.phony: $(1)
 $(1):
 	echo "touch1 ok! $$@"
@@ -50,7 +50,10 @@ $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 ###---伪目标
 .phony: $(SRC_PATH_FILES) touch1
 
-touch1:
+test:
+	echo "i am tes@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+touch1: $(SRC_PATH_FILES) test
 	echo $@
 	@echo all files is touch back first commit time.
 	@echo $(DIR_BASE_SRC)
