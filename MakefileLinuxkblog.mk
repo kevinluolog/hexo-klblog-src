@@ -28,51 +28,36 @@ OBJ_PATH_FILES := $(subst $(SUFFIX_FROM),$(SUFFIX_TO),$(SRC_PATH_FILES))
 ###---生成目标
 
 define PROGRAM_template
-#这个touch的机制可以工作，从git log 获得最后一次commit的时间。但是由于push up上去时其实是不带文件时间的。所以没用，要在hexo g，时改动才会在hexo的静态网站中体现出来。
-#同时注意在这个地方要用两个$$,函数和变量都是。只用一个会永远是最后一个文件的时间，因为第一次展开就被执行了。
-#all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
-#touch_time_$(1) := $$(shell tail -1 $$(all_time_$(1)))
-
-#all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
-#touch_time_$(1) := $$(shell 'git log --date=iso --format="%ad" -- "$(1)" | tail -1') 
 #$$(info $$(touch_time_$(1)))
 #$$(info $$(all_time_$(1)))
 #$$(info $(1))
-#.phony: $(1)
-#$(1):
+
 #得到临时目标，以先walkaround issue of, 直接以已存在的文件做目标，即使用.phony声明，仍然不会执行下面的命令，现在不知道是什么原因。
 TARGET_PHONY_FILE := $(subst $(SUFFIX_FROM),$(SUFFIX_TO),$(1))
+#用各个文件名加入名字，并以.time结尾，保存输出commit时间文件，以让在recipe中照样可以取到
 TMP_TIME_FILE_$(1) := $(subst $(SUFFIX_FROM),.time,$(1))
 all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
+#shell命令已重定向输出到文件，所以变量中没有值
 out_all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)" >$$(TMP_TIME_FILE_$(1)))
+#tail命令之后一定要跟文件，不能变量值。要不报错。
 touch_time_$(1) := $$(shell tail -1 $$(TMP_TIME_FILE_$(1)))
 
 $$(TARGET_PHONY_FILE):
-#	echo "touch1 ok! $$@"
-	@echo "all_time_$(1)="
-	@echo "$$(all_time_$(1))"
-	@echo "TMP_TIME_FILE_$(1)%%$$(TMP_TIME_FILE_$(1))%%"
-	@echo "touch_time_$(1)="
-	@echo "$$(touch_time_$(1))"
-	@echo "cat $$(TMP_TIME_FILE_$(1))"
-	echo "$$(shell cat $$(TMP_TIME_FILE_$(1)))"
-##	touch --date="" -m $filename
-##	touch --date="$$(touch_time_$(1))" -m $$@
-##	touch --date="$$(touch_time_$(1))" $$@
-#
-#	@echo "touch1 ok! $$@"
+	@echo "all_time_$(1)=$$(all_time_$(1))"
+	@echo "touch_time_$(1)=$$(touch_time_$(1))"
+#	@echo "cat $$(TMP_TIME_FILE_$(1))"
+#	echo "$$(shell cat $$(TMP_TIME_FILE_$(1)))"
+	touch --date="$$(touch_time_$(1))" -m $(1)
+	@echo "touch1 ok! $$@ with $$(touch_time_$(1))"
 endef
 
 # 打散目标集合,一个一个送入命令集重组,同时用eval命令在makefile中使能。这样可以克服模式匹配依赖要一致的缺点(%只能匹配文件名,并且要规则一样)
 $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 
 ###---伪目标
-.phony: touch1 test
+.phony: touch1
 
-test:
-	echo "i am tes@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-
-touch1: $(OBJ_PATH_FILES) test
+touch1: $(OBJ_PATH_FILES)
 	echo $@
 	@echo all files is touch back first commit time.
 	@echo $(DIR_BASE_SRC)

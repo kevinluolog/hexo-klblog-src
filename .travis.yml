@@ -28,9 +28,9 @@ install:
 # 执行清缓存，生成网页操作
 script:
 #  - git ls-files -z --eol
-  - echo "+make start"
+  - echo "+make touch1 start"
   - make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
-  - echo "+make End"
+  - echo "+make touch1 End"
   - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
   - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
 
@@ -52,7 +52,7 @@ script:
 # xargs -I{} bash -c 'touch $filename --date="{}"'
   - cd $TRAVIS_BUILD_DIR
 
-  - tail --help
+#  - tail --help
 #  - grep --help
 #  - date --help
 #  - stat --help
