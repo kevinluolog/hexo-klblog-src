@@ -43,7 +43,8 @@ define PROGRAM_template
 #得到临时目标，以先walkaround issue of, 直接以已存在的文件做目标，即使用.phony声明，仍然不会执行下面的命令，现在不知道是什么原因。
 TARGET_PHONY_FILE := $(subst $(SUFFIX_FROM),$(SUFFIX_TO),$(1))
 TMP_TIME_FILE_$(1) := $(subst $(SUFFIX_FROM),.time,$(1))
-all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)" >$$(TMP_TIME_FILE_$(1)))
+all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
+out_all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)" >$$(TMP_TIME_FILE_$(1)))
 touch_time_$(1) := $$(shell tail -1 $$(TMP_TIME_FILE_$(1)))
 
 $$(TARGET_PHONY_FILE):
