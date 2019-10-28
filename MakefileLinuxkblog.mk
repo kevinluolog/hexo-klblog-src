@@ -53,6 +53,7 @@ $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 .phony: touch1
 
 touch1: $(SRC_PATH_FILES)
+	echo $@
 	@echo all files is touch back first commit time.
 	@echo $(DIR_BASE_SRC)
 	@echo $(SRC_PATH_FILES)
