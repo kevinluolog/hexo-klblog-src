@@ -40,11 +40,12 @@ all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #$$(info $(1))
 #.phony: $(1)
 #$(1):
+#得到临时目标，以先walkaround issue of, 直接以已存在的文件做目标，即使用.phony声明，仍然不会执行下面的命令，现在不知道是什么原因。
 TARGET_PHONY := $(subst $(SUFFIX_FROM),$(SUFFIX_TO),$(1))
 $$(TARGET_PHONY):
-	echo "touch1 ok! $$@"
-#	@echo "all_time_$(1)="
-#	@echo "$$(all_time_$(1))"
+#	echo "touch1 ok! $$@"
+	@echo "all_time_$(1)="
+	@echo "$$(all_time_$(1))"
 #	@echo "touch_time_$(1)= $$(touch_time_$(1))"
 ##	touch --date="" -m $filename
 ##	touch --date="$$(touch_time_$(1))" -m $$@
