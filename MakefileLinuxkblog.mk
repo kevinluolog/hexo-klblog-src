@@ -30,8 +30,8 @@ all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #touch_time_$(1) := $$(shell 'git log --date=iso --format="%ad" -- "$(1)" | tail -1') 
 $$(info $$(all_time_$(1)))
 #$$(info $$(touch_time_$(1)))
-#$$(info $(1))
-.phony: $(1)
+$$(info $(1))
+#.phony: $(1)
 $(1):
 	echo "touch1 ok! $$@"
 #	@echo "all_time_$(1)="
@@ -48,7 +48,7 @@ endef
 $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 
 ###---伪目标
-.phony: touch1
+.phony: $(SRC_PATH_FILES) touch1
 
 touch1: $(SRC_PATH_FILES)
 	echo $@
