@@ -33,8 +33,12 @@ define PROGRAM_template
 #all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #touch_time_$(1) := $$(shell tail -1 $$(all_time_$(1)))
 
-all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
+#all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #touch_time_$(1) := $$(shell 'git log --date=iso --format="%ad" -- "$(1)" | tail -1') 
+
+all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)" > tmp.time)
+touch_time_$(1) := $$(shell tail -1 tmp.time) 
+
 #$$(info $$(touch_time_$(1)))
 #$$(info $$(all_time_$(1)))
 #$$(info $(1))
@@ -46,7 +50,8 @@ $$(TARGET_PHONY):
 #	echo "touch1 ok! $$@"
 	@echo "all_time_$(1)="
 	@echo "$$(all_time_$(1))"
-#	@echo "touch_time_$(1)= $$(touch_time_$(1))"
+	@echo "touch_time_$(1)="
+	@echo "$$(touch_time_$(1))"
 ##	touch --date="" -m $filename
 ##	touch --date="$$(touch_time_$(1))" -m $$@
 ##	touch --date="$$(touch_time_$(1))" $$@
