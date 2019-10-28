@@ -8,6 +8,10 @@ DIR_BASE_OBJ :=
 #DIR_BASE_COPYTO := 
 DIR_BASE_COPYTO :=
 
+# 后缀名，文件类型
+SUFFIX_FROM := .md
+SUFFIX_TO := .phony
+
 ###---生成变量
 
 # 获得源$(SUFFIX_FROM)路径名。
@@ -16,7 +20,10 @@ SRC_PATH_DIR := $(shell find $(DIR_BASE_SRC) -type d)
 
 # 取得源文件名,包括路径
 # $(wildcard $(dir)/*.xxx) 的返回，已经包含了目录，所以不用再addprefix加上目录名，要不重复了。
-SRC_PATH_FILES := $(foreach dir,$(SRC_PATH_DIR),$(wildcard $(dir)/*.md))
+SRC_PATH_FILES := $(foreach dir,$(SRC_PATH_DIR),$(wildcard $(dir)/*$(SUFFIX_FROM)))
+
+#得到临时目标，以先walkaround issue of, 直接以已存在的文件做目标，即使用.phony声明，仍然不会执行下面的命令，现在不知道是什么原因。
+OBJ_PATH_FILES := $(subst $(SUFFIX_FROM),$(SUFFIX_TO),$(SRC_PATH_FILES))
 
 ###---生成目标
 
@@ -32,7 +39,9 @@ all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)")
 #$$(info $$(all_time_$(1)))
 #$$(info $(1))
 #.phony: $(1)
-$(1):
+#$(1):
+TARGET_PHONY := $(subst $(SUFFIX_FROM),$(SUFFIX_TO),$(1))
+$$(TARGET_PHONY):
 	echo "touch1 ok! $$@"
 #	@echo "all_time_$(1)="
 #	@echo "$$(all_time_$(1))"
@@ -48,12 +57,12 @@ endef
 $(foreach temp,$(SRC_PATH_FILES),$(eval $(call PROGRAM_template,$(temp))))
 
 ###---伪目标
-.phony: $(SRC_PATH_FILES) touch1
+.phony: touch1 test
 
 test:
 	echo "i am tes@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 
-touch1: $(SRC_PATH_FILES) test
+touch1: $(OBJ_PATH_FILES) test
 	echo $@
 	@echo all files is touch back first commit time.
 	@echo $(DIR_BASE_SRC)
