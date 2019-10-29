@@ -36,7 +36,7 @@ script:
   - git remote
 #  - git ls-files -z --eol
   - echo "+make touch1 start"
-  - make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
+#  - make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
   - echo "+make touch1 End"
   - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
   - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
@@ -53,8 +53,9 @@ script:
   - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | tail -1; done
 # ??touch 回创建时间  
 #  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | tail -1 | xargs -I{} bash -c 'touch -c $filename --date="{}"'; done
+  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | tail -1 | xargs -I{} touch -c $filename --date="{}" -m; done
 #    echo "touch -c --date=\"$(git log -1 --date=iso --format="%ad" -- "$filename")\" -m $filename" 
-# ??touch --date="$(git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | $(tail -1)" -m $filename
+# touch --date="$(git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | $(tail -1)" -m $filename
 # ??git ls-files | xargs -I{} bash -c 'touch "{}" --date=@$(git log -n1 --pretty=format:%ct -- "{}")'
 # xargs -I{} bash -c 'touch $filename --date="{}"'
   - cd $TRAVIS_BUILD_DIR
@@ -65,8 +66,9 @@ script:
 #  - stat --help
 #  - bash --help
 #  - xargs --help
-  - bash -c "help set"
-  - bash -c help
+#  - bash -c "help set"
+#  - bash -c help
+
   - hexo clean
   - hexo generate
 
