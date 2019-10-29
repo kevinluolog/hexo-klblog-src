@@ -48,7 +48,7 @@ $$(TARGET_PHONY_FILE):
 	@echo "touch_time_$(1)=$$(touch_time_$(1))"
 #	@echo "cat $$(TMP_TIME_FILE_$(1))"
 #	echo "$$(shell cat $$(TMP_TIME_FILE_$(1)))"
-	touch --date="$$(touch_time_$(1))" -m $(1)
+	touch -c --date="$$(touch_time_$(1))" -m $(1)
 	@echo "touch1 ok! $$@ with $$(touch_time_$(1))"
 endef
 
