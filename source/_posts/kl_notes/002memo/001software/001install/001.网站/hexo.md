@@ -326,6 +326,7 @@ tag_generator:
 <p>参考</p>
 <p><a href="https://www.jianshu.com/nb/33192262">Hexo高级教程</a></p>
 <p><a href="https://www.jianshu.com/p/26b5a0b59cdd">hexo脚本编写指南（一）</a></p>
+<p><a href="https://www.jianshu.com/p/12279cabca81">Hexo Docs（三）- 高级进阶</a></p>
 <p><a href="https://hexo.io/zh-cn/api/">脚本需要掌握hexo api</a></p>
 <p><a href="https://nodejs.org/en/docs/">nodejs doc-en</a></p>
 <p><a href="https://nodejs.org/en/docs/guides/debugging-getting-started/">nodejs debug guide</a></p>
@@ -387,6 +388,17 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x7
 <p><a href="https://www.jianshu.com/p/7bec9866a04d">hexo-generator-index 源码分析</a></p>
 <p>很好的主题开发文章</p>
 <p><a href="https://molunerfinn.com/make-a-hexo-theme/#%E5%89%8D%E8%A8%80">Hexo主题开发经验杂谈org</a></p>
+<p>参考hexo渲染的事件，可以找到generateBefore这个钩子hook，只要在这个钩子触发的时候，判断一下存不存在data files里的配置文件_data/next.yml，存在的话就把这个配置文件替换或者合并主题本身的配置文件。Next主题采用的是覆盖，melody主题采用的是替换。各有各的好处，并不是绝对的。</p>
+<p>写法是就是在我们的temp主题目录下的scripts文件夹里（没有就创建一个），写一个js文件，内容如下：</p>
+<pre><code>/**
+ * Note: configs in _data/temp.yml will replace configs in   hexo.theme.config.
+ */
+hexo.on(&#39;generateBefore&#39;, function () {
+  if (hexo.locals.get) {
+    var data = hexo.locals.get(&#39;data&#39;) // 获取_data文件夹下的内容
+    data &amp;&amp; data.temp &amp;&amp; (hexo.theme.config = data.temp) // 如果temp.yml   存在，就把内容替换掉主题的config
+  }
+})</code></pre>
 <p><a href="https://juejin.im/entry/59ba97216fb9a00a6b6e50bf">Hexo主题开发经验杂谈</a></p>
 <p>字体大清晰。文字title <a href="https://github.com/stiekel/hexo-theme-random">hexo-theme-random</a></p>
 <p><a href="http://chensd.com/2016-06/hexo-theme-guide.html">Hexo 主题开发指南-random-不可能不确定</a></p>
