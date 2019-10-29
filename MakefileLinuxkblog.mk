@@ -1,11 +1,15 @@
 #linux专用
 # 为了解决git文件clone时间问题。想恢复到commit时间。
 # 由于git log 取回的是本机git保存的commit时间，所以要把repo的所有历史数据拉下来
+
 # 在tavis CI上，只要设置
 # git:
 #  depth: false
 # 在一般机器上clone,还不知道怎么实现，可能pull所有分支就可以了吧？？？
 # 经过这一个回合，训练了linux命令，tail,touch,date,sed,xargs,bash,while do,正则规则也加强记忆，makefile的eval2次展开机制理解更加清晰。
+
+# 这个文件修改时间更新好后，还需要hexo的一个脚本，在渲染前把创建时间设置为修改时间。因为hexo的archive排序用的是创建时间。要不然创建时永远是clone时间。
+# klBlog\themes\next\scripts\filters\kl-touch-file-time.js
 
 # ###---输入变量
 
