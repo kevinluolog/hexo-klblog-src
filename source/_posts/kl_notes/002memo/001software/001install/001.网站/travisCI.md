@@ -111,3 +111,37 @@ endif</code></pre>
 <p>解决方法：</p>
 <p>把 /linux/Makefile 存储成UTF8的。 这样发觉iconv也可以不用了，大概 $(file &gt;$$@.tmp 写入文件时，系统自然就把文件格式设成了UTF,然后用 pandoc $$&lt; -o - &gt;&gt;$$@ append模式添加输入UTF时，就成了utf了。 有一点没搞清楚，到底最后成了UTF8还是UTF16LE，猜想大概是utf8.</p>
 <p>字符编码小知识： 参见 字符文件编码.rst 字符编码小知识</p>
+<h3 id="misc---raw-materials">misc - raw materials</h3>
+<hr />
+<p>用echo $date，结果只输出一个ate</p>
+<hr />
+<p>date +%Y%m%d -d @1425384141</p>
+<hr />
+<p>cp -t -T问题,想copy目录里的文件和子目录，travis提示错</p>
+<hr />
+<p>只查看最后一行 tail -1</p>
+<hr />
+<p>%ad author date (format respects --date= option)</p>
+<p>--date=iso (or --date=iso8601) shows timestamps in a ISO 8601-like format. The differences to the strict ISO 8601 format are:</p>
+<p>????? #For TravisCI users, simply add a config to .travis.yml so it clones the full repository history: # <a href="https://github.com/MestreLion/git-tools#install">MestreLion/git-tools</a></p>
+<p>可以解决拉取全部历史原数据到本地的问题，不加在clone时，只是本分支的历史。这样git log 能拿到文件所有commit的时间</p>
+<p># 根据上面网址介绍加入下面两行 git: depth: false</p>
+<p>????? <a href="https://hexo.io/docs/variables#Page-Variables">hexo.io/docs/variables#Page-Variables</a></p>
+<p>https://hexo.io/zh-cn/docs/variables.html#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F
+&gt;__</p>
+<p>??? Linux下修改文件创建时间(修改文件更改时间) 进到要改的文件目录里 find . -name “<em>” -exec touch ‘{}’ ; 注：最后一定要加分号，{}外一定要加单引号，</em>表示所有的文件（. 代表当前目录下）</p>
+<p>??? <a href="http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">Hexo常见问题解决方案</a></p>
+<p><a href="https://code.skyheng.com/post/50982.html">Hexo搭建技术博客使用与常见问题详细讲解</a></p>
+<p><a href="https://www.jianshu.com/p/ef88b5bbb914">大前端-5分钟带你读懂Hexo源码设计模式</a></p>
+<p><a href="https://blog.csdn.net/li20081006/article/details/73319054">Hexo源码剖析</a></p>
+<p><a href="https://segmentfault.com/a/1190000018082781?utm_source=tag-newest">hexo博客框架从入门到弃坑</a></p>
+<p><a href="https://www.jianshu.com/p/7bec9866a04d">hexo-generator-index 源码分析</a></p>
+<p><a href="https://hexo.io/zh-cn/api/filter">hexo过滤器before_post_render-themescriptsfilterskl-touch-file-time.js</a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
