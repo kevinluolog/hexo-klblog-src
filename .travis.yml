@@ -1,3 +1,9 @@
+#For TravisCI users, simply add a config to .travis.yml so it clones the full repository history:
+# `MestreLion/git-tools <https://github.com/MestreLion/git-tools#install>`__
+# 根据上面网址介绍加入下面两行
+git:
+  depth: false
+
 # 指定语言环境
 language: node_js
 # 指定需要sudo权限
@@ -25,6 +31,51 @@ install:
 
 # 执行清缓存，生成网页操作
 script:
+# 由于git log 取回的是本机git保存的commit时间，所以在tavis CI上面没有意义了。但是经过这一个回合，训练了linux命令，tail,touch,date,sed,xargs,bash,while do,正则规则也加强记忆，makefile的eval2次展开机制理解更加清晰。
+  - git branch -vv
+  - git remote
+#  - git ls-files -z --eol
+  - echo "+make touch1 start"
+  - make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
+  - echo "+make touch1 End"
+#  - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
+#  - git log --date=iso --format="%ad" -- $TRAVIS_BUILD_DIR/source/_posts/002plan/readyToDo.md
+
+##  - pwd
+##  - echo "+显示首次COMMIT时间：$TRAVIS_BUILD_DIR/source/_posts"
+##  - cd $TRAVIS_BUILD_DIR/source/_posts
+##  - pwd
+###  - git ls-files -z --eol
+##
+### 显示各纯文件名：
+##  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g"
+### 显示各文件首次COMMIT时间,注意linux下是lf,not crlr： 2019-09-26 15:09:54 +0800 输出格式：可以直接被 touch 参数 --date ""识别
+##  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | tail -1; done
+##
+### touch 回创建时间  
+### 下面去掉bash -c 就能工作了。 xargs可以直接传参数给touch使用的。
+### 整个过程就是用git ls-files取到文件名，再用sed取出真正的文件名，再用git log取到全部的commit历史时间，tail -1取到创建commit时间，利用xargs把时间作为参数送到touch -data=""更新时间。
+### 这个文件修改时间更新好后，还需要hexo的一个脚本，在渲染前把创建时间设置为修改时间。因为hexo的archive排序用的是创建时间。要不然创建时永远是clone时间。
+### klBlog\themes\next\scripts\filters\kl-touch-file-time.js
+##
+### ?? - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | tail -1 | xargs -I{} bash -c 'touch -c $filename --date="{}"'; done
+##  - git ls-files -z --eol | sed -e "s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/g" | while read filename; do git log --date=iso --format="%ad" -- "$TRAVIS_BUILD_DIR/source/_posts/$filename" | tail -1 | xargs -I{} touch -c $filename --date="{}" -m; done
+###    echo "touch -c --date=\"$(git log -1 --date=iso --format="%ad" -- "$filename")\" -m $filename" 
+### ??git ls-files | xargs -I{} bash -c 'touch "{}" --date=@$(git log -n1 --pretty=format:%ct -- "{}")'
+### ??xargs -I{} bash -c 'touch $filename --date="{}"'
+### xargs -I{} touch $filename --date="{}"
+##
+##  - cd $TRAVIS_BUILD_DIR
+
+#  - tail --help
+#  - grep --help
+#  - date --help
+#  - stat --help
+#  - bash --help
+#  - xargs --help
+#  - bash -c "help set"
+#  - bash -c help
+
   - hexo clean
   - hexo generate
 
