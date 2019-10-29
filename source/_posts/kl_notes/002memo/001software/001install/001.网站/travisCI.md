@@ -1,13 +1,12 @@
- ---
-title: travisCI 
+---
+title: travisCI
 tag: 
-- 001.网站 
+- 自动生成
 - 笔记
 categories:
-- 001.网站 
-- 自动生成
+- 001.网站
 toc: TRUE
---- 
+---
 <h1 id="travis-ci">travis CI</h1>
 <h2 id="install">install</h2>
 <p><a href="https://travis-ci.com">travis website</a></p>

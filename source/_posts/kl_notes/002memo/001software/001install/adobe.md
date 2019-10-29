@@ -1,13 +1,12 @@
- ---
-title: adobe 
+---
+title: adobe
 tag: 
-- 001install 
+- 自动生成
 - 笔记
 categories:
-- 001install 
-- 自动生成
+- 001install
 toc: TRUE
---- 
+---
 <h1 id="adobe-software">adobe software</h1>
 <h2 id="help">help</h2>
 <h3 id="official-help-address">official help address</h3>

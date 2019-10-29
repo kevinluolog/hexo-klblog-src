@@ -1,13 +1,12 @@
- ---
-title: memo-debug 
+---
+title: memo-debug
 tag: 
-- 000misc 
+- 自动生成
 - 笔记
 categories:
-- 000misc 
-- 自动生成
+- 000misc
 toc: TRUE
---- 
+---
 <h1 id="memo-of-debug">memo of debug</h1>
 <h2 id="makefile">makefile</h2>
 <h3 id="else-应该小写">ELSE 应该小写。</h3>

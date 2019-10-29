@@ -1,13 +1,12 @@
- ---
-title: sublime 
+---
+title: sublime
 tag: 
-- 001install 
+- 自动生成
 - 笔记
 categories:
-- 001install 
-- 自动生成
+- 001install
 toc: TRUE
---- 
+---
 <h1 id="sublime">sublime</h1>
 <h2 id="basic-information">basic information</h2>
 <h2 id="website">website</h2>

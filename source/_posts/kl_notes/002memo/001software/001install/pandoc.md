@@ -1,13 +1,12 @@
- ---
-title: pandoc 
+---
+title: pandoc
 tag: 
-- 001install 
+- 自动生成
 - 笔记
 categories:
-- 001install 
-- 自动生成
+- 001install
 toc: TRUE
---- 
+---
 <h1 id="pandoc">pandoc</h1>
 <h2 id="install">install</h2>
 <h2 id="informations">informations</h2>
