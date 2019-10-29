@@ -32,7 +32,7 @@ install:
 # 执行清缓存，生成网页操作
 script:
 # 由于git log 取回的是本机git保存的commit时间，所以在tavis CI上面没有意义了。但是经过这一个回合，训练了linux命令，tail,touch,date,sed,xargs,bash,while do,正则规则也加强记忆，makefile的eval2次展开机制理解更加清晰。
-  - git brach -vv
+  - git branch -vv
   - git remote
 #  - git ls-files -z --eol
   - echo "+make touch1 start"
