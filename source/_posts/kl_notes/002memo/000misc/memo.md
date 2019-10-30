@@ -36,7 +36,7 @@ toc: TRUE
 <hr />
 <p>%ad author date (format respects --date= option)</p>
 <p>--date=iso (or --date=iso8601) shows timestamps in a ISO 8601-like format. The differences to the strict ISO 8601 format are:</p>
-<p>????? #For TravisCI users, simply add a config to .travis.yml so it clones the full repository history: # <a href="https://github.com/MestreLion/git-tools#install">MestreLion/git-tools</a></p>
+<p>????? For TravisCI users, simply add a config to .travis.yml so it clones the full repository history: <a href="https://github.com/MestreLion/git-tools#install">MestreLion/git-tools</a></p>
 <p>可以解决拉取全部历史原数据到本地的问题，不加在clone时，只是本分支的历史。这样git log 能拿到文件所有commit的时间</p>
 <p># 根据上面网址介绍加入下面两行 git: depth: false</p>
 <p>????? <a href="https://hexo.io/docs/variables#Page-Variables">hexo.io/docs/variables#Page-Variables</a></p>
