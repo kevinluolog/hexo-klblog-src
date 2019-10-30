@@ -166,10 +166,10 @@ i/lf    w/lf    attr/                   000misc/extract.mdi/lf    w/lf    attr/ 
 <p><a href="https://www.git-scm.com/docs/git-log">www.git-scm.com/docs/git-log</a></p>
 <p>查看文件最后一行： tail -1 文件名，后面必须是文件， 或者 | tail -1 管道输出的内容</p>
 <pre><code>显示各纯文件名：
-- git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/  g&quot;
+git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/  g&quot;
 
 显示各文件首次COMMIT时间,注意linux下是lf,not crlr：
-- git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/  g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; --   &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1; done
+git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/  g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; --   &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1; done
 输出格式：可以直接被 touch 参数 --date &quot;&quot;识别
 2019-09-26 15:09:54 +0800
 
