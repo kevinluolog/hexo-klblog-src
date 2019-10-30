@@ -239,23 +239,7 @@ flowchart:
   options: # options used for `drawSVG`</code></pre></li>
 </ul>
 <p>This plugin is based on <a href="https://github.com/adrai/flowchart.js">flowchart.js</a>, so you can defined the chart as follow:</p>
-<pre><code>```flow
-st=&gt;start: Start|past:&gt;http://www.google.com[blank]
-e=&gt;end: End:&gt;http://www.google.com
-op1=&gt;operation: My Operation|past
-op2=&gt;operation: Stuff|current
-sub1=&gt;subroutine: My Subroutine|invalid
-cond=&gt;condition: Yes
-or No?|approved:&gt;http://www.google.com
-c2=&gt;condition: Good idea|rejected
-io=&gt;inputoutput: catch something...|request
-
-st-&gt;op1(right)-&gt;cond
-cond(yes, right)-&gt;c2
-cond(no)-&gt;sub1(left)-&gt;op1
-c2(yes)-&gt;io-&gt;e
-c2(no)-&gt;op2-&gt;e
-```</code></pre>
+<p><code>`flow st=&gt;start: Start|past:&gt;http://www.google.com[blank] e=&gt;end: End:&gt;http://www.google.com op1=&gt;operation: My Operation|past op2=&gt;operation: Stuff|current sub1=&gt;subroutine: My Subroutine|invalid cond=&gt;condition: Yes or No?|approved:&gt;http://www.google.com c2=&gt;condition: Good idea|rejected io=&gt;inputoutput: catch something...|request  st-&gt;op1(right)-&gt;cond cond(yes, right)-&gt;c2 cond(no)-&gt;sub1(left)-&gt;op1 c2(yes)-&gt;io-&gt;e c2(no)-&gt;op2-&gt;e</code>`</p>
 <h3 id="hexo-generator-feed">hexo-generator-feed</h3>
 <p><a href="https://github.com/hexojs/hexo-generator-feed.git">github download</a></p>
 <p>Install</p>
