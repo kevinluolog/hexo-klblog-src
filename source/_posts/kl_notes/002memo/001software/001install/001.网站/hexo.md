@@ -530,17 +530,16 @@ tag_map:</code></pre>
 hanzi.js 
 clicklove.js</code></pre></li>
 <li><p>页面文件</p>
-<pre><code>{%- if theme.kl_click_hanzi %}
+<pre><code>KL+TEST
+{%- if theme.kl_click_hanzi %}
       &lt;script src=&quot;//lib.baomitu.com/jquery/3.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;
       &lt;!-- 页面点击汉字 --&gt;
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/hanzi.js&quot;&gt;&lt;/script&gt;
 {%- endif %}
-
 {%- if theme.kl_click_love %}
       &lt;!-- 页面点击小红心 --&gt;
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/clicklove.js&quot;&gt;&lt;/script&gt;
 {%- endif %}
-
 &lt;/body&gt;</code></pre>
 <p>next 中应该用root相对路径，当root在子目录中，这样JS也可以引用到, <code>\klBlog\themes\next\layout\_layout.swig</code></p>
 <pre><code>{%- if theme.kl_click_hanzi %}
@@ -548,7 +547,6 @@ clicklove.js</code></pre></li>
       &lt;!-- 页面点击汉字 --&gt;
       {{- next_js(&#39;hanzi.js&#39;) }}
 {%- endif %}
-
 {%- if theme.kl_click_love %}
       &lt;!-- 页面点击小红心 --&gt;
       {{- next_js(&#39;clicklove.js&#39;) }}
