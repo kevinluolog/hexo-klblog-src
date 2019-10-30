@@ -14,5 +14,5 @@ toc: TRUE
 <h4 id="h4">h4</h4>
 <h5 id="h5">h5</h5>
 <h6 id="h6">h6</h6>
-<p id="h6-1">h6</p>
+<p id="h7">h7</p>
 <p id="h8">h8</p>
