@@ -526,7 +526,7 @@ tag_map:</code></pre>
 <h3 id="怎么添加点击红心和汉字">怎么添加点击红心和汉字？</h3>
 <ol style="list-style-type: decimal">
 <li><p>js文件</p>
-<pre><code>\themes\next\source\js\
+<pre><code>/themes/next/source/js/
 hanzi.js 
 clicklove.js</code></pre></li>
 <li><p>页面文件</p>
