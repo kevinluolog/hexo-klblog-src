@@ -52,6 +52,26 @@ toc: TRUE
 <p><a href="https://hexo.io/zh-cn/api/filter">hexo过滤器before_post_render-theme\scripts\filters\kl-touch-file-time.js</a></p>
 <p><a href="http://www.alltoall.net/rst_pdf/">ALL TO ALL 在线格式转换</a></p>
 <p><a href="https://www.qifeiye.com/">起飞页建站平台</a></p>
+<p><a href="http://luly.lamost.org/oldtown/?p=385">ubuntu下通过PPA源安装texlive2012</a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
+<p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
