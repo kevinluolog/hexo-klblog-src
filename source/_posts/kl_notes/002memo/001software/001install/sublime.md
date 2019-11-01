@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="sublime">sublime</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="basic-information">basic information</h2>
 <h2 id="website">website</h2>
 <ul>
@@ -17,14 +23,14 @@ toc: TRUE
 <li>tutorial</li>
 </ul>
 <h2 id="install-components">install components</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>portable sublime</li>
 <li>package control install</li>
 <li>sublimeGit</li>
 </ol>
 <h3 id="package-control-install">package control install</h3>
 <p>portable sublime 缺省没有安装，可2个方法安装</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>tools-package control install</p>
 <p>装完此菜单消失，preferences出现-&gt;package setting; -&gt;package control</p></li>
 <li><p>2种另外的方法，自动和手动</p>
@@ -45,12 +51,12 @@ preference-&gt;package Settings-&gt; 此处出现安装的sublimeGit
 同时在
 preference-&gt;package settings-&gt; package control -&gt; user setting 中可以看到已经增加选项</code></pre>
 <h4 id="sumlimegit-usage用法">sumlimeGit usage用法</h4>
-<p><a href="https://sublimegit.readthedocs.io/en/latest/" class="uri">https://sublimegit.readthedocs.io/en/latest/</a></p>
+<p><a href="https://sublimegit.readthedocs.io/en/latest/">https://sublimegit.readthedocs.io/en/latest/</a></p>
 <ul>
 <li>【下面的有些问题，看readthedocs就行了】</li>
 </ul>
 <p><a href="https://docs.sublimegit.net/tutorial.html">full tutorial, go to</a></p>
-<p><a href="https://sublimegit.readthedocs.io/en/latest/tutorial.html" class="uri">https://sublimegit.readthedocs.io/en/latest/tutorial.html</a></p>
+<p><a href="https://sublimegit.readthedocs.io/en/latest/tutorial.html">https://sublimegit.readthedocs.io/en/latest/tutorial.html</a></p>
 <p><a href="https://docs.sublimegit.net/quickstart.html">how to get set up</a></p>
 <h2 id="有用的插件">有用的插件</h2>
 <p><a href="https://blog.csdn.net/enjoyyl/article/details/50057491#%20_90">超级文本编辑器Sublime Text3</a></p>
@@ -109,9 +115,9 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 <li>快捷键
 <ul>
 <li>magic table
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>grid table <code>ctrl+t, enter</code>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>keep the column width fixed, <code>ctrl+t, r</code> (<code>super+shift+t, r</code> in Mac)</li>
 <li>merge simple cells: <code>ctrl+t, down</code> <code>ctrl+t, up</code></li>
 </ol></li>
@@ -135,111 +141,39 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>h1</code></td>
-<td>Header level 1</td>
-<td>see <code>Headers</code>_</td>
-</tr>
-<tr class="even">
-<td><code>h2</code></td>
-<td>Header level 2</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><code>h3</code></td>
-<td>Header level 3</td>
-<td></td>
+<td><p><code>h1</code> <code>h2</code> <code>h3</code></p></td>
+<td><p>Header level 1 Header level 2 Header level 3</p></td>
+<td><p>see <code>Headers</code>_</p></td>
 </tr>
 <tr class="even">
 <td><code>e</code></td>
-<td>emphasis</td>
-<td><code>ctrlalti</code></td>
+<td><p>emphasis</p></td>
+<td><p><code>ctrlalti</code> (<code>supershifti</code> on Mac)</p></td>
 </tr>
 <tr class="odd">
-<td>
-</td>
-<td></td>
-<td>(<code>supershifti</code> on Mac)</td>
-</tr>
-<tr class="even">
 <td><code>se</code></td>
 <td>strong emphasis</td>
 <td><code>ctrlaltb</code></td>
 </tr>
-<tr class="odd">
-<td>
-</td>
+<tr class="even">
+<td></td>
 <td>(bold)</td>
 <td>(<code>supershiftb</code> on Mac)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>lit</code></td>
 <td>literal text</td>
 <td><code>ctrlaltk</code></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>literal</code></td>
 <td>(inline code)</td>
 <td>(<code>supershiftk</code> on Mac)</td>
 </tr>
-<tr class="even">
-<td><code>list</code></td>
-<td>unordered list</td>
-<td>see <code>Smart Lists</code>_</td>
-</tr>
 <tr class="odd">
-<td><code>listn</code></td>
-<td>ordered list</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><code>listan</code></td>
-<td>auto ordered list</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><code>def</code></td>
-<td>term definition</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><code>code</code></td>
-<td>codeblock (sphinx)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><code>source</code></td>
-<td>preformatted (<code>::</code> block)</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><code>img</code></td>
-<td>image</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><code>fig</code></td>
-<td>figure</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><code>table</code></td>
-<td>simple table</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><code>link</code></td>
-<td>refered hyperlink</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><code>linki</code></td>
-<td>embeded hyperlink</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><code>fn</code></td>
-<td>autonumbered</td>
-<td></td>
+<td><p><code>list</code> <code>listn</code> <code>listan</code> <code>def</code> <code>code</code> <code>source</code> <code>img</code> <code>fig</code> <code>table</code> <code>link</code> <code>linki</code> <code>fn</code></p></td>
+<td><p>unordered list ordered list auto ordered list term definition codeblock (sphinx) preformatted (<code>::</code> block) image figure simple table refered hyperlink embeded hyperlink autonumbered</p></td>
+<td><p>see <code>Smart Lists</code>_</p></td>
 </tr>
 <tr class="even">
 <td><code>cite</code></td>
@@ -265,7 +199,7 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 <h3 id="anaconda---python-completion">Anaconda - python completion</h3>
 <p>Anaconda 强大的补全工具, 还能实时看文档, 转到定义, 自动格式化代码</p>
 <p><a href="http://damnwidget.github.io/anaconda/">doc</a></p>
-<p><a href="http://damnwidget.github.io/anaconda/" class="uri">http://damnwidget.github.io/anaconda/</a></p>
+<p><a href="http://damnwidget.github.io/anaconda/">http://damnwidget.github.io/anaconda/</a></p>
 <h3 id="hexviewer">HexViewer</h3>
 <p>hex查看模式</p>
 <h3 id="latex-tools">latex tools</h3>
@@ -273,7 +207,7 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 <p><a href="https://latextools.readthedocs.io/en/latest/">DOC on readthedocs</a></p>
 <ul>
 <li>配套
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>sumatrapdf</p>
 <p><a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">sumatraPdf网址</a> <a href="https://github.com/sumatrapdfreader/sumatrapdf">gitREP sumatrpdf</a></p></li>
 </ol></li>
@@ -317,7 +251,7 @@ Copy File Name</code></pre>
 <p>到这里<a href="https://github.com/divinites/cndict.git">下载</a></p>
 <p>设置</p>
 <ul>
-<li>command 设置自动完成切换，总的和package内 Two commands are added in the Command Palette (Ctrl+Shift+P):
+<li><p>command 设置自动完成切换，总的和package内 Two commands are added in the Command Palette (Ctrl+Shift+P):</p>
 <ul>
 <li>Dictionary Auto Complete: Toggle : Activate/deactivate this plug-in.</li>
 <li>Auto Complete: Toggle : Activate/deactivate the sublime auto-completion.</li>
@@ -326,7 +260,7 @@ Copy File Name</code></pre>
 <p>Just type Ctrl + Space to show auto-completion,</p></li>
 <li><p>自动跳出词语</p>
 <p>allow auto-complete to always show suggestions by changing your <strong>‘Settings - User’</strong> for example like this: “auto_complete_selector”: “text, comment, string”</p></li>
-<li>词库</li>
+<li><p>词库</p></li>
 </ul>
 <p><a href="https://github.com/kpym/FrequencyDictionaries">FrequencyDictionaries on github</a></p>
 <ul>
@@ -390,34 +324,34 @@ type          ::=  &quot;b&quot; | &quot;c&quot; | &quot;d&quot; | &quot;e&quot;
 <p>Detailed syntax definition:</p>
 <p><a href="https://github.com/jbrooksuk/InsertNums/blob/master/format_syntax.txt">format_syntax.txt</a></p>
 <ul>
-<li><strong>start</strong>
+<li><p><strong>start</strong></p>
 <ul>
 <li><p><em>with numbers</em> (optional): A</p>
-<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](<a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger" class="uri">http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger</a>)</a></p>
+<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger)</a></p>
 <p>or</p>
-<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber">[floatnumber](<a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber" class="uri">http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber</a>)</a></p>
+<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber">[floatnumber](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber)</a></p>
 <p>according to Python's syntax specifications with an optional leading sign (<code>-</code> or <code>+</code>). Default: <code>1</code></p></li>
-<li><em>with alphabet</em> (required): A sequence of either lower- or uppercase ASCII characters from the alphabet (<code>a</code> to <code>z</code> and <code>A</code> to <code>Z</code>).</li>
+<li><p><em>with alphabet</em> (required): A sequence of either lower- or uppercase ASCII characters from the alphabet (<code>a</code> to <code>z</code> and <code>A</code> to <code>Z</code>).</p></li>
 </ul></li>
-<li><strong>step</strong> (optional)
+<li><p><strong>step</strong> (optional)</p>
 <ul>
 <li><p><em>with numbers</em>: A</p>
-<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](<a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger" class="uri">http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger</a>)</a></p>
+<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger)</a></p>
 <p>or</p>
-<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber">[floatnumber](<a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber" class="uri">http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber</a>)</a></p>
+<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber">[floatnumber](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber)</a></p>
 <p>according to Python's syntax specifications with an optional leading sign (<code>-</code> or <code>+</code>). Default: <code>1</code></p></li>
 <li><p><em>with alphabet</em>: A</p>
-<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](<a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger" class="uri">http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger</a>)</a></p>
+<p><a href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger)</a></p>
 <p>with an optional leading sign (<code>-</code> or <code>+</code>).</p></li>
 </ul></li>
-<li><strong>format</strong> (optional)
+<li><p><strong>format</strong> (optional)</p>
 <ul>
 <li><p><em>with numbers</em>: A format string in Python's [Format Specific</p>
-<p>Mini-Language](<a href="http://docs.python.org/2.6/library/string.html#format-specification-mini-language" class="uri">http://docs.python.org/2.6/library/string.html#format-specification-mini-language</a>) (with small and unimportant adjustments for allowed types).</p></li>
+<p>Mini-Language](<a href="http://docs.python.org/2.6/library/string.html#format-specification-mini-language">http://docs.python.org/2.6/library/string.html#format-specification-mini-language</a>) (with small and unimportant adjustments for allowed types).</p></li>
 <li><p><em>with alphabet</em>: Similar to <em>with numbers</em> but a stripped-down</p>
 <p>version only for strings. This only includes the <code>[[fill]align][width]</code> syntax and additionally accepts a <code>w</code> character at the end (see above).</p></li>
 </ul></li>
-<li><strong>expr</strong> (optional)
+<li><p><strong>expr</strong> (optional)</p>
 <ul>
 <li><p><em>numbers only</em>: A valid Python expression which modifies the value as you please. If specified, the <em>format string</em> is applied afterwards. Here is a list of available variables:</p>
 <ul>
@@ -435,7 +369,7 @@ type          ::=  &quot;b&quot; | &quot;c&quot; | &quot;d&quot; | &quot;e&quot;
 <ul>
 <li><code>c</code>: The current evaluated value by the expression (without formatting) or just the same as <code>_</code> if there was no expression specified</li>
 </ul>
-<p>This ignores the number of selections which means that you can also have more or less values than selections. Especially useful when generating numbers from a single selection. - If there is more selections than numbers generated when processing the stop expression, all the remaining selections' text will be deleted. - If there is more numbers generated than selections, all further numbers are joining by newlines (<code>&quot;\n&quot;</code>) and added to the last selection made. This can be the first selection if there is only one.</p></li>
+<p>This ignores the number of selections which means that you can also have more or less values than selections. Especially useful when generating numbers from a single selection. - If there is more selections than numbers generated when processing the stop expression, all the remaining selections' text will be deleted. - If there is more numbers generated than selections, all further numbers are joining by newlines (<code>"\n"</code>) and added to the last selection made. This can be the first selection if there is only one.</p></li>
 <li><p><strong>reverse</strong> (optional)</p>
 <p>Must be <code>!</code> and results in the regions being filled in reversed order.</p></li>
 </ul>
@@ -443,7 +377,7 @@ type          ::=  &quot;b&quot; | &quot;c&quot; | &quot;d&quot; | &quot;e&quot;
 <pre><code>numbers: [&lt;start&gt;][:&lt;step&gt;][~&lt;format&gt;][::&lt;expr&gt;][@&lt;stopexpr&gt;][!]
 alpha:   &lt;start&gt;[:&lt;step&gt;][~&lt;format&gt;][@&lt;stopexpr&gt;][!]</code></pre>
 <p>format= [[fill]align][sign][#][0][width][.precision][type]</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>传统法</p>
 <pre><code>1:1~0&gt;+#04d::_*1@i&gt;=10!
 1:1~0&gt; #04d::_*1@i&gt;=10!
@@ -497,7 +431,7 @@ Goto-CSS-Declaration
 <h3 id="快捷键介绍">快捷键介绍</h3>
 <p>看这里，<a href="https://www.cnblogs.com/ma-dongdong/p/7653231.html">Sublime Text3使用指南</a></p>
 <h3 id="列编辑模式">列编辑模式</h3>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>方式一</p>
 <p>Shift+鼠标右键 or 鼠标中键</p></li>
 <li><p>方式二</p>
@@ -576,5 +510,7 @@ sublime Text &gt; Preferences &gt; Package Settings &gt; OmniMarkupPreviewer &gt
 <p>latex example:</p>
 <p><br /><span class="math display">$$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$</span><br /></p>
 <p>equation.he Lorenz Equations</p>
-<p><br /><span class="math display">$$\begin{aligned}\dot{x} &amp; = \sigma(y-x) \\\dot{y} &amp; = \rho x - y - xz \\\dot{z} &amp; = -\beta z + xy\end{aligned}$$</span><br /></p>
+<p><br /><span class="math display">$$\begin{aligned}
+\begin{aligned}\dot{x} &amp; = \sigma(y-x) \\\dot{y} &amp; = \rho x - y - xz \\\dot{z} &amp; = -\beta z + xy\end{aligned}
+\end{aligned}$$</span><br /></p>
 <p>inline an example of a LaTeX <span class="math inline">$\sqrt{3x-1}+(1+x)^2$</span></p>
