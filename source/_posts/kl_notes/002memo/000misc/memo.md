@@ -77,9 +77,46 @@ toc: TRUE
 <p><a href="http://zenozeng.github.io/Free-Chinese-Fonts/">网站链接-免费中文字体整理zenozeng.github.io/Free-Chinese-Fonts</a></p>
 <p><a href="https://github.com/zenozeng/Free-Chinese-Fonts">网站源码-免费中文字体整理github.com/zenozeng/Free-Chinese-Fonts</a></p>
 <p><a href="http://blog.sciencenet.cn/blog-597740-1077676.html">[转载]latex】itemize, enumerate枚举，编号使用及编号样式设计</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.jb51.net/LINUXjishu/123859.html">linux比较两个文件是否一样(linux命令md5sum使用方法)</a></p>
+<p><a href="https://www.cnblogs.com/xudong-bupt/p/6493903.html">linux 比较两个文件夹不同 (diff命令, md5列表)</a></p>
+<p>比较文件夹diff，可以直接使用diff命令</p>
+<pre><code>[root@~]# diff -urNa dir1 dir2
+　　-a Treat all files as text and compare them line-by-line, even if they    do not seem to be text.
+　　-N, --new-file
+　　　　In directory comparison, if a file is found in only one directory,    treat it as present but empty in the other directory.
+　　-r When comparing directories, recursively compare any subdirectories    found.
+　　-u Use the unified output format.</code></pre>
+<p>比较文件夹diff，也可以比较文件MD5列表。下面命令可以获取文件夹中文件md5列表</p>
+<pre><code>find /home/ -type f -not \( -name &#39;.*&#39; \) -exec md5sum {} \;
+说明：
+(1) /home/文件目录
+(2) -type f 文件类型为普通文件
+(3) -not \( -name &#39;.*&#39; \)  过滤掉隐藏文件。可以过滤掉不需要考虑的文件
+(4) -exec md5sum {} \;  对每个文件执行md5sum命令 </code></pre>
+<p><a href="https://www.cnblogs.com/kevingrace/p/10201723.html">linux下md5sum用法 (查看文件或字符串的md5值)</a></p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# echo -n "hello world"cut -d" " -f1</p>
+<p>5eb63bbbe01eeed093cb22bb8f5acdc3</p>
+<p>命令解释：</p>
+<p>md5sum: 显示或检查 MD5(128-bit)</p>
+<p>校验和,若没有文件选项，或者文件处为"-"，则从标准输入读取。</p>
+<p>echo -n : 不打印换行符。(注意: echo -n 后面的-n参数必须加上,</p>
+<p>这样算出的字符串的md5值才正确)</p>
+<p>cut:</p>
+<p>cut用来从标准输入或文本文件中剪切列或域。剪切文本可以将之粘贴到一个文本文件。 -d 指定与空格和tab键不同的域分隔符。-f1 表示第一个域。</p>
+<p>查看一个文件的md5值</p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# echo "test md5" &gt; kevin.sql</p>
+<p>查看并获取这个文件的md5值</p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# md5sum kevin.sql</p>
+<p>170ecb8475ca6e384dbd74c17e165c9e kevin.sql</p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# md5sum kevin.sql|cut -d" " -f1</p>
+<p>170ecb8475ca6e384dbd74c17e165c9e</p>
+<p>生产这个个文件的md5值</p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# md5sum kevin.sql &gt; kevin.sql.md5</p>
+<p>检查两个文件是否一样，可以通过比较两个文件的md5值 (后续可以用这个方法来检验kevin.sql文件是否被修改)。</p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# md5sum kevin.sql</p>
+<p>170ecb8475ca6e384dbd74c17e165c9e kevin.sql</p>
+<p>[<a href="mailto:root@web-master">root@web-master</a> ~]# cat kevin.sql.md5</p>
+<p>170ecb8475ca6e384dbd74c17e165c9e kevin.sql</p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
