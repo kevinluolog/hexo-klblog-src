@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="makefiles">makefiles</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="案例">案例</h2>
 <h3 id="通用makefile自动遍历子目录源文件自动生成依赖">通用makefile,自动遍历子目录源文件，自动生成依赖。</h3>
 <p><a href="https://blog.csdn.net/yuliying/article/details/49635485">一份通用makefile,自动遍历子目录源文件，自动生成依赖Ubuntu和OSX</a></p>
@@ -51,7 +57,7 @@ clean:
     rm -f $(Objs) $(Deps) $(StaticLib) $(DynamicLib) $(Bin)</code></pre>
 <h3 id="makefile操作系统检测方法">makefile操作系统检测方法</h3>
 <p>使用两个简单的技巧检测操作系统：</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>首先是环境变量 OS</li>
 <li>然后uname命令</li>
 </ol>
@@ -106,7 +112,7 @@ endif</code></pre>
 <p>笔记：</p>
 <p>命令uname与uname -s因为option -s（--kernel-name）是默认值相同。看看为什么uname -s比这更好uname -o。</p>
 <p>使用OS（而不是uname）简化了识别算法。您仍然可以单独使用uname，但您必须处理if/else块以检查所有MinGW，Cygwin等变体。</p>
-<p>环境变量OS始终设置为&quot;Windows_NT&quot;不同的Windows版本（请参阅%OS%Wikipedia上的环境变量）。</p>
+<p>环境变量OS始终设置为"Windows_NT"不同的Windows版本（请参阅%OS%Wikipedia上的环境变量）。</p>
 <p>另一种方法OS是环境变量MSVC（它检查MS Visual Studio的存在，请参阅使用Visual C ++的示例）。</p>
 <p>下面我提供一个使用make和gcc构建共享库的完整示例：*.so或者*.dll取决于平台。这个例子尽可能简单易懂。</p>
 <p>要在Windows上安装make，gcc请参阅Cygwin或MinGW。</p>
@@ -120,7 +126,7 @@ endif</code></pre>
     └── main.c</code></pre>
 <p>提醒:Makefile使用制表缩进。在示例文件下面复制粘贴时的注意事项。</p>
 <p>这两个Makefile文件</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>lib/Makefile</p>
 <pre><code>ifeq ($(OS),Windows_NT)
     uname_S := Windows

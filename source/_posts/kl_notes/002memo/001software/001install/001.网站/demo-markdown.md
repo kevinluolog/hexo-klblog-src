@@ -9,12 +9,18 @@ toc: TRUE
 ---
 <h1 id="markdow-demo">markdow demo</h1>
 <h2 id="副标题">副标题</h2>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h3 id="标题这里前面要有空格前后有空行此处最好不要添加链接以和rest一致">标题，这里前面要有空格，前后有空行，此处最好不要添加链接以和reST一致</h3>
 <h4 id="body">body</h4>
 <h5 id="标题级段落paragraph">标题级段落，paragraph</h5>
-<p>段落，paragraph,前后面要有空行，除非是文档的头和尾。<strong><code>\n</code>被去掉了</strong> 紧接的另一行会被视为同一段落，换行符会被去掉。这样可以<strong><code>\n</code>被去掉了</strong> 方便段落书写时随意换行，不用启用文本编辑器的自动换行<strong><code>\n</code>被去掉了</strong> 也能实现一个段落。段落内连续两个以上空格 tab 会skip</p>
-<p>段落，保留换行符，行尾加2个空格<br />
-因前面行尾加了两个空格，此行成一个独立行，如是html语言则是前行尾加了<code>&lt;br&gt;</code></p>
+<p>段落，paragraph,前后面要有空行，除非是文档的头和尾。<strong>``n``被去掉了</strong> 紧接的另一行会被视为同一段落，换行符会被去掉。这样可以<strong>``n``被去掉了</strong> 方便段落书写时随意换行，不用启用文本编辑器的自动换行<strong>``n``被去掉了</strong> 也能实现一个段落。段落内连续两个以上空格 tab 会skip</p>
+<div class="line-block">段落，保留换行符，行尾加2个空格<br />
+因前面行尾加了两个空格，此行成一个独立行，如是html语言则是前行尾加了<code>&lt;br&gt;</code></div>
 <p>缩进段落仍是段落，tab或4个空格以下，自动去掉</p>
 <p>缩进段落仍是段落，tab或4个空格以下，自动去掉</p>
 <p>缩进段落仍是段落，tab或4个空格以下，自动去掉</p>
@@ -51,7 +57,7 @@ toc: TRUE
 第2行</code></pre></li>
 </ul>
 <p>列表2级段落，paragraph，顶格8个空格 对齐第2行，建议还是和上行缩进一致，这样代码美观</p></li>
-<li>续上列表2级，一个tab/4个空格</li>
+<li><p>续上列表2级，一个tab/4个空格</p></li>
 </ul></li>
 </ul>
 <h4 id="列表">列表</h4>
@@ -63,11 +69,70 @@ toc: TRUE
 <ul>
 <li><a href="https://links.jianshu.com/go?to=https%3A%2F%2Frubyinstaller.org%2F">Ruby installer</a></li>
 </ul>
+<div class="header">
+<p>This space for rent.</p>
+</div>
+<table>
+<caption>Frozen Delights!</caption>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 18%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Treat</th>
+<th>Quantity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="even">
+<td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn't be crunchy, now would it?</td>
+</tr>
+<tr class="odd">
+<td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>block indent</p>
 <blockquote>
 <p>dark night give me <strong>black</strong> <sub>eyes</sub> but I use it to <sup>seek</sup> for <em>bright</em></p>
 <p>-- gu Cheng</p>
 </blockquote>
-<p>part <span class="math inline">(<em>π</em>/4)*<em>d</em><sup>2</sup></span></p>
+<p>part <span class="math inline">(<em>π</em>/4) * <em>d</em><sup>2</sup></span></p>
 <p>this is the grammar of markdown: $A = (pi/4)d^2$</p>
 <p><br /><span class="math display"><em>A</em> = (<em>π</em>/4)<em>d</em><sup>2</sup></span><br /></p>

@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="memo-of-debug">memo of debug</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="makefile">makefile</h2>
 <h3 id="else-应该小写">ELSE 应该小写。</h3>
 <p>现象：</p>

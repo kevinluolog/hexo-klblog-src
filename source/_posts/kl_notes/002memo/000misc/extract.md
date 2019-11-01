@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="extract">extract</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="摘录东西">摘录东西</h2>
 <h3 id="生活">生活</h3>
 <p><a href="https://post.smzdm.com/p/757510/">厨房里的折腾：更换止逆阀，你也可以自己动手</a></p>
@@ -21,8 +27,7 @@ toc: TRUE
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <h3 id="c4d-3dmax-maya">C4D 3dmax maya</h3>
-<p>C4D R14破解版【Cinema 4D R14中文版】官方简体中文完整版 64/32位 中文版软件 &lt;https://zixue.3d66.com/softhtml/showsoft_758.html https://zixue.3d66.com/softhtml/showsoft_758.html https://zixue.3d66.com/softhtml/downsoft_758.html
-&gt;__</p>
+<p><span class="title-ref">C4D R14破解版【Cinema 4D R14中文版】官方简体中文完整版 64/32位 中文版软件 &lt;https://zixue.3d66.com/softhtml/showsoft_758.html https://zixue.3d66.com/softhtml/showsoft_758.html https://zixue.3d66.com/softhtml/downsoft_758.html &gt;</span>__</p>
 <p><a href="https://zixue.3d66.com/softhtml/softsetup_758.html">C4D R14破解版【Cinema 4D R14中文版】官方简体中文完整版安装图文教程、破解注册方法</a></p>
 <p><a href="https://jingyan.baidu.com/article/19192ad8c0efdbe53e57070c.html">C4D R14安装与激活教程 附安装包_百度经验</a></p>
 <p><a href="https://pan.baidu.com/s/1e26nfHeupg5kEgtW5wJRtg">C4D R14下载地址：链接：</a></p>
@@ -42,7 +47,7 @@ toc: TRUE
 <p>理由：很简单，因为搞装修的都是用3DMAX。。。用别的软件，你跟外单位对接就是问题。。。因为这行业对接都是用MAX格式</p>
 <p>二：搞后期，做动画，工业设计，必须C4D</p>
 <p>理由：这个说起来就比较麻烦了。。。</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>如果做矩阵动画，一天能干3DMAX十天的活，一点都不夸张。</li>
 <li>如果你用苹果机干活，去哪找3DMAX？高端剪辑都是用苹果的，而3DMAX没有苹果版</li>
 <li>ADOBE和MAXON联手，明摆着就是为打压AUTODESK，长远看，选3DMAX等于放弃AE。</li>
@@ -56,7 +61,7 @@ toc: TRUE
 </ol>
 <h4 id="dmaxmayac4d这三款软件会怎么选">3dmax、maya、C4D这三款软件会怎么选？</h4>
 <p><a href="https://www.sohu.com/a/211062052_100087032">3dmax、maya、C4D这三款软件会怎么选？</a></p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>maya的优势是团队合作比max更老牌MAYA是世界顶级的三维动画软件，它的开源性质决定了它被更多的应用在影视特效工作上，因为比较好最延展的二次开发，另外MAYA尤其在动画上有十分出色的表现，只有想不到没有做不到，如果有编程基础就可以让maya发挥更大的威力，大项目制作maya当仁不让。</li>
 <li>3dsmax 老牌三维软件，是一个非常成熟的三维动画软件，使用的人数很广，尤其是在建筑和室内设计及游戏方面。结合众多插件有很好的扩展性。大量优秀插件使得3dsmax在特效等领域也有不错的表现。唯一遗憾的是没有mac版本。虽然它和MAYA现在是同一家公司出品的不同产品，但是MAX对多边形面数的支持更好一些，另外在如建筑、室内效果图的渲染上更有优势。</li>
 <li>C4D德国后起之秀。近些年C4D的风头大有盖过老大哥的势头。创新的思维方式，灵活的扩展功能，让你一个人在很短时间就能做出绚丽的动画效果，C4D是近两年在电视包装领域被应用的最多的软件，原因是它内置的一些变形、克隆、渲染和与AE的结合功能做的特别优秀。</li>

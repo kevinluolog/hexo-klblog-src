@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="github">github</h1>
+<div class="contents">
+<p>contents</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="参考链接">参考链接</h2>
 <p><a href="https://git-scm.com/doc">git-scm 官方doc 网址</a></p>
 <p><a href="https://www.cnblogs.com/qianqiannian/p/6008140.html">Git push常见用法</a></p>
@@ -20,8 +26,7 @@ toc: TRUE
 <p><a href=""></a></p>
 <h2 id="工具">工具</h2>
 <p>git恢复保存REPO文件时间信息的工具----------------------------------------------------------------------</p>
-<p>stackoverflow.com/ What's the equivalent of use-commit-times for git? &lt;https://stackoverflow.com/questions/1964470/whats-the-equivalent-of-use-commit-times-for-git/13284229#13284229
-&gt;__</p>
+<p><span class="title-ref">stackoverflow.com/ What's the equivalent of use-commit-times for git? &lt;https://stackoverflow.com/questions/1964470/whats-the-equivalent-of-use-commit-times-for-git/13284229#13284229 &gt;</span>__</p>
 <h3 id="metastore-额外加上文件meta信息">metastore 额外加上文件meta信息</h3>
 <p><a href="https://repo.or.cz/w/metastore.git">Making git usable for backing up file attributes too</a></p>
 <p>metastore is a tool to store the metadata of files/directories/links in a file tree to a separate file and to later compare and apply the stored metadata to said file tree.</p>
@@ -38,10 +43,9 @@ toc: TRUE
 </dd>
 </dl>
 <h3 id="参考链接1whats-the-equivalent-of-use-commit-times-for-git">参考链接1:What's the equivalent of use-commit-times for git?</h3>
-<p>stackoverflow.com/ What's the equivalent of use-commit-times for git? &lt;https://stackoverflow.com/questions/1964470/whats-the-equivalent-of-use-commit-times-for-git/13284229#13284229
-&gt;__</p>
+<p><span class="title-ref">stackoverflow.com/ What's the equivalent of use-commit-times for git? &lt;https://stackoverflow.com/questions/1964470/whats-the-equivalent-of-use-commit-times-for-git/13284229#13284229 &gt;</span>__</p>
 <p>IMHO, not storing timestamps (and other metadata like permissions and ownership) is a big limitation of git.</p>
-<p>Linus' rationale of timestamps being harmful just because it &quot;confuses make&quot; is lame:</p>
+<p>Linus' rationale of timestamps being harmful just because it "confuses make" is lame:</p>
 <p>make clean is enough to fix any problems.</p>
 <p>Applies only to projects that use make, mostly C/C++. It is completely moot for scripts like Python, Perl, or documentation in general.</p>
 <p>There is only harm if you apply the timestamps. There would be no harm in storing them in repo. Applying them could be a simple --with-timestamps option for git checkout and friends (clone, pull etc), at the user's discretion.</p>
@@ -162,7 +166,7 @@ i/lf    w/lf    attr/                   000misc/extract.mdi/lf    w/lf    attr/ 
 
 -z: 缺省把汉字等字符以\转义码输出，加z表示以正常显示字符输出,但是加z时没有分行
 --eol： will show i/&lt;eolinfo&gt;&lt;SPACES&gt;w/&lt;eolinfo&gt;&lt;SPACES&gt;attr/&lt;eolattr&gt;&lt;SPACE*&gt;&lt;TAB&gt;&lt;file&gt;， windows下自动转换会变成 w/crlf回车换行</code></pre>
-<h3 id="git-log--1---dateiso---formatad----filename-文件提交时间">git log -1 --date=iso --format=&quot;%ad&quot; -- &quot;$filename&quot; 文件提交时间</h3>
+<h3 id="git-log--1---dateiso---formatad----filename-文件提交时间">git log -1 --date=iso --format="%ad" -- "$filename" 文件提交时间</h3>
 <p><a href="https://www.git-scm.com/docs/git-log">www.git-scm.com/docs/git-log</a></p>
 <p>查看文件最后一行： tail -1 文件名，后面必须是文件， 或者 | tail -1 管道输出的内容</p>
 <pre><code>显示各纯文件名：
@@ -256,7 +260,7 @@ $ git branch -u origin/master//将当前分支跟踪origin/master</code></pre>
 * master    1399706 [origin/master] init commit</code></pre>
 <p>master已经跟踪了origin/master了</p>
 <h4 id="实际命令摘录tortoisegit">实际命令摘录，tortoiseGit</h4>
-<h3 id="git.exe-pull---progress--v---no-rebase-origin-hexo-next-pisces">git.exe pull --progress -v --no-rebase &quot;origin&quot; hexo-next-Pisces</h3>
+<h3 id="git.exe-pull---progress--v---no-rebase-origin-hexo-next-pisces">git.exe pull --progress -v --no-rebase "origin" hexo-next-Pisces</h3>
 <pre><code>git.exe pull --progress -v --no-rebase &quot;origin&quot; hexo-next-Pisces
 
 From github.com:kevinluolog/hexo-klblog-src
@@ -267,7 +271,7 @@ Already up to date.
 Success (7800 ms @ 2019/10/27 星期日 8:50:58)</code></pre>
 <h4 id="离散点滴">离散点滴</h4>
 <ul>
-<li>git clone -b gh-pages <a href="https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git" class="uri">https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git</a>： 不写目标目录时，会把repo名gp-memo作为目录名</li>
-<li>git clone -b gh-pages <a href="https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git" class="uri">https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git</a> /tmp/gp-memo： 写目标目录时，不会自动把repo名gp-memo作为目录名，需要显式地写上，要不会把repo内容直接写入目标目录。</li>
-<li>git commit --allow-empty -m &quot;kl+travis+&quot; : --allow-empty 让commit相同时不返回错exit(1),如travis CI 不会报错</li>
+<li>git clone -b gh-pages <a href="https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git">https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git</a>： 不写目标目录时，会把repo名gp-memo作为目录名</li>
+<li>git clone -b gh-pages <a href="https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git">https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git</a> /tmp/gp-memo： 写目标目录时，不会自动把repo名gp-memo作为目录名，需要显式地写上，要不会把repo内容直接写入目标目录。</li>
+<li>git commit --allow-empty -m "kl+travis+" : --allow-empty 让commit相同时不返回错exit(1),如travis CI 不会报错</li>
 </ul>
