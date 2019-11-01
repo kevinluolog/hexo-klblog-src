@@ -72,7 +72,8 @@ toc: TRUE
 <p>安装字体 apt-get install -y --force-yes --no-install-recommends fonts-wqy-microhei</p>
 <p>apt-get install -y --force-yes --no-install-recommends ttf-wqy-zenhei</p>
 <p><a href="https://www.cnblogs.com/jpfss/p/7895773.html">Ubuntu 安装 Courier New字体和雅黑consolas字体</a></p>
-<p><a href=""></a></p>
+<p><a href="http://zenozeng.github.io/Free-Chinese-Fonts/">网站链接-免费中文字体整理zenozeng.github.io/Free-Chinese-Fonts</a></p>
+<p><a href="https://github.com/zenozeng/Free-Chinese-Fonts">网站源码-免费中文字体整理zenozeng.github.io/Free-Chinese-Fonts</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
