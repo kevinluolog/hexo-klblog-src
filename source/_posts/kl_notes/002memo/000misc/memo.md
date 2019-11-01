@@ -58,10 +58,11 @@ toc: TRUE
 <p><a href="http://www.alltoall.net/rst_pdf/">ALL TO ALL 在线格式转换</a></p>
 <p><a href="https://www.qifeiye.com/">起飞页建站平台</a></p>
 <p><a href="http://luly.lamost.org/oldtown/?p=385">ubuntu下通过PPA源安装texlive2012</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.cnblogs.com/ccoming/p/7810861.html">Latex中文支持Ubuntu</a></p>
+<p>可以使用fc-list :lang=zh-cn查看所有中文字体 详细设置可以看这个: ubuntu下latex终极安装方案的字体部分=D</p>
+<p><a href="http://segmentfault.com/a/1190000004059490">ubuntu下latex终极安装方案的字体部分</a></p>
+<p><a href="https://segmentfault.com/a/1190000004059490">Ubuntu 14.04 下 TexLive2014 完美安装攻略</a></p>
+<p><a href="http://www.it1352.com/650222.html">如何避免“太深嵌套”使用Sphinx创建PDF时出错？(How to avoid the “too deeply nested error” when creating PDFs with Sphinx?)</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
