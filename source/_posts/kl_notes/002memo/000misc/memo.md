@@ -67,8 +67,11 @@ toc: TRUE
 <p><a href="https://wiki.ubuntu.org.cn/%E5%AD%97%E4%BD%93">字体- Ubuntu中文wiki.ubuntu.org.cn</a></p>
 <p>获取字体 中文 主条目：免费中文字体 sudo apt-get install ttf-wqy-microhei #文泉驿-微米黑 sudo apt-get install ttf-wqy-zenhei #文泉驿-正黑 sudo apt-get install xfonts-wqy #文泉驿-点阵宋体</p>
 <p><a href="https://wiki.ubuntu.org.cn/%E5%85%8D%E8%B4%B9%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93">免费中文字体wiki.ubuntu.org.cn</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.ucloud.cn/yun/23516.html">ubuntu添加中文字体ucloud</a> ubuntu添加中文字体ubuntu 查看系统类型 cat /proc/version</p>
+<p>查看中文字体 fc-list :lang=zh-cn</p>
+<p>安装字体 apt-get install -y --force-yes --no-install-recommends fonts-wqy-microhei</p>
+<p>apt-get install -y --force-yes --no-install-recommends ttf-wqy-zenhei</p>
+<p><a href="https://www.cnblogs.com/jpfss/p/7895773.html">Ubuntu 安装 Courier New字体和雅黑consolas字体</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
