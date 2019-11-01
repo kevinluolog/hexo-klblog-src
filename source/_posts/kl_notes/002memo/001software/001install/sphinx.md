@@ -9,6 +9,12 @@ toc: TRUE
 ---
 <h1 id="sphinx">sphinx</h1>
 <h2 id="sphinx-is-great">sphinx is great</h2>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h3 id="sphinx-install3">sphinx install+3</h3>
 <p><a href="http://www.sphinx-doc.org/en/master/usage/installation.html#linux">sphinx install 官方spec</a></p>
 <h4 id="windows">windows</h4>
@@ -51,6 +57,17 @@ toc: TRUE
 <pre><code>$ sphinx-build -b html sourcedir builddir</code></pre>
 <h3 id="sphinx选项">sphinx选项</h3>
 <p>引入graphviz???要加入详细描述。。。kl+</p>
+<div class="graphviz">
+<dl>
+<dt>digraph foo {</dt>
+<dd><p>"step 1" -&gt; "step 2"; "step 2" -&gt; "step 3"; "step 3" -&gt; "step 1";</p>
+</dd>
+</dl>
+<p>}</p>
+</div>
+<div class="graphviz">
+<p>H:tmp_H001.work002git000GTdot01.dot</p>
+</div>
 <h3 id="issues">issues</h3>
 <p>kevinluo</p>
 <h4 id="makefile-中设定-sourcedir-失败">makefile 中设定 SOURCEDIR 失败</h4>
@@ -65,7 +82,7 @@ toc: TRUE
 SOURCEDIR     = source
 为
 SOURCEDIR     = &quot;H:\tmp_H\001.work\002git\kdoc\003work\002memo\001software&quot;</code></pre>
-<p>提示出错，&quot;conf.py 找不到。&quot;</p></li>
+<p>提示出错，"conf.py 找不到。"</p></li>
 <li><p>分析：</p>
 <p>一开始以为是文件目录的写法不对，或者是没有加引号。加入echo分析，发现SOURCEDIR仍为source,没改过来。不起作用。原来是没有理解透sphinx的MAKEFILE变量overriding的顺序。make.bat中带入的变量会override makefile中的变量定义。.bat文件相当于命令行运行。此make是个BAT,非真正的make.exe.</p></li>
 <li><p>解决：</p>

@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="travis-ci">travis CI</h1>
+<div class="contents">
+<p>contents</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="install">install</h2>
 <p><a href="https://travis-ci.com">travis website</a></p>
 <h3 id="教程链接">教程链接</h3>
@@ -47,12 +53,7 @@ notifications:
 <p>repo: Repo slug, defaults to current repo. Note: The slug consists of username and repo name and is formatted like user/repo-name.</p>
 <p>target_branch: Branch to (force, see: keep_history) push local_dir contents to, defaults to gh-pages.</p>
 <p>keep_history: Optional, create incremental commit instead of doing push force, defaults to false. fqdn: Optional, sets a custom domain for your website, defaults to no custom domain support.</p>
-<p>project_name: Defaults to value of fqdn or repo slug, used for metadata. email: Optional, committer info, defaults to <script type="text/javascript">
-<!--
-h='&#116;&#114;&#x61;&#118;&#x69;&#x73;&#x2d;&#x63;&#x69;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#100;&#x65;&#112;&#108;&#x6f;&#x79;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#100;&#x65;&#112;&#108;&#x6f;&#x79;&#32;&#x61;&#116;&#32;&#116;&#114;&#x61;&#118;&#x69;&#x73;&#x2d;&#x63;&#x69;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript>. name: Optional, committer, defaults to Deployment Bot.</p>
+<p>project_name: Defaults to value of fqdn or repo slug, used for metadata. email: Optional, committer info, defaults to <a href="mailto:deploy@travis-ci.org">deploy@travis-ci.org</a>. name: Optional, committer, defaults to Deployment Bot.</p>
 <p>committer_from_gh: Optional, defaults to false. Allows you to use the token’s owner name and email for commit. Overrides email and name options.</p>
 <p>allow_empty_commit: Optional, defaults to false. Enabled if only keep_history is true.</p>
 <p>github_url: Optional, the URL of the self-hosted GitHub enterprise, defaults to github.com.</p>
@@ -106,11 +107,11 @@ endif</code></pre>
     iconv -f GBK -t UTF-8 -c $$@.tmp &gt;$$@</code></pre>
 <h4 id="真正原因iconv转换文件gbkutf8报错文件中有不支持的字符">真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</h4>
 <p>.travis.yml 是以 UTF-16 littel endian (0xFFFE)存储的。 所以make带入的参数 ADD_HEXO_TAG_FROM_DIR=技术 也是UTF16LE的。</p>
-<p>/linux/Makefile 是以no BOM的自然方式存储的，后来发觉不是UTF8的模式，是以中文windows的codePage存储的，所以是GBK码形式的。</p>
-<p>这样前面问题就可以解释了, $(file &gt;$$@.tmp 写入文件时， makefile中自然写入的中文&quot;笔记&quot;，被写成GBK码，.travis.yml带入的参数“技术”，却写入的是UTF16LE，同一文件中有不同的编码，这样如果用iconv转换自然会报错，UTF16LE编码的中文在GBK库中是没有的。同时如果用iconv强行当GBK转换就会乱了不知道是什么结果,如果保持原值用UTF8来解释自然就是乱码了。</p>
+<p><span class="title-ref">/linux/Makefile</span> 是以no BOM的自然方式存储的，后来发觉不是UTF8的模式，是以中文windows的codePage存储的，所以是GBK码形式的。</p>
+<p>这样前面问题就可以解释了, <span class="title-ref">$(file &gt;$$@.tmp</span> 写入文件时， makefile中自然写入的中文"笔记"，被写成GBK码，.travis.yml带入的参数“技术”，却写入的是UTF16LE，同一文件中有不同的编码，这样如果用iconv转换自然会报错，UTF16LE编码的中文在GBK库中是没有的。同时如果用iconv强行当GBK转换就会乱了不知道是什么结果,如果保持原值用UTF8来解释自然就是乱码了。</p>
 <p>所以不管是用iconv转换，还是不转都有一种是有问题的，一个好，一个不好。</p>
 <p>解决方法：</p>
 <p>都用同一种格式存储，再决定转还是不转。建议utf8</p>
-<p>把 /linux/Makefile 存储成UTF8的。 这样发觉iconv也可以不用了，大概 $(file &gt;$$@.tmp 写入文件时，系统自然就把文件格式设成了UTF,然后用 pandoc $$&lt; -o - &gt;&gt;$$@ append模式添加输入UTF时，就成了utf了。 有一点没搞清楚，到底最后成了UTF8还是UTF16LE，猜想大概是utf8.</p>
+<p>把 <span class="title-ref">/linux/Makefile</span> 存储成UTF8的。 这样发觉iconv也可以不用了，大概 <span class="title-ref">$(file &gt;$$@.tmp</span> 写入文件时，系统自然就把文件格式设成了UTF,然后用 <span class="title-ref">pandoc $$&lt; -o - &gt;&gt;$$@</span> append模式添加输入UTF时，就成了utf了。 有一点没搞清楚，到底最后成了UTF8还是UTF16LE，猜想大概是utf8.</p>
 <p>字符编码小知识： 参见 字符文件编码.rst 字符编码小知识</p>
 <hr />

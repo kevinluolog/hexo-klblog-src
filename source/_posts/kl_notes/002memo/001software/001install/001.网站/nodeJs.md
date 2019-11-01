@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="node.js">node.JS</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="install">install</h2>
 <p><a href="https://nodejs.org/en/">download here</a></p>
 <h3 id="reference">reference</h3>
@@ -20,23 +26,23 @@ toc: TRUE
 <h4 id="环境变量">环境变量</h4>
 <p>msi安装版本已经配置PAHT， 非安装版，执行nodevars.bat</p>
 <h4 id="配置npm在安装全局模块时的路径和缓存cache的路径">配置npm在安装全局模块时的路径和缓存cache的路径</h4>
-<p>可以先用 npm config ls -l 看一下当前配置变量</p>
+<p>可以先用 <span class="title-ref">npm config ls -l</span> 看一下当前配置变量</p>
 <p>非安装版，npm -g 安装module时，自动放到node_modules目录下面。</p>
 <p><a href="https://blog.csdn.net/antma/article/details/86104068">node.js 安装详细步骤教程-重配全局模块下载目录</a></p>
-<p>在执行例如npm install webpack -g等命令全局安装的时候，默认会将模块安装在 C:\Users\用户名\AppData\Roaming路径下的npm和npm_cache中 ，不方便管理且占用C盘空间</p>
+<p>在执行例如npm install webpack -g等命令全局安装的时候，默认会将模块安装在 <span class="title-ref">C:Users用户名AppDataRoaming路径下的npm和npm_cache中</span> ，不方便管理且占用C盘空间</p>
 <p>这里配置自定义的全局模块安装目录，在node.js安装目录下新建两个文件夹</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>node_global和node_cache，然后在cmd命令下执行如下两个命令：</li>
 </ol>
 <pre><code>npm config set prefix &quot;D:\Program Files\nodejs\node_global&quot;
 npm config set cache &quot;D:\Program Files\nodejs\node_cache&quot;</code></pre>
-<ol start="2" style="list-style-type: decimal">
+<ol start="2" type="1">
 <li><p>加入环境变量 NODE_PATH</p>
 <p>环境变量 -&gt; 系统变量中新建一个变量名为 “NODE_PATH”， 值为“D:Program Filesnodejsnode_modules”</p></li>
 <li><p>用户变量里的Path</p>
 <p>编辑用户变量里的Path，将相应npm的路径改为：D:Program Filesnodejsnode_global</p></li>
 <li><p>测试</p>
-<p>在cmd命令下执行 npm install webpack -g 然后安装成功后可以看到自定义的两个文件夹已生效</p>
+<p>在cmd命令下执行 <span class="title-ref">npm install webpack -g</span> 然后安装成功后可以看到自定义的两个文件夹已生效</p>
 <p>webpack 也已安装成功，执行 npm webpack -v 可以看到所安装webpack的版本号</p></li>
 </ol>
 <h3 id="npm">npm</h3>

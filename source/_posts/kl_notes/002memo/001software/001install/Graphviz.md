@@ -8,12 +8,18 @@ categories:
 toc: TRUE
 ---
 <h1 id="graphviz">Graphviz</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="install">install</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><a href="http://www.graphviz.org/download/">download</a></li>
 <li>设置
-<ol style="list-style-type: lower-roman">
-<li>环境变量 path: ~graphviz-2.38bin</li>
+<ol type="i">
+<li><p>环境变量 path: ~graphviz-2.38bin</p></li>
 <li><p>font中文支持</p>
 <ul>
 <li>graphviz-2.38etcfontsfonts.conf， 指明字体文件目录</li>
