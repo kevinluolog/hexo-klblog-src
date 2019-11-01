@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="hexo">hexo</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="install">install</h2>
 <p><a href="https://hexo.io/docs/">Installation guide on hexo.io</a></p>
 <p><a href="https://segmentfault.com/a/1190000004947261">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></p>
@@ -52,7 +58,7 @@ $ hexo s -g #生成预览</code></pre>
 <h3 id="几款简单的theme">几款简单的theme</h3>
 <p><a href="https://www.jianshu.com/p/f4ae9ee1328a">【Hexo】推荐5款简洁美观的主题</a></p>
 <p>推荐第一款。理由简单，全文字，色调浅色系不扎眼。</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p><a href="https://github.com/frostfan/hexo-theme-polarbear">hexo-theme-polarbear</a></p>
 <p><a href="https://d2fan.com/">demo</a></p></li>
 <li><p><a href="https://github.com/KevinOfNeu/hexo-theme-xoxo">hexo-theme-xoxo</a></p>
@@ -91,7 +97,7 @@ live2d-widget-model-tororo</code></pre></li>
 <pre><code>&lt;script{{ pjax }} async src=&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</code></pre>
 <p>同时在相应的页面模板加入阅读次数等数据。 其提供单页文章和全站的字数和次数信息。next分别把它放在页面标题下面和footer底部。 其渲染过程仍不清楚，</p>
 <p>页面标题下面：</p>
-<p>在 <code>\themes\next\layout\_macro\post.swig</code> 中,只是 <code>&lt;span class=&quot;busuanzi-value&quot; id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;</code> 没有实体，不知什么时候，渲染进去的？</p>
+<p>在 <code>\themes\next\layout\_macro\post.swig</code> 中,只是 <code>&lt;span class="busuanzi-value" id="busuanzi_value_page_pv"&gt;&lt;/span&gt;</code> 没有实体，不知什么时候，渲染进去的？</p>
 <p>footer底部,全站的访问人数等数据：</p>
 <p>在 <code>\themes\next\layout\_partials\analytics\busuanzi-counter.swig</code> 中，此处我增加了一个theme变量来控制</p>
 <pre><code>{%- if theme.kl_footer_eye === true %}</code></pre></li>
@@ -159,7 +165,7 @@ $toc-link-active-current-border-color = $sidebar-highlight;</code></pre>
 <h4 id="安装">安装</h4>
 <p>注：若<code>npm install hexo-renderer-sass</code>安装时报错，可能是国内网络问题，请尝试使用代理或者切换至<a href="http://npm.taobao.org">淘宝NPM镜像</a>安装。 <code>npm install hexo-renderer-sass</code></p>
 <p>出现问题: hexo 3.8.0用淘宝镜像装hexo-renderer-sass，生成的网页有问题，装hexo-renderer-scss，就没问题了。 kl: 建议尽量用npm来安装。</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>安装主题和渲染器：</p>
 <pre><code>$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/    maupassant
 $ npm install hexo-renderer-pug --save
@@ -171,7 +177,7 @@ $ npm install hexo-renderer-sass --save</code></pre></li>
 <p>参考 <a href="https://www.jianshu.com/p/f615e79a50d7">Hexo-文章字数统计与阅读时长</a></p>
 <p><code>npm i --save hexo-wordcount</code></p>
 <p>因缺省已经使能。下面修改不用了，可以作用改动参考</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>在maupassant主题下的新建一个wordcount.pug文件</p>
 <p><code>themes\maupassant\layout\_partial\wordcount.pug wordcount.pug</code> 文件增加内容：</p>
 <pre><code>span(class=&quot;post-time&quot;)
@@ -198,15 +204,15 @@ if theme.disqus</code></pre></li>
 </ol></li>
 </ol>
 <h4 id="设置">设置</h4>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>in _config.yml</p>
 <p>fontawesome:</p>
-<p>fa-home<br />
+<div class="line-block">fa-home<br />
 fa-th categories<br />
 fa-tags<br />
 fa-history<br />
 fa-user<br />
-fa-book</p>
+fa-book</div>
 <pre><code>show_category_count: false
 wordcount: true ## 统计字数
 widgets_on_small_screens: true
@@ -324,7 +330,7 @@ tag_generator:
 <h3 id="脚本script">脚本Script</h3>
 <p>只需要把 JavaScript 文件放到 scripts 文件夹，在启动时就会自动载入。</p>
 <h3 id="hexo扩展">hexo扩展</h3>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>控制台 (Console)</li>
 <li>部署器 (Deployer)</li>
 <li>过滤器 (Filter)</li>
@@ -341,13 +347,8 @@ tag_generator:
 <p>Q:tortoiseGit使用密钥，为何每次还是需要输入用户名密码</p>
 <p>A:那个URL应该选择ssh的，也就是以git@git.oschina.net:{username}/{repo name} 这种形式的，你虽然把SSH key加进去了， 但是你如果仍使用的是https方式，当然要提示输入用户名密码了。 如，git@github.com:kevinluolog/hexo-klblog-src.git</p>
 <p>不过用https方式访问，也有方法可以免手工输入用户名密码的。</p>
-<p>方法1：直接带入，https://{用户名}：<script type="text/javascript">
-<!--
-h='&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;&#x2f;&#x25;&#x37;&#66;&#x75;&#x73;&#x65;&#114;&#110;&#x61;&#x6d;&#x65;&#x25;&#x37;&#68;&#x2f;&#x25;&#x37;&#66;&#114;&#x65;&#112;&#x6f;';a='&#64;';n='&#x25;&#x37;&#66;&#23494;&#x7801;&#x25;&#x37;&#68;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x7b;&#23494;&#x7801;&#x7d;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;&#x2f;&#x7b;&#x75;&#x73;&#x65;&#114;&#110;&#x61;&#x6d;&#x65;&#x7d;&#x2f;&#x7b;&#114;&#x65;&#112;&#x6f;'+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#x7b;&#23494;&#x7801;&#x7d;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;&#x2f;&#x7b;&#x75;&#x73;&#x65;&#114;&#110;&#x61;&#x6d;&#x65;&#x7d;&#x2f;&#x7b;&#114;&#x65;&#112;&#x6f;&#32;&#40;&#x25;&#x37;&#66;&#23494;&#x7801;&#x25;&#x37;&#68;&#32;&#x61;&#116;&#32;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;&#x2f;&#x25;&#x37;&#66;&#x75;&#x73;&#x65;&#114;&#110;&#x61;&#x6d;&#x65;&#x25;&#x37;&#68;&#x2f;&#x25;&#x37;&#66;&#114;&#x65;&#112;&#x6f;&#x29;</noscript> name} 如， https://kevinluolog:XXX@github.com/kevinluolog/hexo-next-muse.git</p>
-<p>方法2：利用token, 当然先要创建。 如， https://gh_token@github.com/kevinluolog/hexo-next-muse.git</p>
+<p>方法1：直接带入，https://{用户名}：{<a href="mailto:密码%7D@github.com">密码}@github.com</a>/{username}/{repo name} 如， <span class="title-ref">https://kevinluolog:XXX@github.com/kevinluolog/hexo-next-muse.git</span></p>
+<p>方法2：利用token, 当然先要创建。 如， <span class="title-ref">https://gh_token@github.com/kevinluolog/hexo-next-muse.git</span></p>
 <h3 id="怎么改掉网页底部的copyright缺省内容">怎么改掉网页底部的COPYRIGHT缺省内容？</h3>
 <pre><code>\hexo\klBlog\themes\maupassant-hexo\layout\_partial\footer.pug(7):   a(rel=&#39;nofollow&#39;, target=&#39;_blank&#39;, href=&#39;https://github.com/pagecho&#39;)  Cho.
 
@@ -359,14 +360,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x7
     |  by
     a(rel=&#39;nofollow&#39;, target=&#39;_blank&#39;, href=&#39;https://github.com/pagecho&#39;)  Cho.</code></pre>
 <h3 id="help-网址">help 网址</h3>
-<p>非常详细的教程，看完照做就可以了。这个写手做事非常细致。就象博主自己讲的 -- 我走的很慢，但我从不后退。</p>
+<p>非常详细的教程，看完照做就可以了。这个写手做事非常细致。就象博主自己讲的 -- <span class="title-ref">我走的很慢，但我从不后退。</span></p>
 <p><a href="http://ijiaober.github.io/2014/08/02/hexo/hexo-index/">Hexo使用攻略 index</a></p>
 <p><a href="https://www.jianshu.com/p/efaf72aab32e">Hexo博客从搭建部署到SEO优化等详细教程</a></p>
 <p><a href="https://www.jianshu.com/p/efaf72aab32e">Hexo seo org</a></p>
 <p><a href="https://www.haomwei.com/technology/maupassant-hexo.html">hexo-theme-maupassant-中文help-大道至简——Hexo简洁主题推荐</a></p>
 <dl>
 <dt><a href="https://www.cnblogs.com/xljzlw/p/5137622.html">hexo主题中添加相册功能</a></dt>
-<dd><p><a href="http://lwzhang.github.io/" class="uri">http://lwzhang.github.io/</a></p>
+<dd><p><a href="http://lwzhang.github.io/">http://lwzhang.github.io/</a></p>
 </dd>
 </dl>
 <p><a href="https://www.jianshu.com/p/7bec9866a04d">hexo-generator-index 源码分析</a></p>
@@ -402,12 +403,16 @@ categories:
 ---</code></pre>
 <ul>
 <li><p>分类frontmatter-categories</p>
+<div id="frontmatter-categories">
 <p>编辑文章的时候，直接在categories:项填写属于哪个分类，但如果分类是中文的时候，路径也会包含中文。</p>
+</div>
 <p>访问路径是：</p>
 <p><code>*/categories/编程</code></p>
-<p>想要把路径名和分类名分别设置，参见 路径名和分类名分别设置，需要怎么办呢？_</p></li>
+<p>想要把路径名和分类名分别设置，参见 <a href="#路径名和分类名分别设置需要怎么办呢">路径名和分类名分别设置，需要怎么办呢？</a></p></li>
 <li><p>标签frontmatter-tags</p>
+<div id="frontmatter-tags">
 <p>在编辑文章的时候，tags:后面是设置标签的地方，如果有多个标签的话，可以用下面两种办法来设置：</p>
+</div>
 <pre><code>tages: [标签1,标签2,...标签n]
 
 tages: 
@@ -418,14 +423,18 @@ tages:
 <li><p>文章摘要description:</p>
 <p>首页默认显示文章摘要而非全文，可以在文章的front-matter中填写一项description:来设置你想显示的摘要，或者直接在文章内容中插入&lt;!--more--&gt;以隐藏后面的内容。</p>
 <p>若两者都未设置，则自动截取文章第一段作为摘要。</p></li>
-<li>添加页面 layout: 在source目录下建立相应名称的文件夹，然后在文件夹中建立index.md文件，并在index.md的front-matter中设置layout为layout: page。若需要单栏页面，就将layout设置为 layout: single-column。</li>
+<li><p>添加页面 layout: 在source目录下建立相应名称的文件夹，然后在文件夹中建立index.md文件，并在index.md的front-matter中设置layout为layout: page。若需要单栏页面，就将layout设置为 layout: single-column。</p></li>
 <li><p>文章目录frontmatter-toc:</p>
-<p>在文章的front-matter中添加toc: true即可让该篇文章显示目录。</p></li>
+<div id="frontmatter-toc">
+<p>在文章的front-matter中添加toc: true即可让该篇文章显示目录。</p>
+</div></li>
 <li><p>文章评论 comments:</p>
 <p>文章和页面的评论功能可以通过在front-matter中设置comments: true或comments: false来进行开启或关闭（默认开启）。</p></li>
 <li><p>数学公式frontmatter-mathjax:</p>
+<div id="frontmatter-mathjax">
 <p>要启用数学公式支持，请在Hexo目录的_config.yml中添加：</p>
-<ol style="list-style-type: decimal">
+</div>
+<ol type="1">
 <li><p>mathjax: true</p>
 <p>并在相应文章的front-matter中添加mathjax: true，例如：</p>
 <pre><code>title: Test Math
@@ -433,13 +442,13 @@ date: 2016-04-05 14:16:00
 categories: math
 mathjax: true
 ---</code></pre>
-<p>数学公式的默认定界符是 $$...$$和\\[...\\]（对于块级公式），以及$...$和\\(...\\)     （对于行内公式） 。</p></li>
+<p>数学公式的默认定界符是 <span class="title-ref">$$...$$和\[...\]（对于块级公式），以及$...$和\(...\) （对于行内公式）</span> 。</p></li>
 <li><p>mathjax2: true</p>
 <p>但是，如果你的文章内容中经常出现美元符号“$”, 或者说你想将“$”用作美元符号而非行内公 式的定界符，请在Hexo目录的_config.yml中添加：</p>
 <p>而不是mathjax: true。 相应地，在需要使用数学公式的文章的front-matter中也添加mathjax2: true。</p></li>
 </ol></li>
 <li><p>donate: donate:</p>
-<p>enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a &quot;donate: true&quot; item to the front-matter.</p></li>
+<p>enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.</p></li>
 <li><p>timeline: (layout: timeline)</p>
 <p>网站历史时间线，在页面front-matter中设置layout: timeline可显示。</p></li>
 </ul>
@@ -506,7 +515,7 @@ subtitle: kevinluo&#39;s BLOG</code></pre>
 +-- hexo-server@0.3.3
 +-- hexo-wordcount@6.0.1</code></pre>
 <h3 id="路径名和分类名分别设置需要怎么办呢">路径名和分类名分别设置，需要怎么办呢？</h3>
-<p>设置分类名可以在文章中设置 frontmatter-categories_:</p>
+<p>设置分类名可以在文章中设置 <a href="">frontmatter-categories</a>:</p>
 <p>打开根目录下的配置文件_config.yml，找到如下位置做更改：</p>
 <pre><code># Category &amp; Tag
 default_category: uncategorized
@@ -524,7 +533,7 @@ tag_map:</code></pre>
 <p><a href="https://github.com/FortAwesome/Font-Awesome">github Font-Awesome lib</a></p>
 <p><a href="http://fontawesome.dashgame.com/">一套绝佳的图标字体库和CSS框架</a></p>
 <h3 id="怎么添加点击红心和汉字">怎么添加点击红心和汉字？</h3>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>js文件</p>
 <pre><code>/themes/next/source/js/
 hanzi.js 
@@ -553,7 +562,7 @@ clicklove.js</code></pre></li>
 {%- endif %}</code></pre></li>
 </ol>
 <h3 id="国内jquery-cdn-有哪些">国内Jquery CDN 有哪些？</h3>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>新浪CDN（推荐）</p>
 <p>一直好使</p>
 <pre><code>&lt;script src=&quot;http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js&quot;&gt;
@@ -621,8 +630,8 @@ TeamCity</code></pre>
 <p><a href="https://docs.travis-ci.com/user/job-lifecycle">Build Lifecycle documentation</a></p>
 <h5 id="travis-ci-配置步骤">travis CI 配置步骤:</h5>
 <p>那既然需要使用travis自动化更新你的博客，travis自然需要读写你的github上的repo。github提供了token机制来供外部访问你的仓库。</p>
-<p><a href="https://github.com/settings/tokens" class="uri">https://github.com/settings/tokens</a></p>
-<ol style="list-style-type: decimal">
+<p><a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a></p>
+<ol type="1">
 <li><p>安装 travis, 并授权管理repo</p>
 <p>marketplace搜索travis,并安装。</p>
 <p>github/{user name}/personal settings/application/ travis CI configure 选择要travis管理的repo.</p></li>
@@ -636,7 +645,7 @@ step 4: 在.travis.yml中，在编译完后，deploy之前用sed替换，step 3 
 <li><p>配置travis</p>
 <p>在travis进入仓库同步管理, <a href="https://travis-ci.com/kevinluolog/hexo-klblog-src/settings">here</a></p>
 <p>主要是前面的gh-token环境变量.</p></li>
-<li>在源码仓库根目录增加.travis.yml 修改 _config.yml
+<li><p>在源码仓库根目录增加.travis.yml 修改 _config.yml</p>
 <ul>
 <li><p>增加 .travis.yml</p>
 <p>注意，如果源码是在分支上要修改branches为相应的分支名，缺省是master:</p>
@@ -682,8 +691,8 @@ after_script:
 # End: Build LifeCycle</code></pre></li>
 <li><p>修改 _config.yml</p>
 <p>1. 主要是修改deploy部分，决定gh-token和推送部署到什么repo的什么分支。 如果是xxxx.github.io就推到master, 如果是子目录repo,则推送到gh-pages分支。</p>
-<ol start="2" style="list-style-type: decimal">
-<li>设置 root变量， 如果是子目录repo，则需要设置相应的子目录repo名字。这样在网页引用css等资源时可以直接引用到。因为hexo引用CSS等资源时用的是绝对目录，如/{子目录repo名}/css/xxx.css, sphinx 用的是相对目录，如 _static/css/xxx.css。 此处因为sphinx资源目录前面带了下划线， _ , 因hexo和jekyll会自动忽略下划线开头的目录，从而导致引用不到CSS,JAVASCRIPT,ETC.，所以在根目录要添加.nojekyll文件, 详细请参考 怎么解决githubpages不能识别下划线开头的目录？_</li>
+<ol start="2" type="1">
+<li>设置 root变量， 如果是子目录repo，则需要设置相应的子目录repo名字。这样在网页引用css等资源时可以直接引用到。因为hexo引用CSS等资源时用的是绝对目录，如/{子目录repo名}/css/xxx.css, sphinx 用的是相对目录，如 _static/css/xxx.css。 此处因为sphinx资源目录前面带了下划线， _ , 因hexo和jekyll会自动忽略下划线开头的目录，从而导致引用不到CSS,JAVASCRIPT,ETC.，所以在根目录要添加.nojekyll文件, 详细请参考 <a href="#怎么解决githubpages不能识别下划线开头的目录">怎么解决githubpages不能识别下划线开头的目录？</a></li>
 </ol>
 <pre><code>root: /hexo-next-muse/
 # Deployment
@@ -694,18 +703,18 @@ deploy:
 </ul></li>
 </ol>
 <h4 id="travis-ci-配置实例">travis CI 配置实例</h4>
-<p>网站规划结构参见 my deploy: kevinluolog.github.io_</p>
+<p>网站规划结构参见 <a href="#my-deploy-kevinluolog.github.io">my deploy: kevinluolog.github.io</a></p>
 <p>简单讲就是，kevinluolog/hexo-klblog-src repo作为源码仓库，master分支对应主网站repo的master分支，其余分支各对应主网站的子目录网站repo的gp-pages分支。源码repo分支名称和子目录网站的仓库名要取得一样，以方便对应。每次源码有推送时，触发对应分支的travis CI启动，源码拉取-&gt;环境搭建-&gt;编译-&gt;部署，部署时是部署到对应的网站repo的gp-pages分支上的。</p>
 <p>最终的效果是，写或修改文章时只和source目录中的_post目录相关 <code>\hexo\klBlog\source\_posts</code> 改动完成提交到对应的分支后， 过2分钟左右， 对应的网站即要自动更新。非常方便和快捷，不用占用本人的时间也不用占用本机的CPU去编译和部署。同时可以的任何可以上网的地方写文章，提交。 和写程序一模一样，一个github搞定一切。</p>
 <h5 id="创建源码新分支需要改动的文件">创建源码新分支需要改动的文件</h5>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>文件.travis.yml</p>
 <p>启动分支名。</p>
 <pre><code># 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项
 branches:
   only:
     - hexo-next-xxx</code></pre></li>
-<li>文件_config.yml
+<li><p>文件_config.yml</p>
 <ul>
 <li><p>theme</p>
 <pre><code>theme: next</code></pre></li>
@@ -719,7 +728,7 @@ branches:
 </ul></li>
 <li><p>其它博客定制相关文件</p>
 <p>如theme下配置文件_config.yml，next和melody支持独立配置文件在_data/next.yml 和 melody.yml</p>
-<ol style="list-style-type: lower-roman">
+<ol type="i">
 <li>_data/next.yml
 <ul>
 <li><p>风格</p>
@@ -734,7 +743,7 @@ scheme: Gemini</code></pre></li>
 <h3 id="需求在github-pages子目录建立hexo博客">需求：在github pages子目录建立hexo博客</h3>
 <p><a href="https://www.jianshu.com/p/986b975a29ae">在githubpages子目录建立hexo博客</a></p>
 <p>实现：</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>首先建立xxx.github.io的repo，xxx是你的用户名，之后开启github pages服务</li>
 <li>再建立一个bbbb的repo，bbbb是你想要的子目录</li>
 <li>设置hexo的deploy配置文件 _config.yml</li>
@@ -742,14 +751,14 @@ scheme: Gemini</code></pre></li>
 <pre><code>- type: git
   repo: https://github.com/xxx/bbbb.git
   branch: gh-pages</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li>修改_config.yml中的root选项，由&quot;/&quot;改为&quot;/bbbb&quot;</li>
+<ol start="4" type="1">
+<li>修改_config.yml中的root选项，由"/"改为"/bbbb"</li>
 </ol>
 <p>github page就大概两种，一种user page必须master分支，另一种project page需要给对应的project设置一个gh-pages分支，上传好网页资源文件之后，就可以在username.github.io/projectname这样的域名访问了。</p>
 <p>网上挺多教程都不太对，自己解决了之后记录一下。</p>
 <h3 id="my-deploy-kevinluolog.github.io">my deploy: kevinluolog.github.io</h3>
 <h4 id="repo-of-sites">Repo of sites:</h4>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>kevinluolog.github.io: branch:master</p>
 <p>generated by travis Ci from repo of hexo source - branch of master</p></li>
 <li><p>hexo-XXX: branch:gh-pages</p>

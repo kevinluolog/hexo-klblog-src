@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="gramma-and-template">gramma and template</h1>
+<div class="contents">
+<p>contents</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="网络资源地址">网络资源地址</h2>
 <p><a href="https://yq.aliyun.com/articles/681643">Linux基础知识——Linux常用命令大全</a></p>
 <p><a href="https://man.linuxde.net/">Linux命令大全</a></p>
@@ -708,7 +714,7 @@ Type `bash -c &quot;help set&quot;&#39; for more information about shell options
 Type `bash -c help&#39; for more information about shell builtin commands.
 Use the `bashbug&#39; command to report bugs.
 The command &quot;bash --help&quot; exited with 0.</code></pre>
-<h3 id="bash--c-help-set">bash -c &quot;help set&quot;</h3>
+<h3 id="bash--c-help-set">bash -c "help set"</h3>
 <pre><code>$ bash -c &quot;help set&quot;
 set: set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]
     Set or unset values of shell options and positional parameters.
@@ -984,8 +990,8 @@ $ awk &#39;{ sub(/test/, &quot;mytest&quot;, $1); print }&#39; testfile</code></
 <p>gawk选项</p>
 <table style="width:75%;">
 <colgroup>
-<col width="20%" />
-<col width="54%" />
+<col style="width: 20%" />
+<col style="width: 54%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1019,8 +1025,8 @@ $ awk &#39;{ sub(/test/, &quot;mytest&quot;, $1); print }&#39; testfile</code></
 <p>gawk的主要功能之一是其处理文本文件中数据的能力。它通过自动将变量分配给每行中的每个数据元素实现这一功能。默认情况下，gawk将下面的变量分配给在文本行中检测到的每个数据字段：</p>
 <table style="width:50%;">
 <colgroup>
-<col width="6%" />
-<col width="43%" />
+<col style="width: 6%" />
+<col style="width: 43%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1323,18 +1329,18 @@ misc</code></pre>
 <p>atime(access time):最近访问文件内容时间（Last Access Time）。</p>
 <p>mtime(modify time):最近修改文件内容时间（Last Modification Time）。</p>
 <p>ctime(change time):最近更改文件属性（Inode内容更改）的时间，包括文件名、大小、内容、权限、属主、属组等（Last Change Time）。</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>输入“touch filetime.txt”创建新文件，输入“stat filetime.txt”即可查看文件filetime.txt的时间属性。</p>
 <p>备注：新创建文件的三种时间抓取当前时间，本例中为2019-01-05 19:42:36。</p>
 <p>Birth时间为空，Linux需要内核提供xstat()接口才可获取Birth时间。</p></li>
 <li><p>使用cat，less，more等命令查看文件后atime已更新（2019-01-05 19:44:13）。</p>
 <p>备注：ls，stat命令不会修改atime。</p></li>
-<li>输入“echo &quot;add test&quot;&gt;&gt;filetime.txt”给文件增加内容“add test”后，输入“stat filetime.txt”查看时间属性，发现mtime和ctime均已更新（2019-01-05 19:55:05）。</li>
+<li><p>输入“echo "add test"&gt;&gt;filetime.txt”给文件增加内容“add test”后，输入“stat filetime.txt”查看时间属性，发现mtime和ctime均已更新（2019-01-05 19:55:05）。</p></li>
 <li><p>输入“mv filetime.txt new.txt”修改文件名为new.txt，输入“stat new.txt”查看时间属性，发现只有ctime更新（2019-01-05 19:57:05）。</p>
 <p>备注：chown和chmod命令均修改ctime，ln（不包括ln -s）亦修改ctime。</p></li>
-<li>输入“ls -lc new.txt”可查看文件new.txt的ctime。</li>
-<li>输入“ls -lu new.txt”可查看文件new.txt的atime。</li>
-<li>输入“ls -l new.txt”可查看文件new.txt的mtime。</li>
+<li><p>输入“ls -lc new.txt”可查看文件new.txt的ctime。</p></li>
+<li><p>输入“ls -lu new.txt”可查看文件new.txt的atime。</p></li>
+<li><p>输入“ls -l new.txt”可查看文件new.txt的mtime。</p></li>
 </ol>
 <h3 id="利用date-时间戳-时间">利用date 时间戳&lt;-&gt;时间</h3>
 <p>时间戳：时间戳是指格林威治时间自1970年1月1日（00:00:00 GMT）至当前时间的总秒数。它也被称为Unix时间戳（Unix Timestamp）。通俗的讲，时间戳是一份能够表示一份数据在一个特定时间点已经存在的完整的可验证的数据。</p>
@@ -1352,7 +1358,7 @@ misc</code></pre>
 <p>第一个命令表示用新的字符串替换指定这一行的内容， 第二个命令表示用新字符串替换指定几行的内容。如下图，第一个命令将第2行内容替换成了“new test!”，第二个命令将第2到6行替换成了“new test!”。</p>
 <p>三、多条件替换</p>
 <pre><code>命令格式：sed -e 命令1 -e 命令2 -e 命令3</code></pre>
-<p>有些时候有多个替换条件，那就可以使用“-e”参数将这些替换条件连接起来，一次性完成所有的替换操作。例如，可以将上述的两种命令连接起来：“sed -e 's/原字符串/新字符串/' '行号c 新字符串' 文件”。如下图，不仅将小写“a”替换成了大写“A&quot;，还将第2行内容替换成了“new test!”。</p>
+<p>有些时候有多个替换条件，那就可以使用“-e”参数将这些替换条件连接起来，一次性完成所有的替换操作。例如，可以将上述的两种命令连接起来：“sed -e 's/原字符串/新字符串/' '行号c 新字符串' 文件”。如下图，不仅将小写“a”替换成了大写“A"，还将第2行内容替换成了“new test!”。</p>
 <p>四、保存替换结果到文件中</p>
 <pre><code>命令格式：sed -i 命令</code></pre>
 <p>上述这些命令都只是将替换结果打印到屏幕上，如果想保存结果到文件中，就需要加上“-i”参数。</p>
