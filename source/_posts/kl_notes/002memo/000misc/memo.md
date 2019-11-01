@@ -62,7 +62,9 @@ toc: TRUE
 <p>可以使用fc-list :lang=zh-cn查看所有中文字体 详细设置可以看这个: ubuntu下latex终极安装方案的字体部分=D</p>
 <p><a href="http://segmentfault.com/a/1190000004059490">ubuntu下latex终极安装方案的字体部分</a></p>
 <p><a href="https://segmentfault.com/a/1190000004059490">Ubuntu 14.04 下 TexLive2014 完美安装攻略</a></p>
-<p><a href="http://www.it1352.com/650222.html">如何避免“太深嵌套”使用Sphinx创建PDF时出错？(How to avoid the “too deeply nested error” when creating PDFs with Sphinx?)</a></p>
+<p><a href="http://www.it1352.com/650222.html">间接链接：如何避免“太深嵌套”使用Sphinx创建PDF时出错？(How to avoid the “too deeply nested error” when creating PDFs with Sphinx?)</a></p>
+<p><span class="title-ref">直接链接：如何避免“太深嵌套”使用Sphinx创建PDF时出错？(How to avoid the “too deeply nested error” when creating PDFs with Sphinx?) &lt;https://www.xszz.org/faq-1/question-2018083122086.html &gt;</span>__</p>
+<p><a href="https://www.sphinx-doc.org/en/master/latex.html#latex-elements-confval">latex-elements：preamble</a></p>
 <p><a href="https://blog.csdn.net/gengyuchao/article/details/101215243">Ubuntu系统中添加中文字体和修改默认中文字体</a></p>
 <p><a href="https://wiki.ubuntu.org.cn/%E5%AD%97%E4%BD%93">字体- Ubuntu中文wiki.ubuntu.org.cn</a></p>
 <p>获取字体 中文 主条目：免费中文字体 sudo apt-get install ttf-wqy-microhei #文泉驿-微米黑 sudo apt-get install ttf-wqy-zenhei #文泉驿-正黑 sudo apt-get install xfonts-wqy #文泉驿-点阵宋体</p>
@@ -73,9 +75,8 @@ toc: TRUE
 <p>apt-get install -y --force-yes --no-install-recommends ttf-wqy-zenhei</p>
 <p><a href="https://www.cnblogs.com/jpfss/p/7895773.html">Ubuntu 安装 Courier New字体和雅黑consolas字体</a></p>
 <p><a href="http://zenozeng.github.io/Free-Chinese-Fonts/">网站链接-免费中文字体整理zenozeng.github.io/Free-Chinese-Fonts</a></p>
-<p><a href="https://github.com/zenozeng/Free-Chinese-Fonts">网站源码-免费中文字体整理zenozeng.github.io/Free-Chinese-Fonts</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://github.com/zenozeng/Free-Chinese-Fonts">网站源码-免费中文字体整理github.com/zenozeng/Free-Chinese-Fonts</a></p>
+<p><a href="http://blog.sciencenet.cn/blog-597740-1077676.html">[转载]latex】itemize, enumerate枚举，编号使用及编号样式设计</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
