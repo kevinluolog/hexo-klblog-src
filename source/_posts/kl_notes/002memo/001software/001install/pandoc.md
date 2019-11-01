@@ -272,14 +272,14 @@ xelatex pdf.tex -o pdf1.pdf -V CJKmainfont=xecjk</code></pre></li>
 </ul>
 <h3 id="拼接pdf">拼接PDF</h3>
 <p>其实用tex就可以合并pdf, 而且这个方法是跨平台的,无论widows, linux, Mac X, 只要有装了tex和宏包pdfpages,这个宏包一般的tex发行版默认都包含了, texlive就已经有了. 代码:</p>
-<pre><code>\\documentclass[a4paper]{article}
-\\usepackage{pdfpages}
-\\begin{document}
-\\includepdfmerge{1.pdf,1-3}
-\\includepdfmerge{2.pdf,5-13}
-\\end{document}
-其中命令\\includepdfmerge{1.pdf,1-3}就是导入1.pdf的1至3页.
-命令\\includepdfmerge{2.pdf,5-13}就是导入2.pdf的5至13页.</code></pre>
+<pre><code>//documentclass[a4paper]{article}
+//usepackage{pdfpages}
+//begin{document}
+//includepdfmerge{1.pdf,1-3}
+//includepdfmerge{2.pdf,5-13}
+//end{document}
+其中命令//includepdfmerge{1.pdf,1-3}就是导入1.pdf的1至3页.
+命令//includepdfmerge{2.pdf,5-13}就是导入2.pdf的5至13页.</code></pre>
 <h3 id="md-pdfbook时怎么添加章节号-markdown语法解决">md-pdfbook时，怎么添加章节号？ markdown语法解决</h3>
 <ul>
 <li><p><a href="https://blog.csdn.net/F8qG7f9YD02Pe/article/details/83629436">用 Pandoc 生成一篇调研论文 | Linux 中国</a></p>
