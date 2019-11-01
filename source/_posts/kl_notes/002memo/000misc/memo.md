@@ -8,6 +8,12 @@ categories:
 toc: TRUE
 ---
 <h1 id="memo">memo</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
 <h2 id="recent">recent</h2>
 <h3 id="xxx">xxx</h3>
 <h2 id="life">life</h2>
@@ -40,8 +46,7 @@ toc: TRUE
 <p>可以解决拉取全部历史原数据到本地的问题，不加在clone时，只是本分支的历史。这样git log 能拿到文件所有commit的时间</p>
 <p># 根据上面网址介绍加入下面两行 git: depth: false</p>
 <p>????? <a href="https://hexo.io/docs/variables#Page-Variables">hexo.io/docs/variables#Page-Variables</a></p>
-<p>https://hexo.io/zh-cn/docs/variables.html#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F
-&gt;__</p>
+<p><span class="title-ref">https://hexo.io/zh-cn/docs/variables.html#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F &gt;</span>__</p>
 <p>??? Linux下修改文件创建时间(修改文件更改时间) 进到要改的文件目录里 find . -name “<em>” -exec touch ‘{}’ ; 注：最后一定要加分号，{}外一定要加单引号，</em>表示所有的文件（. 代表当前目录下）</p>
 <p>??? <a href="http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">Hexo常见问题解决方案</a></p>
 <p><a href="https://code.skyheng.com/post/50982.html">Hexo搭建技术博客使用与常见问题详细讲解</a></p>
