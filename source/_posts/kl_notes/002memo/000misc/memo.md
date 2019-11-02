@@ -134,7 +134,7 @@ toc: TRUE
 <p><a href="http://mirrors.ctan.org/info/lshort/chinese/lshort-zh-cn.pdf">lshort中文版: The Not So Short Introduction to LaTeX, 2015</a></p>
 <p><a href="https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-the-c-domain">latex_additional_files of Example of configuration file of latex_elements</a></p>
 <p><a href="https://www.sphinx-doc.org/en/master/latex.html#the-latex-elements-configuration-setting">the-latex-elements-configuration-setting:'preamble': r'''\usepackage''',</a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.latex-project.org/help/documentation/">latex-project.org documentation</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
