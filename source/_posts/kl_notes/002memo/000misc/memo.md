@@ -122,8 +122,8 @@ toc: TRUE
 <p><a href="https://www.latexstudio.net/page/tex-documents/">学习资源-LaTeX工作室</a></p>
 <p><a href="http://texdoc.net/">TeXDoc-在线的texdoc 应用站点可以看到 LaTeX 配套的文档和宏包。</a></p>
 <p><a href="http://math.ecnu.edu.cn/~latex/">LaTeX 科技排版--华东师范大学数学系 LaTeX 教学课程网页</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="http://math.ecnu.edu.cn/~jypan/Teaching/Latex/">潘建瑜老师 LaTeX 科技排版</a></p>
+<p><a href="http://aff.whu.edu.cn/huangzh/">黄正华老师 LaTeX 教学首页</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
