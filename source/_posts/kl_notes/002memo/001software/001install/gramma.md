@@ -11,7 +11,7 @@ toc: TRUE
 <div class="contents">
 <p>contents</p>
 </div>
-<div class="section-numbering">
+<div class="section-numbering" data-depth="4">
 
 </div>
 <h1 id="h1">h1</h1>

@@ -11,7 +11,7 @@ toc: TRUE
 <div class="contents">
 <p>目录</p>
 </div>
-<div class="section-numbering">
+<div class="section-numbering" data-depth="2">
 
 </div>
 <h2 id="安装方法">安装方法</h2>
