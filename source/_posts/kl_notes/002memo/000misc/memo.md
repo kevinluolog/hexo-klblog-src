@@ -135,8 +135,24 @@ toc: TRUE
 <p><a href="https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-the-c-domain">latex_additional_files of Example of configuration file of latex_elements</a></p>
 <p><a href="https://www.sphinx-doc.org/en/master/latex.html#the-latex-elements-configuration-setting">the-latex-elements-configuration-setting:'preamble': r'''\usepackage''',</a></p>
 <p><a href="https://www.latex-project.org/help/documentation/">latex-project.org documentation</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://blog.csdn.net/jueshu/article/details/90267983">Latex 控制目录显示的深度</a></p>
+<p>以撰写 book 为例：</p>
+<p>book 的 latex 目录默认只显示深度只能到 subsection</p>
+<p>如果想要显示到 subsubsection 深度，就要设置目录显示的深度，在</p>
+<pre><code>\begin{document} 前添加：
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{3}
+tocdepth：设置在目录的显示的章节深度
+secnumdepth：设置章节的编号深度
+两者可选的设置值如下：
+-1 part
+0 chapter
+1 section
+2 subsection
+3 subsubsection
+4 paragraph
+5 subparagraph</code></pre>
+<p><a href="https://www.it610.com/article/5114750.htm">LaTeX中设置目录显示深度的一次乌龙经历</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
