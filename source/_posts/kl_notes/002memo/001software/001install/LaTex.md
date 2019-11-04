@@ -116,6 +116,60 @@ This is the context of the article.
 <h3 id="pstricks绘图">PSTricks绘图</h3>
 <h4 id="使用pstricks绘制精致的流程图">使用PSTricks绘制精致的流程图</h4>
 <p><a href="http://blog.sina.com.cn/s/blog_5e16f1770102e77g.html">使用PSTricks绘制精致的流程图</a> 一个好用的package地址在http://texnik.dante.de/tex/generic/pstricks-add/ 大家也可以下载替换系统的 texlive/2011/texmf-local/tex/generic/pstricks-add/pstricks-add.tex 文件，或者就放在自己编码的文件目录下也可。 我们可以利用已有的命令绘制出精致的流程图</p>
+<h2 id="latex命令help">latex命令help</h2>
+<h3 id="xelatex---help">xelatex --help</h3>
+<pre><code>xelatex --help
+Usage: xetex [OPTION]... [TEXNAME[.tex]] [COMMANDS]
+   or: xetex [OPTION]... \FIRST-LINE
+   or: xetex [OPTION]... &amp;FMT ARGS
+  Run XeTeX on TEXNAME, usually creating TEXNAME.pdf.
+  Any remaining COMMANDS are processed as XeTeX input, after TEXNAME is read.
+  If the first line of TEXNAME is %&amp;FMT, and FMT is an existing .fmt file,
+  use it.  Else use `NAME.fmt&#39;, where NAME is the program invocation name,
+  most commonly `xetex&#39;.
+
+  Alternatively, if the first non-option argument begins with a backslash,
+  interpret all non-option arguments as a line of XeTeX input.
+
+  Alternatively, if the first non-option argument begins with a &amp;, the
+  next word is taken as the FMT to read, overriding all else.  Any
+  remaining arguments are processed as above.
+
+  If no arguments or options are specified, prompt for input.
+
+-etex                   enable e-TeX extensions
+[-no]-file-line-error   disable/enable file:line:error style messages
+-fmt=FMTNAME            use FMTNAME instead of program name or a %&amp; line
+-halt-on-error          stop processing at the first error
+-ini                    be xeinitex, for dumping formats; this is implicitly
+                          true if the program name is `xeinitex&#39;
+-interaction=STRING     set interaction mode (STRING=batchmode/nonstopmode/
+                          scrollmode/errorstopmode)
+-jobname=STRING         set the job name to STRING
+-kpathsea-debug=NUMBER  set path searching debugging flags according to
+                          the bits of NUMBER
+[-no]-mktex=FMT         disable/enable mktexFMT generation (FMT=tex/tfm)
+-mltex                  enable MLTeX extensions such as \charsubdef
+-output-comment=STRING  use STRING for XDV file comment instead of date
+-output-directory=DIR   use existing DIR as the directory to write files in
+-output-driver=CMD      use CMD as the XDV-to-PDF driver instead of xdvipdfmx
+-no-pdf                 generate XDV (extended DVI) output rather than PDF
+[-no]-parse-first-line  disable/enable parsing of first line of input file
+-papersize=STRING       set PDF media size to STRING
+-progname=STRING        set program (and fmt) name to STRING
+-recorder               enable filename recorder
+[-no]-shell-escape      disable/enable \write18{SHELL COMMAND}
+-shell-restricted       enable restricted \write18
+-src-specials           insert source specials into the XDV file
+-src-specials=WHERE     insert source specials in certain places of
+                          the XDV file. WHERE is a comma-separated value
+                          list: cr display hbox math par parend vbox
+-synctex=NUMBER         generate SyncTeX data for previewers according to
+                          bits of NUMBER (`man synctex&#39; for details)
+-translate-file=TCXNAME (ignored)
+-8bit                   make all characters printable, don&#39;t use ^^X sequences
+-help                   display this help and exit
+-version                output version information and exit</code></pre>
 <p>TIPS ===</p>
 <h3 id="misc">MISC</h3>
 <ol type="1">
