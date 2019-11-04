@@ -153,9 +153,9 @@ secnumdepth：设置章节的编号深度
 4 paragraph
 5 subparagraph</code></pre>
 <p><a href="https://www.it610.com/article/5114750.htm">LaTeX中设置目录显示深度的一次乌龙经历</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.cnblogs.com/saneri/p/10819348.html">Linux expect 介绍和用法</a></p>
+<p><a href="https://blog.csdn.net/u013181216/article/details/83055909">Linux expect的安装与使用</a></p>
+<p><a href="https://www.jianshu.com/p/2169a950368d">LaTeX：XeLaTeX+xeCJK的初学习笔记(排版我的诗)</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
