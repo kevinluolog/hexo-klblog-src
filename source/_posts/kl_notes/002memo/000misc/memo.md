@@ -162,10 +162,38 @@ secnumdepth：设置章节的编号深度
 <p><a href="https://github.com/a358003542">万泽:github.com/a358003542</a></p>
 <p><a href="https://github.com/a358003542/tikz_gallery">万泽:TIKZ制图简要教程tikz_gallery</a></p>
 <p><a href="https://github.com/a358003542/ximage">万泽:ximage tools</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://blog.csdn.net/wc996789331/article/details/89168155">Ubantu安装ttf和otf类型的字体</a></p>
+<p><a href="https://blog.csdn.net/piscesyang87/article/details/80086780">Ubuntu下安装字体</a></p>
+<p>ubuntu可以与windows通用ttf格式的字体文件。</p>
+<p>字体有.ttf格式（truetype font）和.otf格式（opentype font）字体，在Ubantu上安装相应的字体。</p>
+<p>Ubuntu系统中的字体文件存放在下面文件夹中</p>
+<pre><code>/usr/share/fonts</code></pre>
+<p>首先，需要将下载的ttf字体文件复制到该目录。</p>
+<p>注意操作该目录的文件需要sudo权限。</p>
+<p>为了方便区分各种字体的类型，可以自定义子文件夹。</p>
+<pre><code>sudo mkdir /usr/share/fonts/windows
+sudo cp /home/sample/*.ttf /usr/share/fonts</code></pre>
+<p>安装mkfontscale和mkfontdir命令，fc-cache命令</p>
+<pre><code>使mkfontscale和mkfontdir命令正常运行
+sudo apt-get install ttf-mscorefonts-installer
+使fc-cache命令正常运行
+sudo apt-get install fontconfig</code></pre>
+<p>然后重新建立字体索引文件。</p>
+<pre><code>sudo mkfontscale
+sudo mkfontdir</code></pre>
+<p>最后更新字体缓存。</p>
+<pre><code>sudo fc-cache</code></pre>
+<p>这样就可以正常使用该字体了。</p>
+<p>合起来：</p>
+<pre><code>sudo mkdir /usr/share/fonts/windows
+sudo cp /home/sample/*.ttf /usr/share/fonts
+sudo apt-get install ttf-mscorefonts-installer
+sudo apt-get install fontconfig
+sudo mkfontscale
+sudo mkfontdir
+sudo fc-cache</code></pre>
+<p><a href="https://blog.csdn.net/a8039974/article/details/89845944">Linux(Ubuntu，Cent OS)环境安装mkfontscale mkfontdir命令以及中文字库</a></p>
+<p><a href="http://manpages.ubuntu.com/manpages/trusty/en/man1/fc-list.1.html">http://manpages.ubuntu.com/manpages/trusty/en/man1/fc-list.1.html</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
