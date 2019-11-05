@@ -927,6 +927,10 @@ GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
 Full documentation at: &lt;http://www.gnu.org/software/coreutils/mv&gt;
 or available locally via: info &#39;(coreutils) mv invocation&#39;
 The command &quot;mv --help&quot; exited with 0.</code></pre>
+<h3 id="chmod---help">chmod --help</h3>
+<blockquote>
+<p>$ sudo chmod --help Usage: chmod [OPTION]... MODE[,MODE]... FILE... or: chmod [OPTION]... OCTAL-MODE FILE... or: chmod [OPTION]... --reference=RFILE FILE... Change the mode of each FILE to MODE. With --reference, change the mode of each FILE to that of RFILE. -c, --changes like verbose but report only when a change is made -f, --silent, --quiet suppress most error messages -v, --verbose output a diagnostic for every file processed --no-preserve-root do not treat '/' specially (the default) --preserve-root fail to operate recursively on '/' --reference=RFILE use RFILE's mode instead of MODE values -R, --recursive change files and directories recursively --help display this help and exit --version output version information and exit Each MODE is of the form '[ugoa]<em>([-+=]([rwxXst]</em>[-+=][0-7]+'. GNU coreutils online help: &lt;<a href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>&gt; Full documentation at: &lt;<a href="http://www.gnu.org/software/coreutils/chmod">http://www.gnu.org/software/coreutils/chmod</a>&gt; or available locally via: info '(coreutils) chmod invocation'</p>
+</blockquote>
 <h2 id="linux常用命令大全">Linux常用命令大全</h2>
 <p><a href="https://yq.aliyun.com/articles/681643">Linux基础知识——Linux常用命令大全</a></p>
 <h3 id="创建目录-mkdir">创建目录 mkdir</h3>
