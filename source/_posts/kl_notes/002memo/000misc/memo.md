@@ -194,10 +194,16 @@ sudo mkfontdir
 sudo fc-cache</code></pre>
 <p><a href="https://blog.csdn.net/a8039974/article/details/89845944">Linux(Ubuntu，Cent OS)环境安装mkfontscale mkfontdir命令以及中文字库</a></p>
 <p><a href="http://manpages.ubuntu.com/manpages/trusty/en/man1/fc-list.1.html">http://manpages.ubuntu.com/manpages/trusty/en/man1/fc-list.1.html</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.jianshu.com/p/0ad5625e9717">为SublimeText3配置IDE(Anaconda虚拟环境)</a></p>
+<p>去掉代码边上的白框</p>
+<pre><code>Sublime &gt; Preferences &gt; Package Settings &gt; Anaconda &gt; Settings User 
+{&quot;anaconda_linting&quot;: false}</code></pre>
+<p>安装格式化插件Python PEP8 Autoformat，快捷键Ctrl+Shift+R。</p>
+<p><a href="https://www.sphinx-doc.org/en/master/usage/configuration.html">conf.py of Sphinx doc</a></p>
+<p>latex_show_urls source_suffix</p>
+<p><a href="https://www.sphinx-doc.org/en/master/latex.html">LaTeX customization of sphinx-doc</a></p>
+<p>latex_engine latex_elements latex_show_urls</p>
+<p><a href="https://www.sphinx-doc.org/en/master/usage/markdown.html">Sphinx support markdown</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
