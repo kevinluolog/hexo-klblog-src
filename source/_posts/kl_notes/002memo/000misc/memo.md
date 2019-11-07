@@ -204,8 +204,8 @@ sudo fc-cache</code></pre>
 <p><a href="https://www.sphinx-doc.org/en/master/latex.html">LaTeX customization of sphinx-doc</a></p>
 <p>latex_engine latex_elements latex_show_urls</p>
 <p><a href="https://www.sphinx-doc.org/en/master/usage/markdown.html">Sphinx support markdown</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.jianshu.com/p/b1751078e28e">自定义：LaTeX字体设置（一）</a></p>
+<p><a href="https://www.cnblogs.com/liuyangnuts/archive/2013/04/23/3038354.html">让pandoc输出pdf时支持中文</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
