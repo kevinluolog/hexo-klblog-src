@@ -216,6 +216,12 @@ sudo fc-cache</code></pre>
 <p><a href="http://www.quanxue.cn/ct_nanhuaijin/index.html">劝学网-南怀瑾全集</a></p>
 <p><a href="http://www.quanxue.cn/ct_nanhuaijin/LunYuIndex.html">南怀瑾-论语别裁</a></p>
 <p><a href="http://www.quanxue.cn/CT_RuJia/LunYuIndex.html">论语</a></p>
+<p><a href="http://www.quanxue.cn/CT_FoJia/LengYanIndex.html">《楞严经》经文</a></p>
+<p><a href="http://www.quanxue.cn/ct_nanhuaijin/LengYanIndex.html">南怀瑾-《楞严大义今释》</a></p>
+<p><a href="http://www.quanxue.cn/ct_nanhuaijin/JinGangIndex.html">南怀瑾-《金刚经说什么》</a></p>
+<p><a href="http://www.quanxue.cn/CT_FoJia/JinGangIndex.html">《金刚经》经文</a></p>
+<p><a href="http://www.quanxue.cn/CT_FoJia/JinGang/JinGang35.html">《金刚经》(原文)</a></p>
+<p><a href=""></a></p>
 <p><a href="http://www.rufengso.net/u/bd-2050031688">青风乘翼分享的百度网盘资源</a></p>
 <p><a href="http://www.rufengso.net/r/42241052">如风搜：历史上最伟大的10个方程（美）Robert P.Crease.pdf</a></p>
 <p><a href="http://www.ireadweek.com/">电子书下载: 周读 ireadweek.com</a></p>
