@@ -53,7 +53,6 @@ out_all_time_$(1) := $$(shell git log --date=iso --format="%ad" -- "$(1)" >$$(TM
 #tail命令之后一定要跟文件，不能变量值。要不报错。
 #touch_time_$(1) := $$(shell tail -1 $$(TMP_TIME_FILE_$(1)))
 
-#取第一次commit时间，并把【时：分：秒】设成【08:08:08】
 touch_time_$(1) := $$(shell tail -1 $$(TMP_TIME_FILE_$(1)) | sed 's/ .*:.*:.* / 08:08:08 /g')
 
 #shell 试验短命令
