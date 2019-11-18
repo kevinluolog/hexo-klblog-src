@@ -420,7 +420,7 @@ toc: TRUE
 <p>"Do yer like it, Miss Sara?" she said. "Do yer?"</p>
 <p>"Like it?" cried Sara. "You darling Becky, you made it all yourself."</p>
 <p>Becky gave a hysteric but joyful sniff, and her eyes looked quite moist with delight.</p>
-<p>"It ain't nothin' but flannin, an' the flannin ain't new; but I wanted to give yer somethin' an' I made it of nights. I knew yer could PRETEND it was satin with diamond pins in. _<a href="">I</a> tried to when I was makin' it. The card, miss," rather doubtfully; "'t warn't wrong of me to pick it up out o' the dust-bin, was it? Miss 'Meliar had throwed it away. I hadn't no card o' my own, an' I knowed it wouldn't be a proper presink if I didn't pin a card on--so I pinned Miss 'Meliar's."</p>
+<p>"It ain't nothin' but flannin, an' the flannin ain't new; but I wanted to give yer somethin' an' I made it of nights. I knew yer could PRETEND it was satin with diamond pins in. I tried to when I was makin' it. The card, miss," rather doubtfully; "'t warn't wrong of me to pick it up out o' the dust-bin, was it? Miss 'Meliar had throwed it away. I hadn't no card o' my own, an' I knowed it wouldn't be a proper presink if I didn't pin a card on--so I pinned Miss 'Meliar's."</p>
 <p>Sara flew at her and hugged her. She could not have told herself or anyone else why there was a lump in her throat.</p>
 <p>"Oh, Becky!" she cried out, with a queer little laugh, "I love you, Becky--I do, I do!"</p>
 <p>"Oh, miss!" breathed Becky. "Thank yer, miss, kindly; it ain't good enough for that. The--the flannin wasn't new."</p>
@@ -1149,7 +1149,7 @@ toc: TRUE
 <p>"Ah," she cried out, "how beautiful! Carlyle's French Revolution. I have SO wanted to read that!"</p>
 <p>"I haven't," said Ermengarde. "And papa will be so cross if I don't. He'll expect me to know all about it when I go home for the holidays. What SHALL I do?"</p>
 <p>Sara stopped turning over the leaves and looked at her with an excited flush on her cheeks.</p>
-<p>"Look here," she cried, "if you'll lend me these books, _I'<a href="">ll</a> read them--and tell you everything that's in them afterward--and I'll tell it so that you will remember it, too."</p>
+<p>"Look here," she cried, "if you'll lend me these books, I'll read them--and tell you everything that's in them afterward--and I'll tell it so that you will remember it, too."</p>
 <p>"Oh, goodness!" exclaimed Ermengarde. "Do you think you can?"</p>
 <p>"I know I can," Sara answered. "The little ones always remember what I tell them."</p>
 <p>"Sara," said Ermengarde, hope gleaming in her round face, "if you'll do that, and make me remember, I'll--I'll give you anything."</p>
@@ -1157,7 +1157,7 @@ toc: TRUE
 <p>"Take them, then," said Ermengarde. "I wish I wanted them--but I don't. I'm not clever, and my father is, and he thinks I ought to be."</p>
 <p>Sara was opening one book after the other. "What are you going to tell your father?" she asked, a slight doubt dawning in her mind.</p>
 <p>"Oh, he needn't know," answered Ermengarde. "He'll think I've read them."</p>
-<p>Sara put down her book and shook her head slowly. "That's almost like telling lies," she said. "And lies--well, you see, they are not only wicked--they're VULGAR. Sometimes"--reflectively--"I've thought perhaps I might do something wicked--I might suddenly fly into a rage and kill Miss Minchin, you know, when she was ill-treating me--but I COULDN'T be vulgar. Why can't you tell your father _<a href="">I</a> read them?"</p>
+<p>Sara put down her book and shook her head slowly. "That's almost like telling lies," she said. "And lies--well, you see, they are not only wicked--they're VULGAR. Sometimes"--reflectively--"I've thought perhaps I might do something wicked--I might suddenly fly into a rage and kill Miss Minchin, you know, when she was ill-treating me--but I COULDN'T be vulgar. Why can't you tell your father I read them?"</p>
 <p>"He wants me to read them," said Ermengarde, a little discouraged by this unexpected turn of affairs.</p>
 <p>"He wants you to know what is in them," said Sara. "And if I can tell it to you in an easy way and make you remember it, I should think he would like that."</p>
 <p>"He'll like it if I learn anything in ANY way," said rueful Ermengarde. "You would if you were my father."</p>

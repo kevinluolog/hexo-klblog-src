@@ -240,11 +240,14 @@ sudo fc-cache</code></pre>
 <p><a href="http://www.gutenberg.org/files/113/113-h/113-h.htm">The Secret Garden by Frances Hodgson Burnett</a></p>
 <p><a href="http://www.gutenberg.org/files/479/479-h/479-h.htm">Little Lord Fauntleroy by Frances Hodgson Burnett</a></p>
 <p><a href="http://www.gutenberg.org/ebooks/500">The Adventures of Pinocchio by Carlo Collodi</a></p>
+<p><span class="title-ref">windows下修改文件创建时间 &lt;https://blog.csdn.net/shinegogo/article/details/7506291?utm_source=blogxgwz4 &gt;</span>__</p>
+<p>使用windows的copy命令达到修改文件创建时间的目的,方法如下: 1. 修改系统时间为你需要的修改到的目标时间; 2. 运行命令:copy 文件名+,,(注意是连续两个英文逗号). done.</p>
+<p><a href="https://www.online-tech-tips.com/computer-tips/how-to-change-the-last-modified-date-creation-date-and-last-accessed-date-for-files-and-folders/">How to Change the Last Modified Date, Creation Date, and Last Accessed Date for Files and Folders</a></p>
+<p><a href="http://www.nirsoft.net/utils/bulk_file_changer.html">bulk_file_changer</a></p>
+<p><a href="https://www.runoob.com/linux/linux-comm-sed.html">Linux sed 命令</a></p>
 <p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p>#touch_<a href="">time</a>$(1) := $$(shell tail -1 $$(<a href="">TMP_TIME_FILE</a>$(1))) <a href="">touch_time</a>$(1) := $$(shell tail -1 $$(<a href="">TMP_TIME_FILE</a>$(1)) | sed 's/ .<em>:.</em>:.* / 08:08:08 /g')</p>
+<p>#Guest@OEM-20090831LIJ MINGW32 /H/tmp_H/001.work/004.env/01prjsp/hexo/klBlog/source/_posts/kl_post/003post (hexo-maup) #$ git log --date=iso --format="%ad" -- "index.md" sed 's/ .<em>:.</em>:.* / 08:08:08 /g' #2019-10-24 08:08:08 +0000</p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
