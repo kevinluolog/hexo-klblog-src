@@ -248,7 +248,7 @@ sudo fc-cache</code></pre>
 <p><a href=""></a></p>
 <p>#touch_<a href="">time</a>$(1) := $$(shell tail -1 $$(<a href="">TMP_TIME_FILE</a>$(1))) <a href="">touch_time</a>$(1) := $$(shell tail -1 $$(<a href="">TMP_TIME_FILE</a>$(1)) | sed 's/ .<em>:.</em>:.* / 08:08:08 /g')</p>
 <p>#Guest@OEM-20090831LIJ MINGW32 /H/tmp_H/001.work/004.env/01prjsp/hexo/klBlog/source/_posts/kl_post/003post (hexo-maup) #$ git log --date=iso --format="%ad" -- "index.md" sed 's/ .<em>:.</em>:.* / 08:08:08 /g' #2019-10-24 08:08:08 +0000</p>
-<p><a href=""></a></p>
+<p><a href="https://www.mafengwo.cn/i/17776687.html">散策 VS 狩枫，游走在京都“立派”的秋色之中</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
