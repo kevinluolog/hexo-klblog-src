@@ -648,6 +648,15 @@ step 4: 在.travis.yml中，在编译完后，deploy之前用sed替换，step 3 
 <li><p>在源码仓库根目录增加.travis.yml 修改 _config.yml</p>
 <ul>
 <li><p>增加 .travis.yml</p>
+<p>直接git法</p>
+<dl>
+<dt>::</dt>
+<dd><ul>
+<li>git clone -b gh-pages <a href="https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git">https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git</a></li>
+</ul>
+</dd>
+</dl>
+<p>hexo deploy法，用sed修改hexo _config.yml 中的deploy命令</p>
 <p>注意，如果源码是在分支上要修改branches为相应的分支名，缺省是master:</p>
 <pre><code>### for branch of hexo-next-muse
 
@@ -688,7 +697,13 @@ after_script:
   # 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！
   - sed -i &quot;s/gh_token/${GH_TOKEN}/g&quot; ./_config.yml
   - hexo deploy
-# End: Build LifeCycle</code></pre></li>
+# End: Build LifeCycle
+
+_config.yml中的代码如下：
+deploy:
+type: git
+repo: https://gh_token@github.com/kevinluolog/        kevinluolog.github.io.git  
+branch: master  </code></pre></li>
 <li><p>修改 _config.yml</p>
 <p>1. 主要是修改deploy部分，决定gh-token和推送部署到什么repo的什么分支。 如果是xxxx.github.io就推到master, 如果是子目录repo,则推送到gh-pages分支。</p>
 <ol start="2" type="1">
