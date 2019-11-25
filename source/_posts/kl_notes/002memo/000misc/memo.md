@@ -249,10 +249,10 @@ sudo fc-cache</code></pre>
 <p>#touch_<a href="">time</a>$(1) := $$(shell tail -1 $$(<a href="">TMP_TIME_FILE</a>$(1))) <a href="">touch_time</a>$(1) := $$(shell tail -1 $$(<a href="">TMP_TIME_FILE</a>$(1)) | sed 's/ .<em>:.</em>:.* / 08:08:08 /g')</p>
 <p>#Guest@OEM-20090831LIJ MINGW32 /H/tmp_H/001.work/004.env/01prjsp/hexo/klBlog/source/_posts/kl_post/003post (hexo-maup) #$ git log --date=iso --format="%ad" -- "index.md" sed 's/ .<em>:.</em>:.* / 08:08:08 /g' #2019-10-24 08:08:08 +0000</p>
 <p><a href="https://www.mafengwo.cn/i/17776687.html">散策 VS 狩枫，游走在京都“立派”的秋色之中</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="http://www.sohu.com/a/283730483_211428">《用金融科技赋能银行资管转型》</a></p>
+<p><a href="https://www.cnblogs.com/37yan/p/6962563.html">shell 判断文件夹或文件是否存在</a></p>
+<p><a href="https://blog.csdn.net/weixin_44792344/article/details/88807391">linux shell 脚本基本用法</a></p>
+<p><a href="https://www.cnblogs.com/jxd283465/p/11611146.html">【Linux】shell脚本参数传递</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
