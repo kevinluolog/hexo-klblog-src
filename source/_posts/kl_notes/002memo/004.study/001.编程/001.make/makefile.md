@@ -14,6 +14,7 @@ toc: TRUE
 <div class="section-numbering">
 
 </div>
+<p><a href="https://blog.csdn.net/u013896064/article/details/83040906">make之makefile 九 隐含规则</a></p>
 <h2 id="案例">案例</h2>
 <h3 id="通用makefile自动遍历子目录源文件自动生成依赖">通用makefile,自动遍历子目录源文件，自动生成依赖。</h3>
 <p><a href="https://blog.csdn.net/yuliying/article/details/49635485">一份通用makefile,自动遍历子目录源文件，自动生成依赖Ubuntu和OSX</a></p>
@@ -255,3 +256,13 @@ hello</code></pre>
 hello</code></pre>
 <h3 id="next">next</h3>
 <h3 id="next-1">next</h3>
+<h2 id="用法技巧">用法技巧</h2>
+<h3 id="multiple-targets-in-a-rule-多目标写在一行">Multiple Targets in a Rule 多目标写在一行</h3>
+<p>相同依赖和生成方式的目标可以写在一起。 生成方式也不用一定一样的，可以用自动化变量加处理函数来处理。 详见说明文档。</p>
+<pre><code>bigoutput littleoutput : text.g
+  generate text.g -$(subst output,,$@) &gt; $@</code></pre>
+<p>is equivalent to:</p>
+<pre><code>bigoutput : text.g
+   generate text.g -big &gt; bigoutput
+littleoutput : text.g
+   generate text.g -little &gt; littleoutput</code></pre>
