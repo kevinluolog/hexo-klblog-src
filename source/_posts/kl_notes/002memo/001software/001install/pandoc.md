@@ -355,3 +355,9 @@ Extension: implicit_header_references</code></pre>
 
 Hexo博客从搭建部署到SEO优化等详细教程_
 这样不能引用</code></pre>
+<h3 id="md2slide">md2slide</h3>
+<ul>
+<li><p>image引用路径问题</p>
+<p>html形式的slide可以正反斜杠都可以,因最后输出到html标识中了，相对路径也可。 beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路径不行。</p>
+<pre><code>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)</code></pre></li>
+</ul>

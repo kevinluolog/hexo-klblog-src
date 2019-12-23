@@ -103,12 +103,13 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 </ul>
 <h3 id="restructuredtext-improved">reStructuredText Improved</h3>
 <p>Headings and terms (from definition lists) are available as symbols, so you can use CTRL-R to jump to them.</p>
-<h3 id="restructured-text-rst-snippets">Restructured Text (RST) Snippets</h3>
-<p>装完后preferences-package setting中的名字为，sumlime-rst-completion</p>
+<h3 id="restructured-text-rst-snippets-rst-completion">Restructured Text (RST) Snippets rst-completion</h3>
+<p>装完后preferences-package setting中的名字为，sublime-rst-completion</p>
 <p><a href="https://packagecontrol.io/\003work\002memo\001software\001install/Restructured%20Text%20(RST)%20Snippets">Restructured Text (RST) Snippets</a></p>
 <ul>
 <li>用法链接
 <ul>
+<li><a href="https://packagecontrol.io/packages/Restructured%20Text%20(RST)%20Snippets">packagecontrol.io/packages/Restructured Text (RST) Snippets</a></li>
 <li><a href="H:\tmp_H\001.work\002git\000study\000misc\sublime-rst-completion\README.rst">本地README</a></li>
 <li><a href="https://github.com/kevinluolog/sublime-rst-completion/blob/master/README.rst">Git-README</a></li>
 </ul></li>
@@ -514,3 +515,14 @@ sublime Text &gt; Preferences &gt; Package Settings &gt; OmniMarkupPreviewer &gt
 \begin{aligned}\dot{x} &amp; = \sigma(y-x) \\\dot{y} &amp; = \rho x - y - xz \\\dot{z} &amp; = -\beta z + xy\end{aligned}
 \end{aligned}$$</span><br /></p>
 <p>inline an example of a LaTeX <span class="math inline">$\sqrt{3x-1}+(1+x)^2$</span></p>
+<h2 id="sublime-使用tips">sublime 使用TIPS</h2>
+<h3 id="sublime-本身的使用">sublime 本身的使用</h3>
+<h5 id="开启project文件视图文件检索文件搜索">开启Project文件视图，文件检索，文件搜索</h5>
+<ol type="1">
+<li>开启project侧边栏 ：Project -&gt; Add Forder to Project</li>
+<li>找文件： Ctrl + P 查找文件</li>
+<li>找函数： Ctrl + P @操作符(可以是变量名或函数名)</li>
+<li>模糊匹配： 文件#搜索的变量</li>
+<li>定位到行：:行数</li>
+</ol>
+<h3 id="sublime-插件-insert-nums的使用">sublime 插件： insert nums的使用</h3>

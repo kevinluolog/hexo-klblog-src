@@ -286,17 +286,30 @@ sudo fc-cache</code></pre>
 <p><a href="https://www.jianshu.com/p/d3a55d05d5d1">论文检测系统</a></p>
 <p><a href="https://slides.com/">reveal.js: slide make online editor</a></p>
 <p><a href="https://github.com/hakimel/reveal.js#markdown">reveal.js: markdown grammar</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://www.cnblogs.com/wybert/p/11523311.html">使用pandoc制作幻灯片</a></p>
+<p>包含在使用pandoc转化pptx的时候表格和图片会单独的出现在一页ppt里面的解决方案链接</p>
+<p><a href="https://zhuanlan.zhihu.com/p/35719599">利用Markdown和Pandoc制作PPT（七）Pandoc的命令行参数</a></p>
+<p><a href="https://blog.csdn.net/RobertChenGuangzhi/article/details/79467438">利用Beamer做slides时让enumerate内容跨越2个frame显示</a></p>
+<p><a href="https://blog.csdn.net/younger_z/article/details/70227948">适合程序员的画图技法</a></p>
+<p><a href="https://blog.csdn.net/zhangskd/article/details/8250470">程序员的绘图利器 — Graphviz</a></p>
+<p>案例全面</p>
+<p><a href="https://blog.csdn.net/judyjie/article/details/84454560">程序员画图工具总结</a></p>
+<ol type="1">
+<li>visio：用的很多。做这个行业的码农，都知道吧。</li>
+<li>wps：用的多。用过电脑的民工，都知道吧。</li>
+<li>亿图：很强大，功能丰富。就是要付费。想免费试用，你知道的。</li>
+<li>Astah Community：Astah Community是一个非常强大的免费的UML建图工具，支持最新的UML图。地址：http://astah.net/tutorial#new-to-astah。</li>
+<li>Graphviz：代码生成图像。AT&amp;T实验室启动的开源工具包。DOT是一种图形描述语言，非常简单的</li>
+<li>Processon：在线流程图。专注于为作图人员提供价值，利用互联网和社交技术颠覆了人们梳理流程的方法习惯，继而使商业用户获得比传统模式更高的效率和回报，改善人们对流程图的创作过程。地址：https://www.processon.com</li>
+<li>XMind：思维脑图。要付费，要免费试用，你知道怎么做的。</li>
+<li>draw.io ：在线流程图。图形颜色很漂亮。</li>
+<li>OmniGraffle：OmniGraffle是由The Omni Group制作的一款绘图软件，其只能于运行在Mac OS X和iPad平台之上。</li>
+</ol>
+<p><a href="https://github.com/jgraph/drawio-desktop/releases/tag/v12.3.2">drawio-desktop/releases</a></p>
+<p><a href="https://blog.csdn.net/weixin_34056162/article/details/91468523?locationNum=7&amp;fps=1">一键搭建drawio</a></p>
+<p><a href="https://blog.csdn.net/dog250/article/details/89272808">使用drawio进行画图真的很方便(WEB版/Chrome APP版/桌面版)</a></p>
+<p><a href="http://topology.le5le.com/">代替Visio第三波，并且是开源的哦：le5le-topology</a></p>
+<p><a href="https://juejin.im/post/5d6c88726fb9a06b0e54ab35">代替Visio第三波详细介绍：</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
@@ -392,3 +405,12 @@ sudo fc-cache</code></pre>
 <p>金融服务咨询公司Opimas报告显示：到2025年，全球金融机构将减员10%，近23万人将受到影响，电脑将取代他们的工作。在这些被裁的岗位中，40%都将来自资产管理部门。</p>
 <p>摩根大通去年宣布，计划在旧金山帕洛阿尔托开设一个新的金融科技园区，这个最终能容纳1000人的园区将于2020年开放，这意味着会有大批的AI，机器学习人才坐阵。</p>
 <p>Bloomberg采访了很多华尔街金融机构的高管，制作了一系列自动化交易图。红色方框底部的黑色文字是在交易过程中使用的人工智能技术，包括机器学习(ML)、自然语言处理(NLP) 、机器人过程自动化(PRA) 、预测分析(PA)。</p>
+<p>干脆把图片导入到CDR中再描不是好一点吗？如果图比较简单的话，还可以用CDR的描幕位图功能来做，自动生成矢量图。</p>
+<p>建议到nocang&lt;<a href="http://www.nocang.com/office2016/">http://www.nocang.com/office2016/</a>&gt;下载office2016/visio2016，注意区分32位和64位。 1.建议用KMSAuto Pro Net 2015 1.3.8激活工具直接激活，关闭杀毒软件和防火墙，运行后自动激活office/visio/project2010/13/16/win7/8/8.1/10系列系统。 2.电话或密钥激活比较费时间，软件激活方法已经很常见了，成功率也高，没必要用电话或密钥激活。该工具可以自动将零售版转换为VOL版。只要不卸载相关服务，是自动续期永久激活的。 <a href="https://zhidao.baidu.com/question/1244597580843857739.html">https://zhidao.baidu.com/question/1244597580843857739.html</a></p>
+<p><a href="https://www.nocang.com/vs2019zhuanyeban/">https://www.nocang.com/vs2019zhuanyeban/</a> vs2019专业版激活序列号密钥，无需任何破解工作即可免费长久使用，需要的朋友赶紧下载使用吧。vs2019专业版激活序列号密钥：NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y。</p>
+<p><a href="https://www.nocang.com/microsoft-visio-2016/">https://www.nocang.com/microsoft-visio-2016/</a> Microsoft Visio 2016官方简体中文32位+64位破解版下载（含序列号密钥）</p>
+<p><a href="https://www.nocang.com/office-2016-rtm/">https://www.nocang.com/office-2016-rtm/</a> office2016</p>
+<p><a href="https://www.nocang.com/office2016/">https://www.nocang.com/office2016/</a> Office2016/Project2016/Visio2016官方32位+64位大客户版下载(含激活工具) kl+:上面这个网址最全</p>
+<p><a href="http://www.visiocafe.com">http://www.visiocafe.com</a> visio 模具</p>
+<p><a href="https://www.cnblogs.com/zhqian/p/9406520.html">https://www.cnblogs.com/zhqian/p/9406520.html</a> office 2016 官方原版 （含Visio Project 等全套 ）下载地址 （不含破解，非网盘下载）不用登录 <a href="https://www.cnblogs.com/zhqian/p/9406520.html">https://www.cnblogs.com/zhqian/p/9406520.html</a></p>
+<p><a href="http://www.zdfans.com/html/27514.html">http://www.zdfans.com/html/27514.html</a> techsmith camstasia</p>
