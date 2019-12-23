@@ -107,13 +107,13 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 <p>装完后preferences-package setting中的名字为，sublime-rst-completion</p>
 <p><a href="https://packagecontrol.io/\003work\002memo\001software\001install/Restructured%20Text%20(RST)%20Snippets">Restructured Text (RST) Snippets</a></p>
 <ul>
-<li>用法链接
+<li><p>用法链接</p>
 <ul>
 <li><a href="https://packagecontrol.io/packages/Restructured%20Text%20(RST)%20Snippets">packagecontrol.io/packages/Restructured Text (RST) Snippets</a></li>
 <li><a href="H:\tmp_H\001.work\002git\000study\000misc\sublime-rst-completion\README.rst">本地README</a></li>
 <li><a href="https://github.com/kevinluolog/sublime-rst-completion/blob/master/README.rst">Git-README</a></li>
 </ul></li>
-<li>快捷键
+<li><p>快捷键</p>
 <ul>
 <li>magic table
 <ol type="1">
@@ -130,6 +130,10 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 <li>add new footnote: <code>alt+shift+f</code></li>
 <li>go back to the reference with <code>shift+up</code></li>
 </ul></li>
+<li><p>如何消除已经生成的表格格式</p>
+<p>进行两次替换动作就可以了。</p>
+<pre><code>[-+=\|]
+\n\n</code></pre></li>
 </ul>
 <p>-usage snippets</p>
 <table>
@@ -517,7 +521,7 @@ sublime Text &gt; Preferences &gt; Package Settings &gt; OmniMarkupPreviewer &gt
 <p>inline an example of a LaTeX <span class="math inline">$\sqrt{3x-1}+(1+x)^2$</span></p>
 <h2 id="sublime-使用tips">sublime 使用TIPS</h2>
 <h3 id="sublime-本身的使用">sublime 本身的使用</h3>
-<h5 id="开启project文件视图文件检索文件搜索">开启Project文件视图，文件检索，文件搜索</h5>
+<h4 id="开启project文件视图文件检索文件搜索">开启Project文件视图，文件检索，文件搜索</h4>
 <ol type="1">
 <li>开启project侧边栏 ：Project -&gt; Add Forder to Project</li>
 <li>找文件： Ctrl + P 查找文件</li>
