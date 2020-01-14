@@ -342,3 +342,12 @@ $(info xxx)</code></pre></li>
 <pre><code>$(info $(dir $(1)))
 $(warning  $(XXX))</code></pre></li>
 </ul>
+<h4 id="echo输出信息时加上会使变量显示有问题不对并且会报错">echo输出信息时加上""会使变量显示有问题，不对并且会报错</h4>
+<pre><code>SRC_PATHDIRNAMES := $(shell dir $(DIR_BASE_SRC) /ad-h-s /b /w /s)
+SRC_PATHDIRNAMES_GITKEEPER := $(addsuffix \.gitkeeper,$(SRC_PATHDIRNAMES))
+$(info $(SRC_PATHDIRNAMES_GITKEEPER))
+@echo &quot;$(SRC_PATHDIRNAMES_GITKEEPER)&quot;</code></pre>
+<p>这么一段简单的代码，居然执行的时候会死机，或者报错，$info显示完全正确。 原因是echo后面 把“”去掉就好了。</p>
+<h4 id="pattern-make-模式匹配的限制">pattern % make 模式匹配的限制</h4>
+<pre><code>SRC_PATHDIRNAMES := $(filter-out $(DIR_BASE_SRC)\.git%,$(SRC_PATHDIRNAMES_FILTER_BEFORE))$(info $(SRC_PATHDIRNAMES))</code></pre>
+<p>此处的模式匹配，%只能用在中间，不能%.git%这种匹配。 匹配不出来。</p>
