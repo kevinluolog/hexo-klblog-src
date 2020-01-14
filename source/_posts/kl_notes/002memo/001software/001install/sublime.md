@@ -103,7 +103,7 @@ Ctrl+Alt+C：复制为HTML文件</code></pre>
 </ul>
 <h3 id="restructuredtext-improved">reStructuredText Improved</h3>
 <p>Headings and terms (from definition lists) are available as symbols, so you can use CTRL-R to jump to them.</p>
-<h3 id="restructured-text-rst-snippets-rst-completion">Restructured Text (RST) Snippets rst-completion</h3>
+<h3 id="restructured-text-rst-snippets-rst-completion-用法">Restructured Text (RST) Snippets rst-completion 用法</h3>
 <p>装完后preferences-package setting中的名字为，sublime-rst-completion</p>
 <p><a href="https://packagecontrol.io/\003work\002memo\001software\001install/Restructured%20Text%20(RST)%20Snippets">Restructured Text (RST) Snippets</a></p>
 <ul>
@@ -530,3 +530,13 @@ sublime Text &gt; Preferences &gt; Package Settings &gt; OmniMarkupPreviewer &gt
 <li>定位到行：:行数</li>
 </ol>
 <h3 id="sublime-插件-insert-nums的使用">sublime 插件： insert nums的使用</h3>
+<h3 id="build-system-新建或修改build-system">build System 新建或修改build System</h3>
+<h4 id="配置自己的build-system在命令行中运行python">配置自己的build-system，在命令行中运行python</h4>
+<p><a href="https://blog.csdn.net/hey_melody/article/details/94438969">配置自己的build-system，在命令行中运行python</a></p>
+<p>在【工具】–【编译系统】–【新编译系统】或者你的 <span class="title-ref">SublimeDataPackagesUser路径下新建一个Python_cmd.sublime-build</span></p>
+<p>更改已有的build system（debian jessie）</p>
+<p><a href="https://blog.csdn.net/rootie321/article/details/44894361">sublime text 3更改已有的build system（debian jessie）</a></p>
+<h4 id="sublime怎么修改之前写过的编译系统配置">sublime怎么修改之前写过的编译系统配置</h4>
+<p><a href="https://blog.csdn.net/a19990412/article/details/82659266">sublime怎么修改之前写过的编译系统配置</a></p>
+<p>工具 -&gt; 编译系统 -&gt; 新建编译系统, 佯作保存，找到目录。然后编辑原先的BUILD system 文件，用编辑器修改。</p>
+<pre><code>E:\programfiles\portable\Sublime3207portable\Data\Packages\User</code></pre>
