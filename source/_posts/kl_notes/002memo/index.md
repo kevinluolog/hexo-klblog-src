@@ -2,7 +2,7 @@
 title: index
 tag: 
 - 自动生成
-- 笔记
+- 002memo
 categories:
 - 002memo
 toc: TRUE
