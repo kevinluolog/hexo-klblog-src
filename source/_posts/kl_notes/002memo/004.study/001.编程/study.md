@@ -2,7 +2,7 @@
 title: study
 tag: 
 - 自动生成
-- 笔记
+- 001.编程
 categories:
 - 001.编程
 toc: TRUE

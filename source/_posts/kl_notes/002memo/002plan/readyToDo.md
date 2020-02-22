@@ -2,7 +2,7 @@
 title: readyToDo
 tag: 
 - 自动生成
-- 笔记
+- 002plan
 categories:
 - 002plan
 toc: TRUE

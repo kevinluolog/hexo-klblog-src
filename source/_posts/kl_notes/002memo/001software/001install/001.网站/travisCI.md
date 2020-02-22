@@ -2,7 +2,7 @@
 title: travisCI
 tag: 
 - 自动生成
-- 笔记
+- 001.网站
 categories:
 - 001.网站
 toc: TRUE
