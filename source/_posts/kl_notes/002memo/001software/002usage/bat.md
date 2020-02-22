@@ -2,7 +2,7 @@
 title: bat
 tag: 
 - 自动生成
-- 笔记
+- 002usage
 categories:
 - 002usage
 toc: TRUE

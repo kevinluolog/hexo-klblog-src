@@ -2,7 +2,7 @@
 title: pandoc
 tag: 
 - 自动生成
-- 笔记
+- 001install
 categories:
 - 001install
 toc: TRUE
@@ -356,19 +356,28 @@ Extension: implicit_header_references</code></pre>
 Hexo博客从搭建部署到SEO优化等详细教程_
 这样不能引用</code></pre>
 <h3 id="md2slide">md2slide</h3>
-<ul>
-<li><p>image引用路径问题</p>
+<p>- image引用路径问题</p>
+<blockquote>
 <p>html形式的slide可以正反斜杠都可以,因最后输出到html标识中了，相对路径也可。 beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路径不行。</p>
-<pre><code>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)</code></pre></li>
-</ul>
-<h3 id="rst2pdf-colorlinks">rst2pdf colorlinks</h3>
-<ul>
-<li><p>pdf目录颜色是黑色的，改不了蓝色</p>
+</blockquote>
+<dl>
+<dt>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</dt>
+<dd><p>同时beamer引用文件时，文件名最好不用中文。有时会引用不到</p>
+</dd>
+</dl>
+<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>
+<blockquote>
+<pre><code>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)</code></pre>
+</blockquote>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ======= rst2pdf colorlinks ---------------------------------------------------------------------</p>
+<p>- pdf目录颜色是黑色的，改不了蓝色</p>
+<blockquote>
 <p>发现问题在metadata.yaml中，colorlinks没有定义，需要定义成TRUE or FALSE,可以在default.latex中找到代码。</p>
 <pre><code>#请参见default.latex中的逻辑
 #如果colorlinks是TRUE,则表示有link颜色，否则没有
 #有的情况下由klbordercolorlink定义与否决定是否linkborder有颜色。如果测定义     才轮到colorlinks来定义文字颜色。
 colorlinks: TRUE
 toccolor: blue
-#klbordercolorlink: blue</code></pre></li>
-</ul>
+#klbordercolorlink: blue</code></pre>
+</blockquote>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>

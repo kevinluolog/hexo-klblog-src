@@ -2,7 +2,7 @@
 title: memo
 tag: 
 - 自动生成
-- 笔记
+- 000misc
 categories:
 - 000misc
 toc: TRUE
@@ -45,7 +45,8 @@ toc: TRUE
 <p>????? For TravisCI users, simply add a config to .travis.yml so it clones the full repository history: <a href="https://github.com/MestreLion/git-tools#install">MestreLion/git-tools</a></p>
 <p>可以解决拉取全部历史原数据到本地的问题，不加在clone时，只是本分支的历史。这样git log 能拿到文件所有commit的时间</p>
 <p># 根据上面网址介绍加入下面两行 git: depth: false</p>
-<p>????? <a href="https://hexo.io/docs/variables#Page-Variables">hexo.io/docs/variables#Page-Variables</a></p>
+<hr />
+<p><a href="https://hexo.io/docs/variables#Page-Variables">hexo.io/docs/variables#Page-Variables</a></p>
 <p><span class="title-ref">https://hexo.io/zh-cn/docs/variables.html#%E9%A1%B5%E9%9D%A2%E5%8F%98%E9%87%8F &gt;</span>__</p>
 <p>??? Linux下修改文件创建时间(修改文件更改时间) 进到要改的文件目录里 find . -name “<em>” -exec touch ‘{}’ ; 注：最后一定要加分号，{}外一定要加单引号，</em>表示所有的文件（. 代表当前目录下）</p>
 <p>??? <a href="http://wp.huangshiyang.com/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">Hexo常见问题解决方案</a></p>
@@ -286,7 +287,17 @@ sudo fc-cache</code></pre>
 <p><a href="https://www.jianshu.com/p/d3a55d05d5d1">论文检测系统</a></p>
 <p><a href="https://slides.com/">reveal.js: slide make online editor</a></p>
 <p><a href="https://github.com/hakimel/reveal.js#markdown">reveal.js: markdown grammar</a></p>
-<p><a href="https://www.cnblogs.com/wybert/p/11523311.html">使用pandoc制作幻灯片</a></p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <a href="https://blog.csdn.net/weixin_30484739/article/details/95816525">git-svn — 让git和svn协同工作</a></p>
+<p>投资相关 <a href="https://xueqiu.com/2290121721/80985681?from=groupmessage">互联网金融分析系列之一:赢时胜(300377)业绩与概念的完美结</a></p>
+<p><a href="https://www.sohu.com/a/233328397_476016">研报 | “互联网金融”系列之二：百舸争流，互联网金融萌芽</a></p>
+<p><a href="http://www.360doc.com/content/19/0408/10/37805727_827158031.shtml">ppt数据中台8问</a></p>
+<p><a href="https://www.jianshu.com/p/8da8968c3a09">数据仓库之ETL实战</a></p>
+<p><a href="https://blog.csdn.net/juceli/article/details/81448224">几款开源的ETL工具及ELT初探</a></p>
+<p><a href="https://www.cnblogs.com/yjd_hycf_space/p/7772722.html">ETL讲解（很详细！！！）</a></p>
+<p>ETL是将业务系统的数据经过抽取、清洗转换之后加载到数据仓库的过程，目的是将企业中的分散、零乱、标准不统一的数据整合到一起，为企业的决策提供分析依据。 ETL是BI项目重要的一个环节。 通常情况下，在BI项目中ETL会花掉整个项目至少1/3的时间,ETL设计的好坏直接关接到BI项目的成败。</p>
+<p>　　ETL的设计分三部分：数据抽取、数据的清洗转换、数据的加载。在设计ETL的时候我们也是从这三部分出发。数据的抽取是从各个不同的数据源抽取到ODS(Operational Data Store，操作型数据存储)中——这个过程也可以做一些数据的清洗和转换)，在抽取的过程中需要挑选不同的抽取方法，尽可能的提高ETL的运行效率。ETL三个部分中，花费时间最长的是“T”(Transform，清洗、转换)的部分，一般情况下这部分工作量是整个ETL的2/3。数据的加载一般在数据清洗完了之后直接写入DW(Data Warehousing，数据仓库)中去。</p>
+<p>　　ETL的实现有多种方法，常用的有三种。一种是借助ETL工具(如Oracle的OWB、SQL Server 2000的DTS、SQL Server2005的SSIS服务、Informatic等)实现，一种是SQL方式实现，另外一种是ETL工具和SQL相结合。前两种方法各有各的优缺点，借助工具可以快速的建立起ETL工程，屏蔽了复杂的编码任务，提高了速度，降低了难度，但是缺少灵活性。SQL的方法优点是灵活，提高ETL运行效率，但是编码复杂，对技术要求比较高。第三种是综合了前面二种的优点，会极大地提高ETL的开发速度和效率。</p>
+<p><a href="http://www.sohu.com/a/331776003_692515">阿里架构总监一次讲透中台架构，13页PPT精华详解</a> ======= <a href="https://www.cnblogs.com/wybert/p/11523311.html">使用pandoc制作幻灯片</a></p>
 <p>包含在使用pandoc转化pptx的时候表格和图片会单独的出现在一页ppt里面的解决方案链接</p>
 <p><a href="https://zhuanlan.zhihu.com/p/35719599">利用Markdown和Pandoc制作PPT（七）Pandoc的命令行参数</a></p>
 <p><a href="https://blog.csdn.net/RobertChenGuangzhi/article/details/79467438">利用Beamer做slides时让enumerate内容跨越2个frame显示</a></p>
@@ -309,23 +320,63 @@ sudo fc-cache</code></pre>
 <p><a href="https://blog.csdn.net/weixin_34056162/article/details/91468523?locationNum=7&amp;fps=1">一键搭建drawio</a></p>
 <p><a href="https://blog.csdn.net/dog250/article/details/89272808">使用drawio进行画图真的很方便(WEB版/Chrome APP版/桌面版)</a></p>
 <p><a href="http://topology.le5le.com/">代替Visio第三波，并且是开源的哦：le5le-topology</a></p>
-<p><a href="https://juejin.im/post/5d6c88726fb9a06b0e54ab35">代替Visio第三波详细介绍：</a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
+<p><a href="https://juejin.im/post/5d6c88726fb9a06b0e54ab35">代替Visio第三波详细介绍：</a> &gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>
+<p><a href="https://www.jianshu.com/p/6edcdc98c33a">李广乾ppt：数据中台促进“互联网＋”产业创新</a></p>
+<p><a href="https://bigdata.163yun.com/middlePlatform?channel=B_baidu_mammut_117">https://bigdata.163yun.com/middlePlatform?channel=B_baidu_mammut_117</a></p>
+<p><a href="https://blog.csdn.net/oracle8090/article/details/84189966">FS-LDM第一讲-----金融业务逻辑数据模型</a></p>
+<p>逻辑数据模型(Logical Data Model) TD建模主题思想FS-LDM</p>
+<p>Teradata天睿公司（纽交所代码：TDC），是美国前十大上市软件公司之一。经过逾30 年的发展，Teradata天睿公司已经成为全球最大的专注于大数据分析、数据仓库和整合营销管理解决方案的供应商之一。 数量庞大、增长迅猛、种类多样的数据已经成为企业在大数据时代发展不得不面临的现实境况。这是挑战，也是机遇。对此，Teradata天睿公司基于客户需求，提供领先、全面、有效的解决方案，帮助企业获取商业洞察力，并且将之转化为行动力，创造商业价值。</p>
+<p>-&gt;NCR-&gt;AT&amp;T 2012年 Teradata天睿公司发布Teradata统一数据架构（Teradata Unified Data Architecture™, UDA）。</p>
+<p>Teradata数据仓库配备性能最高、最可靠的大规模并行处理 (MPP) 平台，能够高速处理海量数据。它使得企业可以专注于业务，无需花费大量精力管理技术，因而可以更加快速地做出明智的决策，实现 ROI 最大化。</p>
+<p>1、 什么是MPP？</p>
+<p>MPP (Massively Parallel Processing)，即大规模并行处理，在数据库非共享集群中，每个节点都有独立的磁盘存储系统和内存系统，业务数据根据数据库模型和应用特点划分到各个节点上，每台数据节点通过专用网络或者商业通用网络互相连接，彼此协同计算，作为整体提供数据库服务。非共享数据库集群有完全的可伸缩性、高可用、高性能、优秀的性价比、资源共享等优势。</p>
+<p>简单来说，MPP是将任务并行的分散到多个服务器和节点上，在每个节点上计算完成后，将各自部分的结果汇总在一起得到最终的结果(与Hadoop相似)。</p>
+<p><a href="https://blog.csdn.net/BabyFish13/article/details/99810727">数据建模三范式</a></p>
+<p><a href="TD建模主题思想FS-LDM">数据仓库建模三范式建模为什么能保证口径的一致性</a></p>
+<p><a href="https://blog.csdn.net/qq_42189083/article/details/80610092">MPP(大规模并行处理)简介</a></p>
+<p>OLTP面对的是操作人员和低层管理人员，OLAP面员和高层管理人员。 [3] 联机分析处理 (OLAP) 的概念最早是由关系数据库之父E.F.Codd于1993年提出的，他同时提出了关于OLAP的12条准则。OLAP的提出引起了很大的反响，OLAP作为一类产品同联机事务处理(OLTP) 明显区分开来。 OLAP是使分析人员、管理人员或执行人员能够从多角度对信息进行快速、一致、交互地存取，从而获得对数据的更深入了解的一类软件技术。OLAP的目标是满足决策支持或者满足在多维环境下特定的查询和报表需求，它的技术核心是"维"这个概念。 “维”是人们观察客观世界的角度，是一种高层次的类型划分。“维”一般包含着层次关系，这种层次关系有时会相当复杂。通过把一个实体的多项重要的属性定义为多个维(dimension)，使用户能对不同维上的数据进行比较。因此OLAP也可以说是多维数据分析工具的集合。 OLAP的基本多维分析操作有钻取（roll up和drill down）、切片（slice）和切块（dice）、以及旋转（pivot）、drill across、drill through等。 OLAP工具是针对特定问题的联机数据访问与分析。它通过多维的方式对数据进行分析、查询和报表。维是人们观察数据的特定角度。例如，一个企业在考虑产品的销售情况时，通常从时间、地区和产品的不同角度来深入观察产品的销售情况。这里的时间、地区和产品就是维。而这些维的不同组合和所考察的度量指标构成的多维数组则是OLAP分析的基础，可形式化表示为（维1，维2，……，维n，度量指标），如（地区、时间、产品、销售额）。多维分析是指对以多维形式组织起来的数据采取切片（Slice）、切块（Dice）、钻取（Drill-down和Roll-up）、旋转（Pivot）等各种分析动作，以求剖析数据，使用户能从多个角度、多侧面地观察数据库中的数据，从而深入理解包含在数据中的信息。 根据综合性数据的组织方式的不同，常见的OLAP主要有基于多维数据库的MOLAP及基于关系数据库的ROLAP两种。MOLAP是以多维的方式组织和存储数据，ROLAP则利用现有的关系数据库技术来模拟多维数据。在数据仓库应用中，OLAP应用一般是数据仓库应用的前端工具，同时OLAP工具还可以同数据挖掘工具、统计分析工具配合使用，增强决策分析功能。 两者区别 OLTP OLAP 用户 操作人员，低层管理人员 决策人员，高级管理人员 功能 日常操作处理 分析决策</p>
+<p>On-Line Transaction Processing联机事务处理过程(OLTP)，也称为面向交易的处理过程，其基本特征是前台接收的用户数据可以立即传送到计算中心进行处理，并在很短的时间内给出处理结果，是对用户操作快速响应的方式之一。</p>
+<p><a href="https://baike.baidu.com/item/OLTP/5019563?fr=aladdin">OLTP百科</a></p>
+<p><a href="https://baike.baidu.com/item/%E8%81%94%E6%9C%BA%E5%88%86%E6%9E%90%E5%A4%84%E7%90%86?fromtitle=OLAP&amp;fromid=1049009">OLAP百科</a></p>
+<p>OLAP的基本多维分析操作有钻取（Drill-up和Drill-down）、切片（Slice）和切块（Dice）、以及旋转（Pivot）等。</p>
+<p>事实上，随着数据仓库理论的发展，数据仓库系统已逐步成为新型的决策管理信息系统的解决方案。数据仓库系统的核心是联机分析处理，但数据仓库包括更为广泛的内容。 概括来说，数据仓库系统是指具有综合企业数据的能力，能够对大量企业数据进行快速和准确分析，辅助做出更好的商业决策的系统。它本身包括三部分内容： 1、数据层：实现对企业操作数据的抽取、转换、清洗和汇总，形成信息数据，并存储在企业级的中心信息数据库中。 2、应用层：通过联机分析处理，甚至是数据挖掘等应用处理，实现对信息数据的分析。 3、表现层：通过前台分析工具，将查询报表、统计分析、多维联机分析和数据发掘的结论展现在用户面前。 从应用角度来说，数据仓库系统除了联机分析处理外，还可以采用传统的报表，或者采用数理统计和人工智能等数据挖掘手段，涵盖的范围更广；就应用范围而言，联机分析处理往往根据用户分析的主题进行应用分割，例如：销售分析、市场推广分析、客户利润率分析等等，每一个分析的主题形成一个OLAP应用，而所有的OLAP应用实际上只是数据仓库系统的一部分。</p>
+<p><a href="https://baijiahao.baidu.com/s?id=1627885723219801116&amp;wfr=spider&amp;for=pc">OLTP与OLAP：在新IT环境下的相互结合</a></p>
+<p>OLTP和OLAP协同工作</p>
+<p>上述示例中上部的数据(HR数据库、CRM、计费系统)一般是通过一个萃取、转置和加载(Extract, Transform and Load, ETL)的过程进行批量处理(通常是在夜间)。它用于从多个OLTP源收集数据并将其放入OLAP数据仓库(允许跨系统分析)。在图的下半部分，您可以看到数据在OLAP立方体中得到了正确的存储和组织。</p>
+<p><a href="https://baijiahao.baidu.com/s?id=1611554859260686629&amp;wfr=spider&amp;for=pc">大数据分析之OLTP与OLAP的区别</a></p>
+<p><a href="https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9331469534616139584%22%7D&amp;n_type=1&amp;p_from=4">大数据生死时刻：七成数据接口被切断，数万员工离开行业</a></p>
+<p><a href="https://www.jianshu.com/p/42b011e69c6a">TD建模系列（二）-FS-LDM设计要点</a></p>
+<p><a href="TD建模系列（一）-TERADATA关键技术知识点">TD建模系列（一）-TERADATA关键技术知识点</a></p>
+<p><a href="https://www.jianshu.com/p/abd09ccd9842">元数据（MetaData）</a></p>
+<p><a href="https://baike.baidu.com/item/%E5%85%83%E6%95%B0%E6%8D%AE/1946090?fr=aladdin">元数据-百科</a></p>
+<p>元数据（Metadata），又称中介数据、中继数据，为描述数据的数据（data about data），主要是描述数据属性（property）的信息，用来支持如指示存储位置、历史数据、资源查找、文件记录等功能。元数据算是一种电子式目录，为了达到编制目录的目的，必须在描述并收藏数据的内容或特色，进而达成协助数据检索的目的。</p>
+<p><a href="https://wenku.baidu.com/view/892374d9b14e852458fb57fb.html">基金投资管理系统O32操作手册-风险控制</a></p>
+<p>基金投资管理系统o32用户手册(01更新)资料</p>
+<p><a href="https://baike.baidu.com/item/%E5%94%AE%E5%89%8D%E5%B7%A5%E7%A8%8B%E5%B8%88/9341955?fr=aladdin">售前-百科</a> 产品型到解决方案型，IT服务型</p>
+<p>在售前的发展过程中，从售前工程师到售前咨询师，又是一个大的跨度。现在，在行业内售前咨询师的需求在增大，而售前工程师的需求缺并不见得有增长。就个人体会，我简单的说说二者的区别： 1、售前工程师仅仅是针对用户的需求，提供技术实现的方案。也就是说，在售前工程师工作时，有个前提假设，即用户需求的是已经得到确定或者是已经成型。而售前咨询师的工作大部分是通过对用户当前业务或者管理状况的分析，提出用户信息化的架构和策略，并且，根据此架构和策略，提供一套可以实现此架构和策略的方案。如果我们将投标作为一个临界点，那么售前工程师往往提供给用户的是标书，而售前咨询师提供给用户的一般为两个部分：信息化规划和信息系统建设建议书。 2、售前工程师要求对于技术实现、项目管理的熟悉程度要长于用户业务。因为用户的原始需求具有比较高的确定性，所以，只需要通过原始需求的分析，结合自己的技术知识和项目管理知识，为用户展现公司在某个项目上的技术和项目管理实例。而售前咨询师要求对用户的业务和管理理解程度要更高，即，更多的时候，售前咨询师是在对用户当前的业务状况和管理状况数据进行收集、统计和分析，通过对这些数据的利用，为用户提供一套有理有据有益的信息化策略和投资收益比率报告。</p>
+<p>售前工程师-售前经理-行业顾问-行业专家</p>
+<p><a href="https://www.zhihu.com/topic/19705996/hot">售前工程师-知乎</a></p>
+<p>作者：项目经理职业生涯 链接：https://zhuanlan.zhihu.com/p/81982040 来源：知乎 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>一、业务能力：</p>
+<p>听：需求获取能力，客户需求引导公司产品及解决方案能力。</p>
+<p>说：语言表达能力，产品及方案阐述能力，演讲能力，面对不同的群体的表达能力，再深一点能够快速识别现场的需求，然后迎合需求的表达能力。</p>
+<p>读：产品阅读能力，客户现有痛点，其他竞品参与程度</p>
+<p>写：方案编制能力，演讲材料编制能力，投标技术材料输出</p>
+<p>动手能力：演示能力，客户场景设计能力，行业场景设计</p>
+<p>能力知识面：行业背景，实际项目经验，专业技能知识，新兴技能掌握能力</p>
+<p>二、非业务能力，软技能</p>
+<p>人情世故：情商，如何管理好项目中销售，客户; 公司内领导、研发、实施及运维各个团队的需求。</p>
+<p>教育背景：年薪30万以上，基本都是本科起步</p>
+<p>项目管理技能：比较优秀的项目管理技能，特别熟悉买方的采购流程，懂得项目关键时间节点。</p>
+<p>学习能力：新技术的学习能力，已有技术的掌握能力，新老技术组合产生的商机</p>
+<p>抗压能力：大心脏，能够抗住客户现场的压力，能够顶住业绩指标的压力</p>
+<p>形象及行为举止：客户现场你就是公司技术能力输出的代表，一言一行就是代表公司的能力那么对于售前岗位中业务和非业务两部分，业务能力反倒是通过职场经验的积累，是比较容易获得，而非业务技能，软技能是难以复制批量生产，才是一个卓越售前的核心竞争力。</p>
+<p>业务技能决定你是否可以做售前工作，非业务技能决定你能否做好售前工作。</p>
+<p>除了上述总结的售前技能，另外的核心技能按照优先级，我进行了排序。</p>
+<p>核心一、主观能动性，积极，结果导向，破局能力，特别是有竞品参与。</p>
+<p>核心二、项目把控能力，销售需求管理能力，销售是售前第一位的管理者，学会把握销售的需求是非常重要的。</p>
+<p>核心三、按需说话，大心脏，能够快速客户的真实目标，临场应变能力，大局观，视角足够高，思考全面，经受得住时间的考验。</p>
+<p>核心四、听说读写，专业技能，不可取代，察言观色。围绕目标，通过各种努力让客户买单，才能售前工程真正价值体现。</p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
@@ -405,7 +456,38 @@ sudo fc-cache</code></pre>
 <p>金融服务咨询公司Opimas报告显示：到2025年，全球金融机构将减员10%，近23万人将受到影响，电脑将取代他们的工作。在这些被裁的岗位中，40%都将来自资产管理部门。</p>
 <p>摩根大通去年宣布，计划在旧金山帕洛阿尔托开设一个新的金融科技园区，这个最终能容纳1000人的园区将于2020年开放，这意味着会有大批的AI，机器学习人才坐阵。</p>
 <p>Bloomberg采访了很多华尔街金融机构的高管，制作了一系列自动化交易图。红色方框底部的黑色文字是在交易过程中使用的人工智能技术，包括机器学习(ML)、自然语言处理(NLP) 、机器人过程自动化(PRA) 、预测分析(PA)。</p>
-<p>干脆把图片导入到CDR中再描不是好一点吗？如果图比较简单的话，还可以用CDR的描幕位图功能来做，自动生成矢量图。</p>
+<p>研究：</p>
+<p>相关知识</p>
+<p>OLTP和OLAP</p>
+<p>Pentaho： kettle:spoon pan kitchen ETL: ETL，是英文Extract-Transform-Load的缩写，用来描述将数据从来源端经过抽取（extract）、转换（transform）、加载（load）至目的端的过程。</p>
+<p>DB-&gt;ODS-&gt;DW-&gt;Dm SDATA-PDATA-CDATA-MDATA 操作型数据存储（ODS，operational data store）是一种常被用作数据仓库临时区域的数据库。 操作型数据存储可用于整合来自多种源的不同数据，这样在进行业务操作时，可以执行业务分析和报告。当前操作中使用的大部分数据在被转入数据仓库进行长期存储或归档之前，就存储在操作型数据存储中。 操作型数据存储（ODS）是专为相对简单的少量数据查询设计的（如查找客户订单状态），而不是对数据仓库中的大量复杂数据进行查询。操作型数据存储类似于人的短期记忆，因为它只能存储最近的信息，相反，数据仓库更像是长期记忆，它存储相对永久的信息。</p>
+<p>数据仓库（DW） 决策支持系统（DSS） 在线分析处理（OLAP） 数据挖掘（DM） 商业智能（BI）</p>
+<p>疑问记录</p>
+<p>1 位置： 数据挖掘-&gt;资产负债分析-&gt;银行存款-双击编辑&gt;指标：ZCFZB.BANK_DEPOSITS</p>
+<p>问题： 指标的公式在哪里。</p>
+<p>2 报表管理-&gt;web报表5.0-&gt;.rpx rpg .sht 是什么东西</p>
+<p>3 指标管理-&gt;算法引擎-&gt;SFTP配置。 什么是SFTP? 配了sftp从这里拿什么过来？ 代码管理是什么代码？由谁来写和上传的。以及这些代码和实际指标的名称在哪里对应。 缓存表管理：是做什么的？ 指标维护： 绩效评估-&gt;风险分析-上行标准差 SP_INDEX_CENTER_TOTAL_PKG.FUN_RISK_UPSIDESTDEV( 这是python写的库么</p>
+<p>这些指标在哪里用的？</p>
+<p>维度指什么？什么叫单维多维？</p>
+<p>哪些是客户可以定制的？定制的流程是怎么样的？ 公司的已有指标，哪些可以公开，哪些是可以收费的？</p>
+<h2 id="repair-维修">repair 维修</h2>
+<h3 id="空调">空调</h3>
+<p><a href="">空调重要元器件——滤波电感 &lt;http://www.360doc.com/content/19/0827/06/58189075_857277691.shtml &gt;</a></p>
+<h2 id="resume-简历">resume 简历</h2>
+<h3 id="已联系情况">已联系情况</h3>
+<p>联系人 简历 日间 备注 TZ投资-杨苓-云基地，创智天地 已发hw 20200115 薪水要求20k左右 ZJL赵金龙-intel 已发intel 20200115 上海hr回复iot已招好人 TQ唐庆 已发hw 20200115 LZY刘志扬-海思 已发hw 20200115 WXF王雪峰-cloudera 未发 20200115 gene-cloudera 已发 20200115 回复等headcount，再通知 傅盛 未发 20200116 回复HEHE 徐铮lsi 已发intel 20200116 已推荐给芯原和猎头，会安排节后和总经理谈一下 徐铮HW 未发 20200116 可以推荐给徐德好，总经理，称做不了 刘江涛 已发intel 20200116 春节后再说，称本周末在南方见一下 牛立伟 未发 20200116 称有空电话里详谈 王栋 未发 20200116 称研发部门还在招人 杨成功 未发 20200116 未接话 蔡照明 未发 20200116 称不懂这个行业 eric博通 未发 20200116 未回复 david-mavell 未发 20200116 称不在mavell,没有继续谈</p>
+<h3 id="公司job网站">公司job网站</h3>
+<ol type="1">
+<li><p>intel</p>
+<p>jobs.intel.com</p></li>
+<li><p>arm</p></li>
+<li><p>cloudera</p></li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 4. qualcomm</p>
+<blockquote>
+<p><a href="https://www.qualcomm.cn/company/careers">https://www.qualcomm.cn/company/careers</a></p>
+</blockquote>
+<p>======= 干脆把图片导入到CDR中再描不是好一点吗？如果图比较简单的话，还可以用CDR的描幕位图功能来做，自动生成矢量图。</p>
 <p>建议到nocang&lt;<a href="http://www.nocang.com/office2016/">http://www.nocang.com/office2016/</a>&gt;下载office2016/visio2016，注意区分32位和64位。 1.建议用KMSAuto Pro Net 2015 1.3.8激活工具直接激活，关闭杀毒软件和防火墙，运行后自动激活office/visio/project2010/13/16/win7/8/8.1/10系列系统。 2.电话或密钥激活比较费时间，软件激活方法已经很常见了，成功率也高，没必要用电话或密钥激活。该工具可以自动将零售版转换为VOL版。只要不卸载相关服务，是自动续期永久激活的。 <a href="https://zhidao.baidu.com/question/1244597580843857739.html">https://zhidao.baidu.com/question/1244597580843857739.html</a></p>
 <p><a href="https://www.nocang.com/vs2019zhuanyeban/">https://www.nocang.com/vs2019zhuanyeban/</a> vs2019专业版激活序列号密钥，无需任何破解工作即可免费长久使用，需要的朋友赶紧下载使用吧。vs2019专业版激活序列号密钥：NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y。</p>
 <p><a href="https://www.nocang.com/microsoft-visio-2016/">https://www.nocang.com/microsoft-visio-2016/</a> Microsoft Visio 2016官方简体中文32位+64位破解版下载（含序列号密钥）</p>
@@ -413,4 +495,4 @@ sudo fc-cache</code></pre>
 <p><a href="https://www.nocang.com/office2016/">https://www.nocang.com/office2016/</a> Office2016/Project2016/Visio2016官方32位+64位大客户版下载(含激活工具) kl+:上面这个网址最全</p>
 <p><a href="http://www.visiocafe.com">http://www.visiocafe.com</a> visio 模具</p>
 <p><a href="https://www.cnblogs.com/zhqian/p/9406520.html">https://www.cnblogs.com/zhqian/p/9406520.html</a> office 2016 官方原版 （含Visio Project 等全套 ）下载地址 （不含破解，非网盘下载）不用登录 <a href="https://www.cnblogs.com/zhqian/p/9406520.html">https://www.cnblogs.com/zhqian/p/9406520.html</a></p>
-<p><a href="http://www.zdfans.com/html/27514.html">http://www.zdfans.com/html/27514.html</a> techsmith camstasia</p>
+<p><a href="http://www.zdfans.com/html/27514.html">http://www.zdfans.com/html/27514.html</a> techsmith camstasia &gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>
