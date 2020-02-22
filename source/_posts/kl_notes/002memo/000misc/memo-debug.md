@@ -2,7 +2,7 @@
 title: memo-debug
 tag: 
 - 自动生成
-- 笔记
+- 000misc
 categories:
 - 000misc
 toc: TRUE

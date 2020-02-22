@@ -2,7 +2,7 @@
 title: linux
 tag: 
 - 自动生成
-- 笔记
+- 001install
 categories:
 - 001install
 toc: TRUE
