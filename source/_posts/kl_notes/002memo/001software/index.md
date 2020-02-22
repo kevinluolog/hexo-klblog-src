@@ -2,7 +2,7 @@
 title: index
 tag: 
 - 自动生成
-- 笔记
+- 001software
 categories:
 - 001software
 toc: TRUE
