@@ -35,3 +35,39 @@ toc: TRUE
 <pre><code>#　enca filename</code></pre>
 <p>解决方法，忽略那些不能解释的字符：</p>
 <pre><code>iconv -f cp936 -t utf-8 -c file1 &gt;  file2</code></pre>
+<h2 id="命令行解压缩-zipunzip7z.exerar.exe">命令行解压缩-zip/unzip/7z.exe/rar.exe</h2>
+<h3 id="unzip">unzip</h3>
+<h4 id="下载">下载</h4>
+<p><a href="">win32 zip下载地址 &lt;http://gnuwin32.sourceforge.net/packages/zip.htm &gt;</a></p>
+<p><a href="http://gnuwin32.sourceforge.net/packages/unzip.htm">win32 unzip下载地址</a></p>
+<h4 id="用法-1">用法</h4>
+<p>批处理：</p>
+<blockquote>
+<pre><code>set EXT_DIR=&quot;H:\tmp\downloads\chrome\周读readweek\000\pdf\xx&quot;
+@REM unzip [-Z] [-cflptuvz[abjnoqsCLMVX$/:]] file[.zip] [file(s) ...]  [-x xfile(s) ...] [-d exdir]
+@REM -j 表示解压不带目录(必须放到解压文件名之前)， -d 后面接目标目录(必须放到最后面)
+@REM unzip -j *.zip -d %EXT_DIR%
+unzip -j *.zip -d %EXT_DIR%</code></pre>
+</blockquote>
+<p>注意： 需要加入执行路径，如果直接打入路径引用unzip会提示出错。</p>
+<h3 id="z.exe">7z.exe</h3>
+<h4 id="下载-1">下载</h4>
+<h4 id="用法-2">用法</h4>
+<p><a href="https://blog.csdn.net/WPwalter/article/details/90638622">使用7-Zip 的命令行版本来压缩和解压文件</a></p>
+<p>运行 7z.exe 后可以看到命令行中列出了可用的命令行命令：</p>
+<pre><code>a：将文件添加到压缩档案中
+b：测试压缩或解压算法执行时的 CPU 占用
+d：从压缩档案中删除文件
+e：将压缩档案中的所有文件解压到指定路径，所有文件将输出到同一个目录中
+h：计算文件的哈希值
+i：显示有关支持格式的信息
+l：列出压缩档案的内容
+rn：重命名压缩档案中的文件
+t：测试压缩档案的完整性
+u：更新要进入压缩档案中的文件
+x：将压缩档案中的所有文件解压到指定路径，并包含所有文件的完整路径</code></pre>
+<p>解压一个文件</p>
+<pre><code>7z x {fileName} -o{outputDirectory}
+特别注意：-o 和 {outputDirectory} 之间是 没有空格 的。</code></pre>
+<p>一个例子：</p>
+<pre><code>7z x C:\Users\walterlv\demo.7z -oC:\Users\walterlv\demo</code></pre>
