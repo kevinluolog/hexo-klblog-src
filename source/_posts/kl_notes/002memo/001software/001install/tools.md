@@ -14,6 +14,44 @@ toc: TRUE
 <div class="section-numbering">
 
 </div>
+<h2 id="工具应用汇总">工具应用汇总</h2>
+<h3 id="文件比较">文件比较</h3>
+<ol type="1">
+<li>winmerge</li>
+</ol>
+<h3 id="文件解压缩">文件解压缩</h3>
+<ol type="1">
+<li>Bandizip</li>
+<li>7z</li>
+<li>unzip/zip</li>
+<li></li>
+</ol>
+<h3 id="misc">MISC</h3>
+<ol type="1">
+<li>iconv</li>
+<li></li>
+</ol>
+<h2 id="winmerge">winmerge</h2>
+<ol type="1">
+<li>explorer右键菜单安装</li>
+<li>设置
+<ol type="a">
+<li>file filter: tools-&gt;filter-&gt;,filefilters(指文件名), linfilters(是指文件内容)。 include/exclude 语境是"include或exclude-全部文件除xxx以外"</li>
+<li>tree浏览/Tabular: view-&gt;treemode, 一般是灰的，要valid需要在打开界面folder filter下面勾上：include subfolders. 这样tree可选。</li>
+<li>启用单侧目录内容展开，另一侧没目录时不会展开:edit-&gt;option-&gt;compare-&gt;folder-&gt;,单侧子文件夹内容;子文件夹</li>
+<li>启用比较简单模式，仅用时间和大小。edit-&gt;option-&gt;compare-&gt;folder-&gt;,compare method。</li>
+</ol></li>
+<li>案例
+<ol type="a">
+<li>带目录拷贝/移动。
+<ol start="0" type="1">
+<li>tabular模式查看</li>
+<li>选中要拷贝的文件，拷贝/移动这些文件，自然目录就创建了。如果是tree模式也可以，但是如果拷贝tree的话会把所有tree下的文件拷贝/移动的。</li>
+</ol></li>
+<li></li>
+</ol></li>
+</ol>
+<hr />
 <h2 id="iconv-编码转换">iconv 编码转换</h2>
 <h3 id="参考链接">参考链接</h3>
 <p><a href=""></a></p>
