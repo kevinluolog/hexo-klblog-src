@@ -78,9 +78,13 @@ preference-&gt;package settings-&gt; package control -&gt; user setting 中可�
 
 4. 然后通过Ctrl+Alt+O快捷键生成HTML预览，或者Ctrl+Alt+X导出。</code></pre>
 <h5 id="omnimarkuppreviewer中支持latex公式显示">OmniMarkupPreviewer中支持LaTeX公式显示：</h5>
-<p>1.设置。</p>
+<ol type="1">
+<li>设置。</li>
+</ol>
 <pre><code>公式的渲染使用了MathJax库，所以需要在OmniMarkupPreviewer的设置中，将&quot;mathjax_enabled&quot;设置为“true”。之后MathJax会在后端自动下载。</code></pre>
-<p>2.可能是网速的原因，MathJax库下载很慢，所以可以选择手动安装。</p>
+<ol start="2" type="1">
+<li>可能是网速的原因，MathJax库下载很慢，所以可以选择手动安装。</li>
+</ol>
 <pre><code>[下载MathJax](https://github.com/downloads/timonwong/OmniMarkupPreviewer/mathjax.zip)
 
     然后解压到下面的目录里：Sublime Text 2\\003work\002memo\001software\001install\OmniMarkupPreviewer\public
@@ -89,6 +93,21 @@ preference-&gt;package settings-&gt; package control -&gt; user setting 中可�
     This expression 
     $\sqrt{3x-1}+(1+x)^2$ is an example of a $\LaTeX$ inline equation.he Lorenz Equations:
     $$\begin{aligned}\dot{x} &amp; = \sigma(y-x) \\\dot{y} &amp; = \rho x - y - xz \\\dot{z} &amp; = -\beta z + xy\end{aligned}$$</code></pre>
+<ol start="3" type="1">
+<li><p>使用参考网址</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/4d38b0bee395">用MathJax插入数学公式</a>
+<ul>
+<li><a href="http://www.forkosh.com/mathtextutorial.html">LaTex 完整教程</a></li>
+<li><a href="http://mirrors.ctan.org/info/symbols/math/maths-symbols.pdf">MathJax 支持的数学符号表</a></li>
+<li><a href="https://kerzol.github.io/markdown-mathjax/editor.html">在线 Markdown MathJax 编辑器</a></li>
+</ul></li>
+</ul>
+<ol type="1">
+<li>行间公式:使用 $$ 来作为公式的左右边界;</li>
+<li>行内公式:使用 $ 号作为公式的左右边界;</li>
+</ol></li>
+</ol>
 <p>在Sublime Text 3中使用命令：</p>
 <pre><code>Ctrl+Alt+O：在浏览器中预览
 Ctrl+Alt+X：输出为HTML文件
